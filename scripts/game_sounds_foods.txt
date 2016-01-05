@@ -1,0 +1,9 @@
+"Foods.eat"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"player/eat.wav"
+}
+

@@ -1,0 +1,179 @@
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"FN P90"
+	"viewmodel"			"models/weapons/v_smg_p90.mdl"
+	"playermodel"			"models/weapons/w_smg_p90.mdl"
+	"anim_prefix"			"smg2"
+	"bucket"				"3"
+	"bucket_position"		"2"
+
+	"clip_size"			"50"
+	"clip2_size"			"-1"
+
+	"default_clip"			"100"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"CustomAmmo5"
+	"secondary_ammo"		"None"
+
+	"weight"			"0"
+	"item_flags"			"0"
+
+	"BuiltRightHanded"		"0"
+	"AllowFlipping"			"1"
+
+	"CSViewModel"			"1"
+	"MuzzleType"			"CSSMG"
+	"MuzzleSize"			"1.5"
+//	"MuzzleAttach"			"0"
+	"LagScale"			".9"
+	"CSWorldModel"			"1"
+
+	// SMOD Ironsight setting.
+	IronSight
+	{
+		"right"			"1.21"
+		"up"			"0.110"
+	}
+
+	// SMOD Adjust View model postion
+	Adjust
+	{
+		"right"		"1.50"
+		"up"		"0.03"
+		"forward"	"-2"
+
+	}
+
+	VMDOF
+	{
+		"IronSight" {
+			"start"		"0"
+			"end"		"9.50"
+		}
+	}
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_TMP.Single"
+		"single_shot_npc"	"Weapon_TMP.Single"
+		"empty"			"Weapon_SMG1.Empty"
+		"double_shot"		"Weapon_TMP.Single"
+		"burst"			"Weapon_TMP.Single"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"a"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"a"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"p"
+		}
+		"ammo2"
+		{
+				"font"		"WeaponIcons"
+				"character"	"t"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	
+	"WeaponSpec"
+	{
+		//	0 : single
+		//	1 : automatic
+		//	2 : shotgun
+		//	3 : autoshotgun
+		"WeaponType"	"1"
+		"FireRate"	"0.067"
+		"UnderWater"	"0"
+		
+	
+		"Options" {
+			"ReloadSound"	"1"
+			"LastFireSound"	"0"
+			"TurnoffScope"	"0"
+			"TurnoffIron"	"0"
+			"TimeScale"	"0"
+		}
+
+		"LaserPointer" {
+			"AccBonus"	"0.5"
+//			"UseButton"	"0"
+			"UseIronsight"	"1"
+			"DeactivateinReload"	"1"
+			"Material"	"materials/sprites/eotech.vmt"
+//			"DrawTrail"	"1"
+			"SwitchSound"	"0"
+			"DrawRange"	"512"
+			"TraceLength"	"64"
+			"FixSize"	"1"
+			"PointerSize"	".2"
+		}
+
+		"Recoil" {
+			"PunchPitch"	"-0.5 0.1"
+			"PunchYaw"	"-0.5 0.5"
+			"EnableSnap"	"0"
+			"SnapPitch"	"0 0"
+			"SnapYaw"	"0 0"
+			"Crouch"	"-0.2 0"
+			"Amp"		"1.1"
+			"PunchLimit"	"1"
+		}
+		
+		"Spread" {
+			"Default"	"0.1"
+			"MaxSpread"	"1"
+			"Run"		".5"
+			"RunSpeed"	"100"
+			"Crouch"	"0.3"
+			"Fire"		"1.0"
+		}
+		
+		"Bullet" {
+			"AmmoType"	"smg1"
+			"Damage"	"10"
+			"ShotCount"	"1"
+			"Tracer"	"5"
+			"Force"		".2"
+			"Penetrate"	"8"
+		}
+
+		"Npc" {
+			"RifleAnim"	"1"
+			"BurstMax"	"10"
+			"BurstMin"	"5"
+			"FireRate"	"0.075"
+			"Range"		"80000"
+			"MuzzleFire"	"1"
+		}
+	}
+	
+}
+
+

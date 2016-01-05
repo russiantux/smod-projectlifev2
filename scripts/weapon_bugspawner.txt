@@ -1,0 +1,63 @@
+// BUG SPAWNER
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"#HL2_Bugspawner"
+	"viewmodel"			"models/weapons/v_bugspawner.mdl"
+	"playermodel"			"models/weapons/w_bugspawner.mdl"
+	"anim_prefix"			"Grenade"
+	"bucket"			"5"
+	"bucket_position"		"1"
+
+	"clip_size"			"0"
+	"clip2_size"			"0"
+	"primary_ammo"			"None"
+	"secondary_ammo"		"None"
+	"default_clip"			"0"
+	"default_clip2"			"0"
+
+	"autoswitchto"			"0"
+	"autoswitchfrom"		"0"
+	"weight"			"0"
+	"item_flags"			"0"
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+			"file"		"sprites/hud_weapons"
+			"x"		"0"
+			"y"		"192"
+			"width"		"64"
+			"height"	"32"
+		}
+		"weapon_s"
+		{
+			"file"		"sprites/hud_weapons"
+			"x"		"0"
+			"y"		"192"
+			"width"		"64"
+			"height"	"32"
+		}
+		"ammo"
+		{
+			"font"		"WeaponIcons"
+			"character"	"j"
+		}
+		"crosshair"
+		{
+			"font"		"Crosshairs"
+			"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+}

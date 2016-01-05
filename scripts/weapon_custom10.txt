@@ -1,0 +1,194 @@
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"H&K MP5"
+	"viewmodel"			"models/weapons/v_smg_mp5.mdl"
+	"playermodel"			"models/weapons/w_smg_mp5.mdl"
+	"anim_prefix"			"smg2"
+	"bucket"			"3"
+	"bucket_position"		"1"
+
+	"clip_size"			"30"
+	"clip2_size"			"-1"
+
+	"default_clip"			"30"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"CustomAmmo2"
+	"secondary_ammo"		"None"
+
+	"weight"			"0"
+	"item_flags"			"0"
+
+	"BuiltRightHanded"		"0"
+	"AllowFlipping"			"1"
+
+	"CSViewModel"			"1"
+	"MuzzleType"			"CSSMG"
+	"MuzzleSize"			"1.5"
+	"MuzzleAttach"			"0"
+	"LagScale"			".9"
+	"CSWorldModel"			"1"
+
+	VMDOF
+	{
+		"IronSight" {
+			"start"		"6.500"
+			"end"		"6.0"
+		}
+	}
+
+	// SMOD Ironsight setting.
+	IronSight
+	{
+		"right"			".990"
+		"up"			"0.18"
+		"roll"			"-0.200000"
+		"yaw"			"0.60000"
+	}
+
+	// SMOD Adjust View model postion
+	Adjust
+	{
+		"right"		"2"
+		"up"		"0.99"
+		"forward"	"-2"
+	}
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"reload"			"Weapon_SMG1.Reload"
+		"reload_npc"		"Weapon_SMG1.NPC_Reload"
+		"empty"				"Weapon_SMG1.Empty"
+		"single_shot"		"Weapon_MP5Navy.Single"
+		"single_shot_npc"	"Weapon_MP5Navy.Single"
+		"special1"			"Weapon_SMG1.Special1"
+		"special2"			"Weapon_SMG1.Special2"
+		"double_shot"		"Weapon_MP5Navy.Single"
+		"burst"				"Weapon_MP5Navy.Single"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"a"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"a"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"p"
+		}
+		"ammo2"
+		{
+				"font"		"WeaponIcons"
+				"character"	"t"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	
+	"WeaponSpec"
+	{
+		//	0 : single
+		//	1 : automatic
+		//	2 : shotgun
+		//	3 : autoshotgun
+		"WeaponType"	"0"
+		"FireRate"	"0.075"
+		"UnderWater"	"0"
+
+		//	Fire Mode
+		//	1 : single ,  2 : burst ,  4 : automatic
+		"FireMode"	"5"		
+
+		"Burst" {
+			"FireCount"	"1"
+			"Delay"		"0.1"
+		//	"AccBonus"	"2.0"
+		}	
+
+		"Options" {
+			"ReloadSound"	"1"
+			"LastFireSound"	"0"
+			"TurnoffScope"	"0"
+			"TurnoffIron"	"0"
+			"TimeScale"	"0"
+		}
+		
+		"LaserPointer" {
+			"AccBonus"	"0.5"
+//			"UseButton"	"0"
+			"UseIronsight"	"1"
+			"DeactivateinReload"	"1"
+			"Material"	"materials/sprites/laserpointer.vmt"
+//			"DrawTrail"	"1"
+			"SwitchSound"	"0"
+			"DrawRange"	"512"
+			"TraceLength"	"64"
+			"FixSize"	"1"
+			"PointerSize"	".05"
+		}
+
+		"Recoil" {
+			"PunchPitch"	"-0.5 0.1"
+			"PunchYaw"	"-0.5 0.5"
+			"EnableSnap"	"0"
+			"SnapPitch"	"0 0"
+			"SnapYaw"	"0 0"
+			"Crouch"	"-0.2 0"
+			"Amp"		"1.1"
+			"PunchLimit"	"1"
+		}
+		
+		"Spread" {
+			"Default"	"0.1"
+			"MaxSpread"	"1"
+			"Run"		".5"
+			"RunSpeed"	"100"
+			"Crouch"	"0.3"
+			"Fire"		"1.0"
+		}
+		
+		"Bullet" {
+			"AmmoType"	"smg1"
+			"Damage"	"20"
+			"ShotCount"	"1"
+			"Tracer"	"3"
+			"Force"		".2"
+			"Penetrate"	"5"
+		}
+
+
+		"Npc" {
+			"RifleAnim"	"1"
+			"BurstMax"	"3"
+			"BurstMin"	"1"
+			"FireRate"	"0.075"
+			"Range"		"80000"
+			"MuzzleFire"	"1"
+		}
+	}
+	
+}
+
+

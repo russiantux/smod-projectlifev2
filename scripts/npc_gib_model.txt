@@ -1,0 +1,79 @@
+//
+//	SMOD gib model data (sample)
+//
+NPCGibModelData
+{
+	"default_humans" {
+			"skin"		"0"
+		"ragdoll_gibs"	"models/gibs/rgib_p1.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p2.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p3.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p3.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p4.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p5.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p6.mdl"
+		"ragdoll_gibs"	"models/gibs/brain.mdl"
+		"ragdoll_gibs"	"models/gibs/heart.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/niku1.mdl"
+		"gib2"	"models/gibs/hgibs_jaw.mdl"
+		"gib2"	"models/gibs/hgibs_scapula.mdl"
+		"gib2"	"models/gibs/hgibs_scapula.mdl"
+		"gib2"	"models/gibs/hgibs_spine.mdl"
+		"ragdoll_gibs"	"models/gibs/leg.mdl"
+		"ragdoll_gibs"	"models/gibs/leg.mdl"
+		"gib2"	"models/gibs/shoe.mdl"
+		"gib2"	"models/gibs/shoe.mdl"
+		}
+	"default_aliens" {
+		"skin"		"1"
+		"gib2"		"models/gibs/pgib_p3.mdl"
+		"gib2"		"models/gibs/pgib_p4.mdl"
+		"gib2"		"models/gibs/pgib_p5.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p1.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p2.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p3.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p3.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p4.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p5.mdl"
+		"ragdoll_gibs"	"models/gibs/rgib_p6.mdl"
+	}
+	"models" {z
+		"Antlion.mdl" {
+			"skin"		"1"
+			"gib2"		"models/gibs/Antlion_gib_Large_1.mdl"
+			"gib2"		"models/gibs/Antlion_gib_Large_2.mdl"
+			"gib2"		"models/gibs/Antlion_gib_Large_3.mdl"
+			"gib2"		"models/gibs/Antlion_gib_medium_1.mdl"
+			"gib2"		"models/gibs/Antlion_gib_medium_2.mdl"
+			"gib2"		"models/gibs/Antlion_gib_medium_3.mdl"
+			"70" {
+				"gib2"		"models/gibs/Antlion_gib_small_1.mdl"
+				"gib2"		"models/gibs/Antlion_gib_small_2.mdl"
+				"gib2"		"models/gibs/Antlion_gib_small_3.mdl"
+				"gib2"		"models/gibs/Antlion_gib_medium_1.mdl"
+				"gib2"		"models/gibs/Antlion_gib_medium_2.mdl"
+				"gib2"		"models/gibs/Antlion_gib_medium_3.mdl"
+			}
+			"30" {
+				"gib2"		"models/gibs/Antlion_gib_small_1.mdl"
+				"gib2"		"models/gibs/Antlion_gib_small_2.mdl"
+				"gib2"		"models/gibs/Antlion_gib_small_3.mdl"
+			}
+		}
+	}
+}

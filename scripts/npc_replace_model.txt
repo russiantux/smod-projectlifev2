@@ -1,0 +1,597 @@
+NPCModelReplaceData
+{
+   "default_map" {
+
+      "default_npc"   {
+//         "models/alyx.mdl"   "10"
+//         "models/barney.mdl"   "10"
+      }
+
+      "npc_zombie2"{
+		"models\Zombies\Group1\male_02.mdl"	"1"
+		"models\Zombies\Group1\male_03.mdl"	"1"
+		"models\Zombies\Group1\male_04.mdl"	"1"
+		"models\Zombies\Group1\male_05.mdl"	"1"
+		"models\Zombies\Group1\male_06.mdl"	"1"
+		"models\Zombies\Group1\male_07.mdl"	"1"
+		"models\Zombies\Group1\male_08.mdl"	"1"
+		"models\Zombies\Group1\male_09.mdl"	"1"
+		"models\Zombies\Group2\male_02.mdl"	"1"
+		"models\Zombies\Group2\male_03.mdl"	"1"
+		"models\Zombies\Group2\male_04.mdl"	"1"
+		"models\Zombies\Group2\male_05.mdl"	"1"
+		"models\Zombies\Group2\male_06.mdl"	"1"
+		"models\Zombies\Group2\male_07.mdl"	"1"
+		"models\Zombies\Group2\male_08.mdl"	"1"
+		"models\Zombies\Group2\male_09.mdl"	"1"
+		"models\Zombies\Group3\male_02.mdl"	"1"
+		"models\Zombies\Group3\male_03.mdl"	"1"
+		"models\Zombies\Group3\male_04.mdl"	"1"
+		"models\Zombies\Group3\male_05.mdl"	"1"
+		"models\Zombies\Group3\male_06.mdl"	"1"
+		"models\Zombies\Group3\male_07.mdl"	"1"
+		"models\Zombies\Group3\male_08.mdl"	"1"
+		"models\Zombies\Group3\male_09.mdl"	"1"
+		}
+
+	"npc_combine_ace"{
+		"models/panzer_combine.mdl"   "100"
+		}
+
+	"npc_combine_p"{
+		"models/prison_soldier.mdl"	"100"
+		}
+
+	"item_ammo_ar2"{
+		"models/items/magazine_m249.mdl"   "100"
+		}
+
+   }
+
+   "d2_coast_01" {
+      "npc_metropolice" {
+         "models/police.mdl"		"50"
+	 "models/masked_cop.mdl"	"50"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"50"
+	 "models/combine_soldier.mdl"	"50"
+      }
+   }
+
+   "d2_coast_03" {
+      "npc_metropolice" {
+         "models/police.mdl"		"50"
+	 "models/masked_cop.mdl"	"50"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"50"
+	 "models/combine_soldier.mdl"	"50"
+      }
+   }
+
+   "d2_coast_04" {
+      "npc_metropolice" {
+         "models/police.mdl"		"50"
+	 "models/masked_cop.mdl"	"50"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"50"
+	 "models/combine_soldier.mdl"	"50"
+      }
+   }
+
+   "d2_coast_05" {
+      "npc_metropolice" {
+         "models/police.mdl"		"50"
+	 "models/masked_cop.mdl"	"50"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"50"
+	 "models/combine_soldier.mdl"	"50"
+      }
+   }
+
+   "d2_coast_07" {
+      "npc_metropolice" {
+         "models/police.mdl"		"50"
+	 "models/masked_cop.mdl"	"50"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"50"
+	 "models/combine_soldier.mdl"	"50"
+      }
+   }
+
+   "d2_coast_08" {
+      "npc_metropolice" {
+         "models/police.mdl"		"50"
+	 "models/masked_cop.mdl"	"50"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"50"
+	 "models/combine_soldier.mdl"	"50"
+      }
+   }
+
+   "d2_coast_09" {
+      "npc_metropolice" {
+         "models/police.mdl"		"50"
+	 "models/masked_cop.mdl"	"50"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"50"
+	 "models/combine_soldier.mdl"	"50"
+      }
+   }
+
+   "d2_coast_10" {
+      "npc_metropolice" {
+         "models/police.mdl"		"50"
+	 "models/masked_cop.mdl"	"50"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"50"
+	 "models/combine_soldier.mdl"	"50"
+      }
+   }
+
+   "d2_coast_11" {
+      "npc_metropolice" {
+         "models/police.mdl"		"50"
+	 "models/masked_cop.mdl"	"50"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"50"
+	 "models/combine_soldier.mdl"	"50"
+      }
+   }
+
+   "d2_coast_12" {
+      "npc_metropolice" {
+         "models/police.mdl"		"50"
+	 "models/masked_cop.mdl"	"50"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"50"
+	 "models/combine_soldier.mdl"	"50"
+      }
+   }
+
+   "d2_prison_01" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d2_prison_02" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d2_prison_03" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d2_prison_04" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+
+      "npc_combine_ace"{
+	"models/panzer_combine.mdl"   "100"
+			}
+   }
+
+   "d2_prison_05" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d2_prison_06" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d2_prison_07" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d2_prison_08" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_s" {
+         "models/urban_combine.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_c17_01" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_c17_02" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_c17_03" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_c17_04" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+
+   "d3_c17_05" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+
+   "d3_c17_06a" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+
+   "d3_c17_06b" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_c17_07" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_c17_08" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_c17_09" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_c17_10a" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_c17_10b" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_c17_11" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_c17_12" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_c17_13" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_citadel_01" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_citadel_02" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_citadel_03" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_citadel_04" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_citadel_05" {
+      "npc_metropolice" {
+	 "models/masked_cop.mdl"	"100"
+      }
+
+	"npc_combine_e"{
+		"models/panzer_combine.mdl"   "100"
+			}
+
+      "npc_combine_p" {
+         "models/urbantrenchcoat.mdl"	"100"
+      }
+   }
+
+   "d3_breen_01" {
+	"npc_combine_e"{
+		"models/panzer_combine.mdl"   "100"
+		}
+   }
+
+
+   "cs_assault" {
+      "npc_combine_s" {
+			"models/urban_combine.mdl"	"50"
+			"models/urbantrenchcoat.mdl"   "50"
+			 }
+   }
+
+   "cc_urban_warfare" {
+         "npc_combine_p" {
+				"models/leet_combine.mdl" "50"
+				"models/guerilla_combine.mdl" "50"
+			}
+
+	
+   }
+
+
+
+   "rp_cscdesert" {
+         "npc_combine_s" {
+				"models/seal_01.mdl" "17"
+				"models/seal_02.mdl" "17"
+				"models/seal_03.mdl" "17"
+				"models/seal_04.mdl" "17"
+				"models/seal_05.mdl" "16"
+				"models/seal_06.mdl" "16"
+
+			}
+         "npc_combine_e" {
+
+				"models/seal_01s.mdl" "17"
+				"models/seal_02s.mdl" "17"
+				"models/seal_03s.mdl" "17"
+				"models/seal_04s.mdl" "17"
+				"models/seal_05s.mdl" "16"
+				"models/seal_06s.mdl" "16"
+			}
+	
+   }
+
+   "dm_mine_enhanced" {
+         "npc_combine_s" {
+				"models/seal_01.mdl" "50"
+				"models/seal_02.mdl" "50"
+				"models/seal_03.mdl" "50"
+				"models/seal_04.mdl" "50"
+				"models/seal_05.mdl" "50"
+				"models/seal_06.mdl" "50"
+				"models/seal_01s.mdl" "50"
+				"models/seal_02s.mdl" "50"
+				"models/seal_03s.mdl" "50"
+				"models/seal_04s.mdl" "50"
+				"models/seal_05s.mdl" "50"
+				"models/seal_06s.mdl" "50"
+			}
+
+	
+   }
+
+
+   "cs_cabaret" {
+      "npc_citizen" {
+				"models/humans/nypdcop/Male_01.mdl" "10"
+				"models/humans/nypdcop/Male_02.mdl" "10"
+				"models/humans/nypdcop/Male_03.mdl" "10"
+				"models/humans/fbiagnt/Male_04.mdl" "10"
+				"models/humans/fbiagnt/Male_05.mdl" "10"
+				"models/humans/fbiagnt/Male_06.mdl" "10"
+				"models/humans/armoredp/Male_07.mdl" "10"
+				"models/humans/armoredp/Male_08.mdl" "10"
+				"models/humans/armoredp/Male_09.mdl" "20"
+		 }
+         "npc_f_combine" {
+				"models/humans/Group03/Male_01.mdl" "10"
+				"models/humans/Group03/Male_02.mdl" "10"
+				"models/humans/Group03/Male_03.mdl" "10"
+				"models/humans/Group03/Male_04.mdl" "10"
+				"models/humans/Group03/Male_05.mdl" "10"
+				"models/humans/Group03/Male_06.mdl" "10"
+				"models/humans/Group03/Male_07.mdl" "10"
+				"models/humans/Group03/Male_08.mdl" "10"
+				"models/humans/Group03/Male_09.mdl" "20"
+			}
+         "npc_combine_s" {
+				"models/leet_combine.mdl" "100"
+			}
+         "npc_combine_e" {
+				"models/guerilla_combine.mdl" "100"
+			}
+         "npc_metropolice" {
+				"models/combine_soldier_arctic.mdl" "100"
+			}
+
+   }
+
+} 
+

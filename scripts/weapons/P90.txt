@@ -1,0 +1,40 @@
+"Weapon_P90.unlock"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\p90\p90_unlock.wav"
+}
+
+"Weapon_P90.magout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\p90\p90_magout.wav"
+}
+
+"Weapon_P90.magin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\p90\p90_magin.wav"
+}
+
+"Weapon_P90.cock"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\p90\p90_cock.wav"
+}
+=

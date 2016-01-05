@@ -1,0 +1,98 @@
+"Weapon_USP.DetachSilencer"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/usp/usp_silencer_off.wav"
+	
+}
+
+"Weapon_USP.AttachSilencer"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/usp/usp_silencer_on.wav"
+	
+}
+
+"Weapon_USP.Clipout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/usp/usp_clipout.wav"
+	
+}
+
+"Weapon_USP.SwapClip"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/usp/usp_sclip.wav"
+	
+}
+
+"Weapon_USP.Clipin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/usp/usp_clipin.wav"
+	
+}
+
+"Weapon_USP.Sliderelease"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/usp/usp_sliderelease.wav"
+	
+}
+
+"Weapon_USP.Slideback"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/usp/usp_slideback.wav"
+	
+}
+
+"Weapon_USP.Slideback2"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/usp/usp_slideback2.wav"
+	
+}
+
+"Weapon_USP.Deploy"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/usp/usp_deploy.wav"
+	
+}

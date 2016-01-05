@@ -1,0 +1,46 @@
+//
+//	SMOD npc ShieldSet setting (sample)
+//
+
+ShieldSet
+{
+	"default_map" {
+		"npc_combine_s" {
+			"RiotShield" {
+				"Model"		"models/misc/shield.mdl"
+				"Attach"	"anim_attachment_RH"
+				"Rotate"	"0 0 0"
+				"Offset"	"0 0 0"
+				"Durability"	"9999 9999"
+			}
+		}
+	
+		"npc_combine_c" {
+			"Reference"	"npc_combine_s"
+		}
+		
+		"npc_metropolice" {
+			"ArmShield" {
+				"Model"		"models/misc/armshield.mdl"
+				"Attach"	"LHand"
+				"Rotate"	"0 0 0"
+				"Offset"	"0 0 0"
+				"Durability"	"9999 9999"
+			}
+			"ArmShield2" {
+				"Model"		"models/misc/armshield.mdl"
+				"Attach"	"RHand"
+				"Rotate"	"0 0 0"
+				"Offset"	"0 0 0"
+				"Durability"	"9999 9999"
+			}
+			"FaceGuard" {
+				"Model"		"models/misc/faceshield.mdl"
+				"Attach"	"eyes"
+				"Rotate"	"0 0 0"
+				"Offset"	"0 0 0"
+				"Durability"	"9999 9999"
+			}
+		}
+	}
+}

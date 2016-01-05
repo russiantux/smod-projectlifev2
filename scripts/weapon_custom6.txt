@@ -1,0 +1,184 @@
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"AWM"
+	"viewmodel"			"models/weapons/v_snip_awp.mdl"
+	"playermodel"			"models/weapons/w_snip_awp.mdl"
+	"anim_prefix"			"ar2"
+	"bucket"				"4"
+	"bucket_position"		"1"
+
+	"clip_size"			"6"
+	"clip2_size"			"-1"
+
+	"default_clip"			"6"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"Buckshot"
+	"secondary_ammo"		"None"
+
+	"weight"			"3"
+	"item_flags"			"0"
+
+	"BuiltRightHanded"		"0"
+	"AllowFlipping"			"1"
+
+	"CSViewModel"			"1"
+	"MuzzleType"			"CSRIFLE"
+	"MuzzleSize"			"1.5"
+	"MuzzleAttach"			"1"
+	"LagScale"			"1"
+	"CSWorldModel"			"1"
+	"DisableROAimmode"		"0"
+
+	// SMOD Ironsight setting.
+	IronSight
+	{
+		"right"		"0.860"
+		"up"		"0.01"
+		"forward"	"-2.8"
+		"fov"		"-10"
+	}
+
+	// SMOD Adjust View model postion
+	Adjust
+	{
+		"right"		"2.00"
+		"up"		"1.020"
+		"forward"	"-1.00"
+
+	}
+
+	VMDOF
+	{
+		"IronSight" {
+			"start"		"1.50"
+			"end"		"1"
+		}
+	}
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"reload_npc"		"Weapon_Pistol.NPC_Reload"
+		"empty"			"Default.ClipEmpty_Rifle"
+		"single_shot"		"Weapon_AWP.Single"
+		"single_shot_npc"	"Weapon_AWP.Single"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"a"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"a"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"p"
+		}
+		"ammo2"
+		{
+				"font"		"WeaponIcons"
+				"character"	"t"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	
+	"WeaponSpec"
+	{
+		//	0 : single
+		//	1 : automatic
+		//	2 : shotgun
+		//	3 : autoshotgun
+		"WeaponType"	"0"
+		"FireRate"	"1.5"
+		"UnderWater"	"1"
+		
+	
+//		"Scope" {
+//			"Type"		"4"
+//			"Switch"	"2"
+//			"ZoomFact"	"2.0"
+//			"CrosshairOff"	"1"
+//			"AccBonus"	"0.02"
+//			"Drift" ".1"
+//			"FireRate"	"1.5"
+//			"DrawViewmodel"	"0"
+//			"IronsightIsScope" "1"
+//		}
+
+//		"Burst" {
+//			"FireCount"	"3"
+//			"Delay"		"1.0"
+//		}
+		
+		"Options" {
+			"ReloadSound"	"1"
+			"LastFireSound"	"0"
+			"TurnoffScope"	"1"
+			"TurnoffIron"	"1"
+			"TimeScale"	"100"
+		}
+		
+		"Recoil" {
+			"PunchPitch"	"-1.0 -1.0"
+			"PunchYaw"	"-0.1 0.1"
+			"EnableSnap"	"0"
+			"SnapPitch"	"-0.0 0.0"
+			"SnapYaw"	"-0.0 0.0"
+			"Crouch"	"0.5"
+			"Amp"		"0"
+			"PunchLimit"	"1.0"
+		}
+		
+		"Spread" {
+			"Default"	"0"
+			"MaxSpread"	"0"
+			"Run"		"0"
+			"RunSpeed"	"100"
+			"Crouch"	"0"
+			"Fire"		"0"
+		}
+		
+		"Bullet" {
+			"AmmoType"	"ak47"
+			"Damage"	"200"
+			"ShotCount"	"1"
+			"Tracer"	"1"
+			"Force"		".5"
+			"Penetrate"	"10"
+		}
+
+		"Npc" {
+			"RifleAnim"	"1"
+			"BurstMax"	"1"
+			"BurstMin"	"1"
+			"FireRate"	"1.4"
+			"Range"		"10192"
+			"MuzzleFire"	"2"
+		}
+	}
+	
+}
+
+

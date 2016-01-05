@@ -1,0 +1,142 @@
+//===============
+//Melee [Bucket 0]
+//	weapon_custom25	Kbar			[position 0] 
+//	weapon_custom13	Fists			[position 1] 
+//	weapon_physcannon Gravity Gun	[position 2]
+//===============
+//Handguns [Bucket 1]
+//	weapon_custom1	Kimber 1911		[position 0] 
+//	weapon_custom9	Glock 19		[position 1]
+//	weapon_custom14	Dual FN 57		[position 2]
+//	weapon_custom15	FN Five Seven	[position 3]
+//	weapon_custom21	Desert Eagle	[position 4]
+//	weapon_custom23	.357			[position 5]
+//===============
+//Rifles [Bucket 2]
+//	weapon_custom3	M4A1			[position 0]
+//	weapon_custom5	M249 PARA		[position 1]
+//	weapon_custom7	AK47			[position 2]
+//	weapon_custom16	M4A1 Suppressed	[position 3]
+//	weapon_custom24	Mini-Gun		[position 4]
+//	weapon_custom8	M4A1 GL ACOG	[position 5]
+//===============
+//Sub-Machineguns [Bucket 3]
+//	weapon_custom2	H&K UMP			[position 0]
+//	weapon_custom10	MP5-SD			[position 1]
+//	weapon_custom11	FN P90			[position 2]
+//	weapon_custom12	UZI				[position 3]
+//	weapon_custom18	Dual MP5		[position 4]
+//===============
+//Tactical Weapons [Bucket 4]
+
+//	weapon_custom20	RPG-7			[position 0]
+//	weapon_rpg	HL2 RPG				[position 1]
+//===============
+//Explosives  [Bucket 5]
+//	weapon_custom17	Frag Grenade	[position 0]
+//	weapon_custom22	C-4 30sec Timer	[position 1]
+//	weapon_bugbait		Bugbait		[position 2]
+//===============
+//Shotguns  [Bucket 6]
+//	weapon_custom4	M598 (shotgun)	[position 0]
+//	weapon_custom19	Dual Shotguns	[position 1]
+//===============
+//Sniper Rifles  [Bucket 7]
+//	weapon_custom6	AWM				[position 0]
+//===============
+
+WeaponCategory
+{
+	"CANNOTCARRY" {
+		"weapon_lstick"{}
+		"weapon_gcrowbar"{}
+		"weapon_bugspawner"{}
+		"weapon_stcannon"{}
+		"weapon_abgun"{}
+		"weapon_physlauncher"{}
+		"weapon_pistol"{}
+		"weapon_soy"{}
+		"weapon_ar2"{}
+		"weapon_kar98"{}
+		"weapon_lasergun"{}
+		"weapon_scissor"{}
+		"weapon_flaregun"{}
+		"weapon_alyxgun"{}
+		"weapon_357"{}
+		"weapon_psp"{}
+		"weapon_bananna"{}
+		"weapon_mp5"{}
+		"weapon_grease"{}
+		"weapon_gauss"{}
+		"weapon_ak47"{}
+		"weapon_svd"{}
+		"weapon_crossbow"{}
+		"weapon_shotgun"{}
+		"weapon_smg1"{}
+	}
+
+	"Melee" {
+		"weapon_crowbar"{}
+		"weapon_custom25"{}
+		"weapon_custom13"{}
+		"weapon_shovel"{}
+	}
+	
+	"Handgun" {
+		"weapon_custom1"{}
+		"weapon_custom9"{}
+		"weapon_custom14"{}
+		"weapon_custom15"{}
+		"weapon_custom21"{}
+		"weapon_custom23"{}
+	}
+
+	"Rifle" {
+		"weapon_custom3"{}
+		"weapon_custom5"{}
+		"weapon_custom7"{}
+		"weapon_custom16"{}
+		"weapon_custom24"{}
+		"weapon_custom8"{}
+	}
+	
+	"SMG" {
+		"weapon_custom2"{}
+		"weapon_custom10"{}
+		"weapon_custom11"{}
+		"weapon_custom12"{}
+		"weapon_custom18"{}
+	}
+	
+	"Tactical"{
+		"weapon_custom20"{}
+		"weapon_rpg"{}
+	}
+	
+	"Shotguns"{
+		"weapon_custom4"{}
+		"weapon_custom19"{}
+	}
+	
+	"Sniper Rifles"{
+		"weapon_custom6"{}
+	}
+
+	"Explosives" {
+		"weapon_custom22"{}
+	}
+
+	"anm14" {
+		"weapon_anm14"{}
+	}
+
+	"Grenade" {
+		"weapon_custom17"{}
+		"weapon_frag"{}
+		"weapon_gravgren"{}
+	}
+	"mines" {
+		"weapon_msbomb"{}
+	}
+			
+}

@@ -1,0 +1,39 @@
+"Weapon_ar10.boltrelease"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/sg550/ar10_boltrelease.wav"
+}
+
+"Weapon_ar10.boltpull"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/sg550/ar10_boltpull.wav"
+}
+
+"Weapon_ar10.catch"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/sg550/boltpull1.wav"
+}
+
+"Weapon_ar10.Draw"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/sg550/ar10_draw.wav"
+}

@@ -1,0 +1,55 @@
+//Kimber
+"Weapon_Kimber.Magin1"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\kimber\magin1.wav" 
+}
+"Weapon_Kimber.Magin2"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\kimber\magin2.wav" 
+}
+"Weapon_Kimber.Magout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\kimber\magout.wav" 
+}
+"Weapon_Kimber.Slideback"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\kimber\slideback.wav" 
+}
+"Weapon_Kimber.SlideFor"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\kimber\slideforw.wav" 
+}
+"Weapon_Kimber.SlideRel"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\kimber\sliderelease.wav" 
+}

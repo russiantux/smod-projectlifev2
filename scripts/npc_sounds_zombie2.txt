@@ -1,0 +1,74 @@
+"Zombie2.Attack"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+	"pitch"			"90, 110"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/zombie2/zo_attack1.wav"
+		"wave"	"npc/zombie2/zo_attack2.wav"
+		"wave"	"npc/zombie2/zo_attack3.wav"
+		"wave"	"npc/zombie2/zo_attack4.wav"		
+		"wave"	"npc/zombie2/zo_attack5.wav"				
+	}
+}
+
+"Zombie2.Roar"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+	"pitch"			"90, 110"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/zombie2/zombie_roar1.wav"
+		"wave"	"npc/zombie2/zombie_roar2.wav"
+		"wave"	"npc/zombie2/zombie_roar3.wav"
+		"wave"	"npc/zombie2/zombie_roar4.wav"		
+		"wave"	"npc/zombie2/zombie_roar5.wav"				
+	}
+}
+
+"Zombie2.Pain"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+	"pitch"			"90, 110"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/zombie2/zombie_pain1.wav"
+		"wave"	"npc/zombie2/zombie_pain2.wav"
+		"wave"	"npc/zombie2/zombie_pain3.wav"
+		"wave"	"npc/zombie2/zombie_pain4.wav"		
+		"wave"	"npc/zombie2/zombie_pain5.wav"				
+		"wave"	"npc/zombie2/zombie_pain6.wav"
+		"wave"	"npc/zombie2/zombie_pain7.wav"
+		"wave"	"npc/zombie2/zombie_pain8.wav"						
+	}
+}
+"Zombie2.Die"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+	"pitch"			"90, 110"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/zombie2/zombie_die1.wav"
+		"wave"	"npc/zombie2/zombie_die2.wav"
+		"wave"	"npc/zombie2/zombie_die3.wav"
+		"wave"	"npc/zombie2/zombie_die4.wav"		
+		"wave"	"npc/zombie2/zombie_die5.wav"				
+		"wave"	"npc/zombie2/zombie_die6.wav"
+						}
+}

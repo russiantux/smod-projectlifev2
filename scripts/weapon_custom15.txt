@@ -1,0 +1,181 @@
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"FN Five Seven"
+	"viewmodel"			"models/weapons/v_pist_fiveseven.mdl"
+	"playermodel"			"models/weapons/w_pist_fiveseven.mdl"
+	"anim_prefix"			"pistol"
+	"bucket"				"1"
+	"bucket_position"		"2"
+
+	"clip_size"			"20"
+	"clip2_size"			"-1"
+
+	"default_clip"			"40"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"CustomAmmo5"
+	"secondary_ammo"		"None"
+
+	"weight"			"0"
+	"item_flags"			"0"
+
+	"BuiltRightHanded"		"0"
+	"AllowFlipping"			"1"
+
+	"CSViewModel"			"1"
+	"MuzzleType"			"CSSMG"
+	"MuzzleSize"			"1.5"
+//	"MuzzleAttach"			"0"
+	"LagScale"			".5"
+	"CSWorldModel"			"1"
+
+	// SMOD Ironsight setting.
+	IronSight
+	{
+		"right"		"0.010"
+		"up"		"1.100"
+		"forward"	"2.0"
+	}
+
+	// SMOD Adjust View model postion
+	Adjust
+	{
+		"right"		"2.68"
+		"up"		"0.50"
+		"forward"	"1.60"
+
+	}
+
+	VMDOF
+	{
+		"IronSight" {
+			"start"		"-15.00"
+			"end"		"15.5"
+		}
+	}
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+//		"reload"		"Weapon_Pistol.Reload"
+		"reload_npc"		"Weapon_Pistol.NPC_Reload"
+		"empty"			"Weapon_Pistol.Empty"
+		"single_shot"		"Weapon_FiveSeven.Single"
+		"single_shot_npc"	"Weapon_FiveSeven.Single"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"d"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"d"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"p"
+		}
+		"ammo2"
+		{
+				"font"		"WeaponIcons"
+				"character"	"t"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	
+	"WeaponSpec"
+	{
+		//	0 : single
+		//	1 : automatic
+		//	2 : shotgun
+		//	3 : autoshotgun
+		"WeaponType"	"0"
+		"FireRate"	"0.1"
+		"UnderWater"	"1"
+		
+	
+		"Options" {
+			"ReloadSound"	"0"
+			"LastFireSound"	"0"
+			"TurnoffScope"	"0"
+			"TurnoffIron"	"0"
+			"TimeScale"	"1"
+			"LastDryFireActivity"	"1"	// not work
+		}
+
+		"LaserPointer" {
+			"AccBonus"	"0"
+//			"UseButton"	"1"
+//			"UseIronsight"	"1"
+//			"DeactivateinReload"	"1"
+			"Material"	"sprites/laserpointer.vmt"
+//			"DrawTrail"	"1"
+			"SwitchSound"	"0"
+			"DrawRange"	"1024"
+			"TraceLength"	"1024"
+			"FixSize"	"0"
+			"PointerSize"	".4"
+		}
+		
+		"Recoil" {
+			"PunchPitch"	"-0.5 0"
+			"PunchYaw"	"-0.15 .15"
+			"EnableSnap"	"0"
+			"SnapPitch"	"0 0"
+			"SnapYaw"	"0 0"
+			"Crouch"	"0.5"
+			"Amp"		"1.5"
+			"PunchLimit"	"0.5"
+		}
+		
+		"Spread" {
+			"Default"	"0.1"
+			"MaxSpread"	"1"
+			"Run"		"0.3"
+			"RunSpeed"	"100"
+			"Crouch"	"0.8"
+			"Fire"		"10.5"
+		}
+		
+		"Bullet" {
+			"AmmoType"	"smg1"
+			"Damage"	"10"
+			"ShotCount"	"1"
+			"Tracer"	"1"
+			"Force"		"0.25"
+			"Penetrate"	"8"
+		}
+
+		"Npc" {
+			"AnimType"	"Pistol"
+			"BurstMax"	"3"
+			"BurstMin"	"2"
+			"FireRate"	"1.0"
+			"Range"		"80000"
+			"MuzzleFire"	"1"
+		}
+	}
+	
+}
+
+

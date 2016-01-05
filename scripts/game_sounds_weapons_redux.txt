@@ -1,0 +1,466 @@
+"Weapon_A35.Deploy"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/a35/a35_deploy.wav"
+}
+
+"Weapon_A35.InsertShell"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/a35/a35_insert.wav"
+}
+
+"Weapon_Alyxgun.Reload"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"weapons/alyxgun/alyxgun_reload.wav"
+}
+
+"Weapon_Alyxgun.NPC_Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	//"pitch"			"95,105"
+
+	"wave"			"^weapons/alyxgun/alyxgun-npc.wav"
+}
+
+"Weapon_Minigun.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7" //1.0
+	"soundlevel"	"SNDLVL_GUNFIRE"
+
+	"wave"		"weapons/minigun/minigun_fire.wav"
+}
+
+"Weapon_Minigun.SpinUp"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.9"
+	"pitch"			"95,105"
+
+	"soundlevel"	"SNDLVL_140dB"
+
+	"wave"		"weapons/minigun/minigun_spinup.wav"
+}
+
+"Weapon_Minigun.SpinDown"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.9"
+	"pitch"			"95,105"
+
+	"soundlevel"	"SNDLVL_140dB"
+
+	"wave"		"weapons/minigun/minigun_spindown.wav"
+}
+
+"Weapon_OICW.Reload"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"weapons/oicw/oicw_reload.wav"
+}
+
+"Weapon_OICW.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	//"pitch"			"95,105"
+	"rndwave"
+	{	
+	"wave"			"weapons/oicw/oicw_fire1.wav"
+	"wave"			"weapons/oicw/oicw_fire2.wav"
+	"wave"			"weapons/oicw/oicw_fire3.wav"	
+  }
+}
+
+"Weapon_OICW.NPC_Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	//"pitch"			"95,105"
+
+	"wave"			"^weapons/oicw/oicw_npc_fire1.wav"
+}
+
+"Weapon_MP40.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"weapons/mp40/mp40_shoot.wav"
+}
+
+"Weapon_MP40.NPC_Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"^weapons/mp40/mp40_npc_shoot.wav"
+}
+
+//Sawedoff
+"Weapon_Sawedoff.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"			"98,101"
+	"wave"			"weapons/sawedoff/sawedoff_fire.wav"
+}
+
+"Weapon_Sawedoff.close"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/sawedoff/close.wav"
+	
+}
+
+"Weapon_Sawedoff.open"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/sawedoff/open.wav"
+	
+}
+
+"Weapon_Sawedoff.load"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/sawedoff/load.wav"
+	
+}
+
+//KNIFE
+"Weapon_Knife.Deploy"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/knife/knife_deploy1.wav"
+}
+
+"Weapon_Knife.Hit"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave" "weapons/knife/knife_hit1.wav"
+		"wave" "weapons/knife/knife_hit2.wav"
+		"wave" "weapons/knife/knife_hit3.wav"
+		"wave" "weapons/knife/knife_hit4.wav"
+	}
+}
+
+"Weapon_Knife.HitWall"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave" 		"weapons/knife/knife_hitwall1.wav"
+}
+
+"Weapon_Knife.Slash"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave" "weapons/knife/knife_slash1.wav"
+		"wave" "weapons/knife/knife_slash2.wav"
+	}
+}
+
+"Weapon_Knife.Stab"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"  	"weapons/knife/knife_stab.wav"
+	
+}
+
+//Pulse-MG
+"Weapon_PulseMG.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"		"95,115"
+  "wave"	"weapons/pulsemg/pulsemg_fire1.wav"	
+}
+
+"Weapon_PulseMG.NPC_Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"0.8"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"	"100, 120"
+  "wave"	"weapons/pulsemg/pulsemg_npcfire.wav"	
+}
+
+"Weapon_PulseMG.Clipout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+  "wave"	"weapons/pulsemg/clipout.wav"	
+}
+
+"Weapon_PulseMG.Clipin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/pulsemg/clipin.wav"
+}
+//CZ-52
+"Weapon_CZ52.Single"
+{
+   "channel"      "CHAN_WEAPON"
+   "volume"      "1.0"
+   //"CompatibilityAttenuation"   "0.6"
+   "pitch"      "PITCH_NORM"
+   "wave"      "^weapons/cz52/cz52_fire.wav"
+}
+
+"Weapon_CZ52.NPC_Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"0.8"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"	"100"
+   "wave"      "^weapons/cz52/cz52_fire.wav"  
+} 
+
+"Weapon_CZ52.Clipout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/cz52/clipout.wav"
+}
+
+"Weapon_CZ52.Clipin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/cz52/clipin.wav"
+}
+
+"Weapon_CZ52.Slide"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.6"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/cz52/sliderelease.wav"
+}
+
+//Jackhammer
+"Weapon_jackhammer.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"			"98,101"
+	"wave"			"^weapons/jackhammer/jackhammer-1.wav"
+}
+
+"Weapon_jackhammer.NPC_Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"			"95,100"
+
+	"wave"			"^weapons/jackhammer/jackhammer-1.wav"
+}
+
+"Weapon_Jackhammer.cock"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/jackhammer/jackhammer_cock.wav"
+}
+
+"Weapon_Jackhammer.insert"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/jackhammer/jackhammer_insert.wav"
+}
+
+"Weapon_Annabelle.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"			"90,95"
+
+	"wave"			"weapons/annabelle/annabelle_fire.wav"
+}
+
+//ELITES
+"Weapon_ELITE.Reloadstart"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/elite/elite_reloadstart.wav" 
+}
+
+"Weapon_ELITE.Lclipin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/elite/elite_leftclipin.wav" 
+}
+
+"Weapon_ELITE.Clipout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/elite/elite_clipout.wav" 
+}
+
+"Weapon_ELITE.Sliderelease"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/elite/elite_sliderelease.wav" 
+}
+
+
+"Weapon_ELITE.Rclipin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/elite/elite_rightclipin.wav" 
+}
+
+"Weapon_ELITE.Deploy"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/elite/elite_deploy.wav" 
+}
+
+"Weapon_Garand.Fire"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.9"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"			"98,102"
+
+	"wave"		"weapons/garand/garand_shoot.wav"
+}
+
+"Weapon_Garand.ClipDing"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.9"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"			"98,102"
+
+	"wave"		"weapons/garand/garand_reload_clipding.wav"
+}
+
+"Weapon_Garand.NPC_Fire"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.9"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"			"98,105"
+
+	"wave"		"^weapons/garand/garand_npc.wav"
+}
+
+"Weapon_Garand.Clipin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.9"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"			"98,102"
+
+	"wave"		"weapons/garand/garand_reload_clipin.wav"
+}

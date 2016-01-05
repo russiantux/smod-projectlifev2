@@ -1,0 +1,18 @@
+//
+//	SMOD weapon weight customize setting (sample)
+//
+
+WeaponWeightData
+{
+	"default_map" {
+		"default_weapon"	"-1"
+		"weapon_crowbar"	"10"
+		"weapon_pistol"		"1"
+		"weapon_shotgun"	"2"
+		"weapon_smg1"		"3"
+		"weapon_grease"		"3"
+		"weapon_ar2"		"4"
+		"weapon_ak47"		"4"
+		"weapon_kar98"		"5"
+	}
+}

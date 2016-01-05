@@ -1,0 +1,177 @@
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Mini-Gun"
+	"viewmodel"			"models/weapons/v_mach_mini-gun.mdl"
+	"playermodel"			"models/weapons/w_minigun.mdl"
+	"anim_prefix"			"shotgun"
+	"bucket"				"2"
+	"bucket_position"		"4"
+
+	"clip_size"			"2000"
+	"clip2_size"			"-1"
+
+	"default_clip"			"4000"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"ar2"
+	"secondary_ammo"		"None"
+
+	"weight"			"0"
+	"item_flags"			"0"
+
+	"BuiltRightHanded"		"1"
+	"AllowFlipping"			"0"
+	"CSViewModel"			"1"
+
+
+	"RunSpeed"			".8"
+
+	"MuzzleType"			"MZRIFLE"
+	"MuzzleSize"			"1.5"
+	"MuzzleAttach"			"1"
+//	"LagScale"			".00001"
+	"CSWorldModel"			"1"
+
+	// SMOD Ironsight setting.
+	IronSight
+	{
+		"right"			"0"
+		"up"			"0"
+		"forward"		"-5"
+		"fov"			"6"
+	}
+
+	VMDOF
+	{
+		"IronSight" {
+			"start"		"0"
+			"end"		"21.50"
+		}
+	}
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+//		"reload"		"Weapon_Pistol.Reload"
+		"reload_npc"		"Weapon_Pistol.NPC_Reload"
+		"empty"			"Weapon_Pistol.Empty"
+		"single_shot"		"Weapon_M249.Single"
+		"single_shot_npc"	"Weapon_M249.Single"
+		"special1"		"NPC_CombineGunship.CannonStartSound"	// Barrel spinup sound
+		"special2"		"NPC_CombineGunship.CannonStopSound"	// Barrel spindown sound
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"a"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"a"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"p"
+		}
+		"ammo2"
+		{
+				"font"		"WeaponIcons"
+				"character"	"t"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	
+	"WeaponSpec"
+	{
+		//	0 : single
+		//	1 : automatic
+		//	2 : shotgun
+		//	3 : autoshotgun
+		"WeaponType"	"1"
+		"FireRate"	"0.03"
+		"UnderWater"	"0"
+		
+		"LaserPointer" {
+			"AccBonus"	"0"
+//			"UseButton"	"1"
+//			"UseIronsight"	"1"
+//			"DeactivateinReload"	"1"
+			"Material"	"sprites/laserpointer.vmt"
+			"DrawTrail"	"1"
+//			"SwitchSound"	"0"
+			"DrawRange"	"1024"
+			"TraceLength"	"1024"
+			"FixSize"	"0"
+			"PointerSize"	"2"
+		}
+	
+		"Options" {
+			"ReloadSound"	"1"
+			"LastFireSound"	"0"
+			"TurnoffScope"	"0"
+			"TurnoffIron"	"0"
+			"TimeScale"	"0.2"
+			"FireLag"	"0.8"	// Barrel spinup time
+			"IsGatlingGun"	"1"	// GatlingGun mode(use spindown sound)
+		}
+		
+		"Recoil" {
+			"PunchPitch"	"-0.5 0.1"
+			"PunchYaw"	"-0.5 0.5"
+			"EnableSnap"	"0"
+			"SnapPitch"	"-0.0 0.0"
+			"SnapYaw"	"-0.0 0.0"
+			"Crouch"	"0.7"
+			"Amp"		"1.1"
+			"PunchLimit"	"1.5"
+		}
+		
+		"Spread" {
+			"Default"	"0"
+			"MaxSpread"	"16"
+			"Run"		".50"
+			"RunSpeed"	".50"
+			"Crouch"	"0.3"
+			"Fire"		"1.2"
+		}
+		
+		"Bullet" {
+			"AmmoType"	"ak47"
+			"Damage"	"5"
+			"ShotCount"	"2"
+			"Tracer"	"2"
+			"Force"		"3"
+			"Penetrate"	"3"
+		}
+
+		"Npc" {
+			"RifleAnim"	"1"
+			"BurstMax"	"30"
+			"BurstMin"	"30"
+			"FireRate"	"0.005"
+			"Range"		"80000"
+			"MuzzleFire"	"1"
+		}
+	}
+}
+
+

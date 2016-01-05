@@ -1,0 +1,70 @@
+// SCOOP
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"#HL2_SHOVEL"
+	"viewmodel"			"models/weapons/v_shovel.mdl"
+	"playermodel"			"models/weapons/w_shovel.mdl"
+	"anim_prefix"			"crowbar"
+	"bucket"			"0"
+	"bucket_position"		"6"
+
+	"clip_size"			"-1"
+	"primary_ammo"			"None"
+	"secondary_ammo"		"None"
+
+	"weight"			"1"
+	"item_flags"			"0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"melee_hit"		"Weapon_Shovel.Melee_Hit"
+		"special1"		"Weapon_Shovel.Stab"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+			"file"		"sprites/hud_weapons"
+			"x"			"64"
+			"y"			"160"
+			"width"		"64"
+			"height"	"32"
+		}
+		"weapon_s"
+		{
+			"file"		"sprites/hud_weapons"
+			"x"			"64"
+			"y"			"160"
+			"width"		"64"
+			"height"	"32"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"r"
+		}
+		"ammo2"
+		{
+				"font"		"WeaponIcons"
+				"character"	"t"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/hud_weapons"
+			"x"			"0"
+			"y"			"0"
+			"width"		"32"
+			"height"	"32"
+		}
+	}
+}

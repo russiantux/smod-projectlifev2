@@ -1,0 +1,141 @@
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"FRAG GRENADE"
+	"viewmodel"			"models/weapons/v_eq_fraggrenade.mdl"
+	"playermodel"			"models/weapons/w_eq_fraggrenade.mdl"
+	"anim_prefix"			"grenade"
+	"bucket"				"5"
+	"bucket_position"		"0"
+
+	"default_clip"			"1"
+	"clip_size"			"-1"
+
+	"primary_ammo"			"grenade"
+
+	"weight"			"0"
+	"item_flags"			"18"
+
+	"BuiltRightHanded"		"0"
+	"AllowFlipping"			"1"
+	"DisableROAimmode"		"1"
+
+
+	"CSViewModel"			"1"
+//	"MuzzleType"			"MZSMG"
+//	"MuzzleSize"			"1.5"
+	"LagScale"			"0.4"
+//	"CSWorldModel"			"1"
+
+	"RunSpeed"			"1.1"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_Knife.Slash"
+		"melee_hit"		"Weapon_Knife.Hit"
+		"melee_hit_world"	"Weapon_Knife.HitWall"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"CSWeaponIcons"
+				"character"	"h"
+		}
+		"weapon_s"
+		{
+				"font"		"CSWeaponIconsSelected"
+				"character"	"h"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"v"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	
+	"WeaponSpec"
+	{
+		//	0 : single
+		//	1 : automatic
+		//	2 : shotgun
+		//	3 : autoshotgun
+		//	4 : melee
+		//	5 : grenade
+		"WeaponType"	"5"
+		"FireRate"	"0.05"
+
+		"HandGrenade" {
+			"ThrowFrame"	"10"		//	-1 = use animation event
+		}
+
+		"Activities" {
+			"PrimaryFire"	"ACT_VM_PULLBACK_HIGH"
+//			"PrimaryFire"	"ACT_VM_PULLPIN"
+			"SecondaryFire"	"ACT_VM_THROW"
+		}
+
+
+		"Recoil" {
+			"PunchPitch"	"-2.0 -4.0"
+			"PunchYaw"	"-0.4 0.4"
+			"EnableSnap"	"0"
+			"SnapPitch"	"-0.0 0.0"
+			"SnapYaw"	"-0.0 0.0"
+			"Crouch"	"0.5"
+			"Amp"		"1.5"
+			"PunchLimit"	"1.0"
+		}
+		
+		"Spread" {
+			"Default"	"1.0"
+			"MaxSpread"	"10.0"
+			"Run"		"2.0"
+			"RunSpeed"	"100"
+			"Crouch"	"0.8"
+			"Fire"		"6.5"
+		}
+		
+		"Bullet" {
+			"AmmoType"	"357"
+			"Damage"	"5"
+			"ShotCount"	"1"
+			"Tracer"	"1"
+			"Force"		"0.6"
+		}
+
+		"BulletEntitySpawn" {
+			"Class"		"custom_explosive"
+			"Type"		"CSFragGrenade2"
+			"ZVector"	"100"	//	Correction throw vector
+			"Power"		"700"
+		}
+
+		"Npc" {
+			"BurstMax"	"0"
+			"BurstMin"	"0"
+			"FireRate"	"3.0"
+			"Range"		"3048"
+			"MuzzleFire"	"0"
+		}
+	}
+	
+}
+
+

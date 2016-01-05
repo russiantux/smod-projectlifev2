@@ -1,0 +1,60 @@
+//
+//	SMOD weapon weight customize setting (sample)
+//
+
+WeaponWeightData
+{
+	"default_map" {
+		"weapon_custom1"  "1"
+		"weapon_custom2"  "2"
+		"weapon_custom3"  "3"
+		"weapon_custom4"  "4"
+		"weapon_custom5"  "5"
+		"weapon_custom6"  "6"
+		"weapon_custom7"  "7"
+		"weapon_custom8"  "8"
+		"weapon_custom9"  "9"
+		"weapon_custom10" "10"
+		"weapon_custom11" "11"
+		"weapon_custom12" "12"
+		"weapon_custom13" "13"
+		"weapon_custom14" "14"
+		"weapon_custom15" "15"
+		"weapon_custom16" "16"
+		"weapon_custom17" "17"
+		"weapon_custom18" "18"
+		"weapon_custom19" "19"
+		"weapon_custom20" "20"
+		"weapon_custom21" "21"
+		"weapon_custom22" "22"
+		"weapon_custom23" "23"
+		"weapon_custom24" "24"
+		"weapon_custom25" "0"
+	}
+}
+
+//	weapon_custom1  Kimber
+//	weapon_custom2  PDW7
+//	weapon_custom3  M16
+//	weapon_custom4  Shotgun
+//	weapon_custom5  Para
+//	weapon_custom6  AWM
+//	weapon_custom7  AK47
+//	weapon_custom8  G36
+//	weapon_custom9  Glock
+//	weapon_custom10 MP5
+//	weapon_custom11 P90
+//	weapon_custom12 UZI
+//	weapon_custom13 AK47U
+//	weapon_custom14 NEO
+//	weapon_custom15 Five Seven
+//	weapon_custom16 M4A1 Supressed
+//	weapon_custom17 M16A2 M203
+//	weapon_custom18 Dual MP5
+//	weapon_custom19 Dual Shotguns
+//	weapon_custom20 RPG-7
+//	weapon_custom21 AR15 With Scope
+//	weapon_custom22 C-4: 30sec Timer
+//	weapon_custom23 Colt .357 Python
+//	weapon_custom24 NONE
+//	weapon_custom25 KNIFE

@@ -1,0 +1,236 @@
+//	weapon_custom1		Kimber 1911
+//	weapon_custom2		H&K UMP
+//	weapon_custom3		M4A1
+//	weapon_custom4		M598
+//	weapon_custom5		M249 PARA
+//	weapon_custom6		AWM
+//	weapon_custom7		AK47
+//	weapon_custom8		DELETED
+//	weapon_custom9		Glock 19
+//	weapon_custom10		MP5-SD
+//	weapon_custom11	FN P90
+//	weapon_custom12	UZI
+//	weapon_custom13	DELETED
+//	weapon_custom14	Dual FN Five Seven
+//	weapon_custom15	FN Five Seven
+//	weapon_custom16	M4A1 Suppressed
+//	weapon_custom17	Frag Grenade
+//	weapon_custom18	Dual MP5
+//	weapon_custom19	Dual Shotguns
+//	weapon_custom20	RPG-7
+//	weapon_custom21	Desert Eagle
+//	weapon_custom22	C-4 30sec Timer
+//	weapon_custom23	.357
+//	weapon_custom24	Mini-Gun
+//	weapon_custom25	Kbar
+
+WeaponRandomizeData
+{
+	"default_map" {
+		"npc_citizen"{
+			"weapon_custom7"		"50"
+			"weapon_custom12"		"25"
+			"weapon_custom4"		"25"
+			}
+
+		"npc_f_combine"{
+			"weapon_custom3"		"10"
+			"weapon_custom5"		"5"
+			"weapon_custom7"		"10"
+			"weapon_custom10"		"10"
+			"weapon_custom11"		"10"
+			"weapon_custom12"		"5"
+			"weapon_custom16"		"10"
+			"weapon_custom17"		"5"
+		}
+
+		"npc_combine_p"{
+			"weapon_custom2"		"50"
+			"weapon_custom4"		"50"
+		}
+
+		"npc_metropolice"{
+			"weapon_custom1"		"20"
+			"weapon_custom2"		"20"
+			"weapon_custom9"		"20"
+			"weapon_custom4"		"20"
+			"weapon_custom10"		"20"
+		}
+
+		"default_npc" {
+			"weapon_custom11"		"50"
+			"weapon_custom3"		"50"
+		}
+
+		"npc_combine_e" {
+			"weapon_custom8"		"100"
+		}
+
+		"npc_combine_s" {
+			"weapon_custom3"		"50"
+			"weapon_custom2"		"20"
+			"weapon_custom5"		"10"
+			"weapon_custom10"		"10"
+			"weapon_custom4"		"10"
+		}
+
+		"npc_combine_ace" {
+			"weapon_custom11"		"90"
+			"weapon_custom24"		"10"
+		}
+
+		"npc_combine_c" {
+			"weapon_custom11"		"50"
+			"weapon_custom10"		"25"
+			"weapon_custom16"		"25"
+		}
+
+	}
+
+		"d1_trainstation_01" {
+			"npc_metropolice"{
+				"weapon_stunstick"		"100"
+			}
+			"npc_barney"{
+				"0"		"100"
+			}
+			"npc_citizen"{
+				"0"		"25"
+			}
+		}
+
+		"d1_trainstation_02" {
+			"npc_metropolice"{
+				"weapon_stunstick"		"100"
+			}
+			"npc_citizen"{
+				"none"		"25"
+			}
+		}
+
+		"d1_trainstation_03" {
+			"npc_metropolice"{
+				"weapon_stunstick"		"100"
+			}
+			"npc_citizen"{
+				"0"		"25"
+			}
+
+			"npc_alyx"{
+				"0"		"100"
+			}
+
+			"npc_barney"{
+				"0"		"100"
+			}
+
+		}
+
+		"d1_trainstation_04" {
+			"npc_metropolice"{
+				"weapon_stunstick"		"100"
+			}
+			"npc_citizen"{
+				"0"		"25"
+			}
+
+			"npc_alyx"{
+				"0"		"100"
+			}
+
+			"npc_barney"{
+				"0"		"100"
+			}
+
+		}
+
+		"d1_trainstation_05" {
+			"npc_metropolice"{
+				"weapon_stunstick"		"100"
+			}
+			"npc_citizen"{
+				"0"		"25"
+			}
+
+			"npc_alyx"{
+				"0"		"100"
+			}
+
+			"npc_barney"{
+				"0"		"100"
+			}
+
+		}
+
+		"d1_trainstation_06" {
+		
+			"npc_alyx"{
+				"0"		"100"
+			}
+
+			"npc_barney"{
+				"0"		"100"
+			}
+		}
+
+   "d3_breen_01" {
+		"npc_combine_e" {
+			"weapon_custom11"		"100"
+		}
+	  }
+
+
+	"cs_cabaret" {
+         "npc_combine_s" {
+				"weapon_custom12" "50"
+			}
+         "npc_combine_e" {
+				"weapon_custom7"  "50"
+				"weapon_custom12" "50"
+			}
+         "npc_metropolice" {
+				"weapon_custom7"  "50"
+				"weapon_custom12" "50"
+			}
+	"npc_citizen"{
+			"weapon_custom9"		"25"
+			"weapon_custom1"		"25"
+			"weapon_custom15"		"25"
+			"weapon_custom4"		"25"
+			}
+
+	"npc_f_combine"{
+			"weapon_custom3"		"25"
+			"weapon_custom11"		"25"
+			"weapon_custom10"		"25"
+			}
+
+	}
+
+	"cc_urban_warfare" {
+         "npc_combine_p" {
+				"weapon_custom7"  "50"
+				"weapon_custom12" "50"
+			}
+         "npc_combine_s" {
+				"weapon_custom3"  "70"
+				"weapon_custom5" "30"
+			}
+
+	}
+
+	"cs_militia" {
+         "npc_combine_s" {
+				"weapon_custom12" "50"
+			}
+         "npc_combine_e" {
+				"weapon_custom7"  "50"
+				"weapon_custom12" "50"
+			}
+         "npc_metropolice" {
+				"weapon_custom7"  "50"
+				"weapon_custom12" "50"
+			}
+
+	}
+}

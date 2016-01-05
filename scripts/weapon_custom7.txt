@@ -1,0 +1,176 @@
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"AK47"
+	"viewmodel"			"models/weapons/v_rif_ak47.mdl"
+	"playermodel"			"models/weapons/w_rif_ak47.mdl"
+	"anim_prefix"			"ar2"
+	"bucket"				"2"
+	"bucket_position"		"2"
+
+	"clip_size"			"30"
+	"clip2_size"			"-1"
+
+	"default_clip"			"30"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"CustomAmmo4"
+	"secondary_ammo"		"None"
+
+	"weight"			"50"
+	"item_flags"			"0"
+
+	"BuiltRightHanded"		"0"
+	"AllowFlipping"			"1"
+
+	"CSViewModel"			"1"
+	"MuzzleType"			"CSRIFLE"
+	"MuzzleSize"			"1.5"
+	"MuzzleAttach"			"1"
+	"LagScale"			"0.4"
+	"CSWorldModel"			"1"
+
+	// SMOD Ironsight setting.
+	IronSight
+	{
+		"right"		"1.06"
+		"up"		"0.58"
+	}
+
+	// SMOD Adjust View model postion
+	Adjust
+	{
+		"right"		"1.00"
+		"up"		"0.980"
+		"forward"	"-3.60"
+
+	}
+
+	VMDOF
+	{
+		"IronSight" {
+			"start"		"60.00"
+			"end"		"-6.5"
+		}
+	}
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+//		"reload"		"Weapon_Pistol.Reload"
+		"reload_npc"		"Weapon_Pistol.NPC_Reload"
+		"empty"			"Weapon_Pistol.Empty"
+		"single_shot"		"Weapon_AK47.Single"
+		"single_shot_npc"	"Weapon_AK47.Single"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"a"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"a"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"p"
+		}
+		"ammo2"
+		{
+				"font"		"WeaponIcons"
+				"character"	"t"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	
+	"WeaponSpec"
+	{
+		//	0 : single
+		//	1 : automatic
+		//	2 : shotgun
+		//	3 : autoshotgun
+		"WeaponType"	"0"
+		"FireRate"	"0.1"
+		"UnderWater"	"0"
+
+		//	Fire Mode
+		//	1 : single ,  2 : burst ,  4 : automatic
+		"FireMode"	"5"		
+
+		"Burst" {
+			"FireCount"	"1"
+			"Delay"		"0.1"
+		//	"AccBonus"	"2.0"
+		}	
+
+		"Options" {
+			"ReloadSound"	"1"
+			"LastFireSound"	"0"
+			"TurnoffScope"	"0"
+			"TurnoffIron"	"0"
+			"TimeScale"	"0"
+		}
+	
+
+		"Recoil" {
+			"PunchPitch"	"-.5 0.1"
+			"PunchYaw"	"-0.5 0.5"
+			"EnableSnap"	"0"
+			"SnapPitch"	"-0.0 0.0"
+			"SnapYaw"	"-0.0 0.0"
+			"Crouch"	"0.7"
+			"Amp"		"2.2"
+			"PunchLimit"	"2"
+			"MaxSpread"	"0.0"
+		}
+		
+		"Spread" {
+			"Default"	"0.0"
+			"MaxSpread"	"0.0"
+			"Run"		"0.0"
+			"RunSpeed"	"100"
+			"Crouch"	"0.8"
+			"Fire"		"0"
+		}
+		
+		"Bullet" {
+			"AmmoType"	"ak47"
+			"Damage"	"25"
+			"ShotCount"	"1"
+			"Tracer"	"3"
+			"Force"		".2"
+			"Penetrate"	"5"
+		}
+
+		"Npc" {
+			"RifleAnim"	"1"
+			"BurstMax"	"5"
+			"BurstMin"	"2"
+			"FireRate"	"0.075"
+			"Range"		"80000"
+			"MuzzleFire"	"1"
+		}
+	}
+	
+}
+
+

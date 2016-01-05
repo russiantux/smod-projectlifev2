@@ -1,0 +1,39 @@
+"Weapon_dual.unlock"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\dual-mp5\p90_unlock.wav"
+}
+
+"Weapon_dual.magout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\dual-mp5\p90_magout.wav"
+}
+
+"Weapon_dual.magin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\dual-mp5\p90_magin.wav"
+}
+
+"Weapon_dual.cock"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\dual-mp5\p90_cock.wav"
+}

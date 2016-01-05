@@ -1,0 +1,49 @@
+"Weapon_AWP.Clipin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/awp/awp_clipin.wav"
+}
+
+"Weapon_AWP.Clipout"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/awp/awp_clipout.wav"
+}
+
+"Weapon_AWP.Boltup"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/awp/boltup.wav"
+}
+
+"Weapon_AWP.Boltpull"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/awp/boltpull1.wav"
+}
+
+"Weapon_AWP.Boltdown"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons/awp/boltdown.wav"
+}

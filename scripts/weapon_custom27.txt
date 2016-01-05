@@ -1,0 +1,124 @@
+// Crowbar
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"#HL2_SWORD"
+	"viewmodel"				"models/weapons/v_sword.mdl"
+	"playermodel"			"models/weapons/w_sword.mdl"
+	"anim_prefix"			"crowbar"
+	"bucket"				"0"
+	"bucket_position"		"6"
+
+	"clip_size"				"-1"
+	"primary_ammo"			"None"
+	"secondary_ammo"		"None"
+
+	"weight"				"0"
+	"item_flags"			"0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_Knife.Slash"
+		"melee_hit"		"Weapon_Knife.Hit"
+		"melee_hit_world"	"Weapon_Knife.HitWall"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+			"file"		"sprites/hud_weapons_redux"
+			"x"			"12"
+			"y"			"128"
+			"width"		"64"
+			"height"	"32"
+		}
+		"weapon_s"
+		{
+			"file"		"sprites/hud_weapons_redux"
+			"x"			"12"
+			"y"			"128"
+			"width"		"64"
+			"height"	"32"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"ammo2"
+		{
+			"file"		"sprites/640hud7"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"0"
+			"y"			"48"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+	
+	"WeaponSpec"
+	{
+		//	0 : single
+		//	1 : automatic
+		//	2 : shotgun
+		//	3 : autoshotgun
+		//	4 : melee
+		//	5 : grenade
+		"WeaponType"	"4"
+		"FireRate"	"0.9"
+		
+		"Melee" {
+			"Primary" {
+				"Range"		"128"
+				"Frame"		"2"
+				"NextAttack"	"40"
+				"Damage"	"40"
+				"DamageType"	"DMG_CLUB"
+			}
+			"Secondary" {
+				"Range"		"128"
+				"Frame"		"4"
+				"Damage"	"80"
+				"NextAttack"	"80"
+				"DamageType"	"DMG_CUT"
+			}			
+			"Force"	"0.2"
+			"ImpactEffect"	"3"	//	0:default 1:nodecal 2:nodecal,nosound 3:noeffect
+			"Decal"	"ManhackCut"
+		}
+
+		"Activities" {
+			"PrimaryFire"	"ACT_VM_HITCENTER"
+			"SecondaryFire"	"ACT_VM_MISSCENTER"
+		}
+		
+		"Recoil" {
+			"PunchPitch"	"-5.0 5.0"
+			"PunchYaw"	"-5.0 5.0"
+			"EnableSnap"	"0"
+			"SnapPitch"	"-0.0 0.0"
+			"SnapYaw"	"-0.0 0.0"
+			"Crouch"	"1.0"
+			"Amp"		"1.0"
+			"PunchLimit"	"1.0"
+		}
+
+	}
+	
+}

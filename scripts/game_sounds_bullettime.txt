@@ -1,0 +1,361 @@
+
+"SolidMetal.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	"volume"		"0.5"
+	"rndwave"
+	{
+		"wave"		"physics/bullettime/metal_solid_impact_bullet1.wav"
+		"wave"		"physics/bullettime/metal_solid_impact_bullet2.wav"
+		"wave"		"physics/bullettime/metal_solid_impact_bullet3.wav"
+		"wave"		"physics/bullettime/metal_solid_impact_bullet4.wav"
+	}
+}
+
+"Dirt.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"physics/bullettime/sand_impact_bullet1.wav"
+		"wave"		"physics/bullettime/sand_impact_bullet2.wav"
+		"wave"		"physics/bullettime/sand_impact_bullet3.wav"
+		"wave"		"physics/bullettime/sand_impact_bullet4.wav"
+	}
+}
+
+"MetalGrate.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"physics/bullettime/metal_sheet_impact_bullet1.wav"
+		"wave"		"physics/bullettime/metal_sheet_impact_bullet2.wav"
+		"wave"		"physics/bullettime/metal_solid_impact_bullet2.wav"
+	}
+}
+
+"Tile.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/tile_impact_bullet1.wav"
+		"wave"	"physics/bullettime/tile_impact_bullet2.wav"
+		"wave"	"physics/bullettime/tile_impact_bullet3.wav"
+		"wave"	"physics/bullettime/tile_impact_bullet4.wav"	
+	}	
+}
+
+"Underwater.BulletImpact_bt"
+{
+	"soundlevel"	"SNDLVL_95dB"
+	"volume"		"1.0"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"#physics/bullettime/underwater_impact_bullet1.wav"
+		"wave"	"#physics/bullettime/underwater_impact_bullet2.wav"
+		"wave"	"#physics/bullettime/underwater_impact_bullet3.wav"
+	}
+}
+
+"Glass.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/glass_impact_bullet1.wav"
+		"wave"	"physics/bullettime/glass_impact_bullet2.wav"
+		"wave"	"physics/bullettime/glass_impact_bullet3.wav"	
+		"wave"	"physics/bullettime/glass_impact_bullet4.wav"
+	}
+}
+
+
+"Computer.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/glass_impact_bullet1.wav"
+		"wave"	"physics/bullettime/glass_impact_bullet2.wav"
+		"wave"	"physics/bullettime/metal_computer_impact_bullet1.wav"
+		"wave"	"physics/bullettime/metal_computer_impact_bullet2.wav"
+		"wave"	"physics/bullettime/metal_computer_impact_bullet3.wav"
+		"wave"	"physics/bullettime/plastic_box_impact_bullet1.wav"
+		"wave"	"physics/bullettime/plastic_box_impact_bullet2.wav"
+		"wave"	"physics/bullettime/plastic_box_impact_bullet3.wav"
+	}
+}
+
+"Concrete.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"physics/bullettime/concrete_impact_bullet1.wav"
+		"wave"		"physics/bullettime/concrete_impact_bullet2.wav"
+		"wave"		"physics/bullettime/concrete_impact_bullet3.wav"
+		"wave"		"physics/bullettime/concrete_impact_bullet4.wav"
+	}
+}
+
+
+"Flesh.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_100dB"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/flesh_impact_bullet1.wav"
+		"wave"	"physics/bullettime/flesh_impact_bullet2.wav"
+		"wave"	"physics/bullettime/flesh_impact_bullet3.wav"
+		"wave"	"physics/bullettime/flesh_impact_bullet4.wav"
+		"wave"	"physics/bullettime/flesh_impact_bullet5.wav"
+	}
+}
+
+"Carpet.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/sand_impact_bullet1.wav"
+		"wave"	"physics/bullettime/sand_impact_bullet2.wav"
+		"wave"	"physics/bullettime/sand_impact_bullet3.wav"
+		"wave"	"physics/bullettime/sand_impact_bullet4.wav"
+	}
+}
+
+"Sand.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/sand_impact_bullet1.wav"
+		"wave"	"physics/bullettime/sand_impact_bullet2.wav"
+		"wave"	"physics/bullettime/sand_impact_bullet3.wav"
+		"wave"	"physics/bullettime/sand_impact_bullet4.wav"
+	}
+}
+
+"ArmorFlesh.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"physics/bullettime/metal_sheet_impact_bullet1.wav"
+		"wave"		"physics/bullettime/metal_sheet_impact_bullet2.wav"
+	}
+}
+
+"Metal_Barrel.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/metal_sheet_impact_bullet1.wav"
+		"wave"	"physics/bullettime/metal_sheet_impact_bullet2.wav"
+		"wave"	"physics/bullettime/metal_solid_impact_bullet2.wav"
+		"wave"	"physics/bullettime/metal_solid_impact_bullet3.wav"
+	}
+}
+
+
+"ceiling_tile.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/ceiling_tile_impact_bullet1.wav"
+		"wave"	"physics/bullettime/ceiling_tile_impact_bullet2.wav"
+		"wave"	"physics/bullettime/ceiling_tile_impact_bullet3.wav"
+	}
+}
+
+"Cardboard.BulletImpact_bt"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_85dB"
+	"pitch"		"PITCH_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave" "physics/bullettime/cardboard_box_impact_bullet1.wav"
+		"wave" "physics/bullettime/cardboard_box_impact_bullet2.wav"
+		"wave" "physics/bullettime/cardboard_box_impact_bullet3.wav"
+		"wave" "physics/bullettime/cardboard_box_impact_bullet4.wav"
+		"wave" "physics/bullettime/cardboard_box_impact_bullet5.wav"
+		
+	}
+}
+
+"Plastic_Barrel.BulletImpact_bt"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_85dB"
+	"pitch"		"96,104"
+	"volume"	"0.6"
+	"rndwave"
+	{
+		"wave" "physics/bullettime/plastic_barrel_impact_bullet1.wav"
+		"wave" "physics/bullettime/plastic_barrel_impact_bullet2.wav"
+		"wave" "physics/bullettime/plastic_barrel_impact_bullet3.wav"
+		
+	}
+}
+
+"Plastic_Box.BulletImpact_bt"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_85dB"
+	"pitch"		"96,104"
+	"volume"	"0.6"
+	"rndwave"
+	{
+		"wave" "physics/bullettime/plastic_box_impact_bullet1.wav"
+		"wave" "physics/bullettime/plastic_box_impact_bullet2.wav"
+		"wave" "physics/bullettime/plastic_box_impact_bullet3.wav"
+		"wave" "physics/bullettime/plastic_box_impact_bullet4.wav"
+		"wave" "physics/bullettime/plastic_box_impact_bullet5.wav"	
+	}
+}
+
+"Rubber.BulletImpact_bt"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_85dB"
+	"pitch"		"90,96"
+	"volume"	"1.0"
+	"wave" "physics/bullettime/rubber_tire_impact_bullet1.wav"
+}
+
+"Rubber_Tire.BulletImpact_bt"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_85dB"
+	"pitch"		"96,104"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave" "physics/bullettime/rubber_tire_impact_bullet1.wav"
+		"wave" "physics/bullettime/rubber_tire_impact_bullet2.wav"
+		"wave" "physics/bullettime/rubber_tire_impact_bullet3.wav"
+		
+	}
+}
+
+"Wood.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/wood_solid_impact_bullet1.wav"
+		"wave"	"physics/bullettime/wood_solid_impact_bullet2.wav"
+		"wave"	"physics/bullettime/wood_solid_impact_bullet3.wav"
+		"wave"	"physics/bullettime/wood_solid_impact_bullet4.wav"
+		"wave"	"physics/bullettime/wood_solid_impact_bullet5.wav"
+	}
+}
+
+
+"Wood_Box.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/wood_box_impact_bullet1.wav"
+		"wave"	"physics/bullettime/wood_box_impact_bullet2.wav"
+		"wave"	"physics/bullettime/wood_box_impact_bullet3.wav"
+		"wave"	"physics/bullettime/wood_box_impact_bullet4.wav"
+	}
+}
+
+
+"Wood_Plank.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/wood_box_impact_bullet1.wav"
+		"wave"	"physics/bullettime/wood_box_impact_bullet2.wav"
+		"wave"	"physics/bullettime/wood_box_impact_bullet3.wav"
+		"wave"	"physics/bullettime/wood_box_impact_bullet4.wav"
+	}
+}
+
+
+"Wood_Solid.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/wood_solid_impact_bullet1.wav"
+		"wave"	"physics/bullettime/wood_solid_impact_bullet2.wav"
+		"wave"	"physics/bullettime/wood_solid_impact_bullet3.wav"
+		"wave"	"physics/bullettime/wood_solid_impact_bullet4.wav"
+		"wave"	"physics/bullettime/wood_solid_impact_bullet5.wav"
+	}
+}
+
+
+"Wood_Panel.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/wood_box_impact_bullet1.wav"
+		"wave"	"physics/bullettime/wood_box_impact_bullet2.wav"
+		"wave"	"physics/bullettime/wood_box_impact_bullet3.wav"
+		"wave"	"physics/bullettime/wood_box_impact_bullet4.wav"
+	}
+}
+
+"weapon.BulletImpact_bt"
+{
+	"soundlevel"		"SNDLVL_85dB"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"physics/bullettime/plastic_box_impact_bullet5.wav"
+		"wave"	"physics/bullettime/metal_computer_impact_bullet3.wav"
+		"wave"	"physics/bullettime/metal_computer_impact_bullet1.wav"
+	}
+} 
+

@@ -1,0 +1,151 @@
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"#HL2_MINIGUN"
+	"viewmodel"			"models/weapons/v_minigun.mdl"
+	"playermodel"			"models/weapons/w_minigun.mdl"
+	"anim_prefix"			"shotgun"
+	"bucket"			"5"
+	"bucket_position"		"5"
+
+	"clip_size"			"999"
+	"clip2_size"			"-1"
+
+	"default_clip"			"999"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"CustomAmmo5"
+	"secondary_ammo"		"None"
+
+	"weight"			"0"
+	"item_flags"			"0"
+
+	"BuiltRightHanded"		"1"
+	"DisableROAimmode"		"1"
+	"RunSpeed"			"0.75"
+	
+	Adjust
+	{
+		"right"		"5"
+  }
+  
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+//		"reload"		"Weapon_Pistol.Reload"
+		"reload_npc"		"Weapon_Pistol.NPC_Reload"
+		"empty"			"Weapon_Pistol.Empty"
+		"single_shot"		"Weapon_Minigun.Single"
+		"single_shot_npc"	"Weapon_Minigun.Single"
+		"special1"		"Weapon_Minigun_SpinUp"	// Barrel spinup sound
+		"special2"		"Weapon_Minigun_SpinDown"	// Barrel spindown sound
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+			"file"		"sprites/hud_weapons_redux"
+			"x"		"136"
+			"y"		"32"
+			"width"		"64"
+			"height"	"32"
+		}
+		"weapon_s"
+		{
+			"file"		"sprites/hud_weapons_redux"
+			"x"		"136"
+			"y"		"32"
+			"width"		"64"
+			"height"	"32"
+		}	
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"p"
+		}
+		"ammo2"
+		{
+				"font"		"WeaponIcons"
+				"character"	"t"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	
+	"WeaponSpec"
+	{
+		//	0 : single
+		//	1 : automatic
+		//	2 : shotgun
+		//	3 : autoshotgun
+		"WeaponType"	"1"
+		"FireRate"	"0.065"
+		"UnderWater"	"0"
+		
+	
+		"Options" {
+			"ReloadSound"	"0"
+			"LastFireSound"	"0"
+			"TurnoffScope"	"0"
+			"TurnoffIron"	"0"
+			"TimeScale"	"1"
+			"FireLag"	"0.9"	// Barrel spinup time
+			"IsGatlingGun"	"1"	// GatlingGun mode(use spindown sound)
+			"CrossHairMinSize"	"9999.0"							
+		}
+		
+		"Recoil" {
+			"PunchPitch"	"-0.05 0.05"
+			"PunchYaw"	"-0.05 0.05"
+			"EnableSnap"	"0"
+			"SnapPitch"	"-0.0 0.0"
+			"SnapYaw"	"-0.0 0.0"
+			"Crouch"	"0.7"
+			"Amp"		"1.12"
+			"PunchLimit"	"3.5"
+		}
+		
+		"Spread" {
+			"Default"	"10"
+			"MaxSpread"	"10"
+			"Run"		"100"
+			"RunSpeed"	"100"
+			"Crouch"	"0.5"
+			"Fire"		"1.1"
+		}
+		
+		"Bullet" {
+			"AmmoType"	"ak47"
+			"Damage"	"5"
+			"ShotCount"	"2"
+			"Tracer"	"2"
+			"Force"		"3"
+			"Penetrate"	"5"
+		}
+
+		"Npc" {
+			"AnimType"	"AR2"
+			"BurstMax"	"100"
+			"BurstMin"	"25"
+			"FireRate"	"0.065"
+			"Range"		"80000"
+			"MuzzleFire"	"1"
+		}
+	}
+	
+}
+
+

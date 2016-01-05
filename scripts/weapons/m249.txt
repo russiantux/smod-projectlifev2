@@ -1,0 +1,27 @@
+"Weapon_Flakk249.Magin"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\schmung.M249\magin.wav"
+}
+"Weapon_Flakk249.Boltpull"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\schmung.M249\boltpull.wav"
+}
+"Weapon_Flakk249.Boltrel"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\schmung.M249\boltrel.wav"
+}

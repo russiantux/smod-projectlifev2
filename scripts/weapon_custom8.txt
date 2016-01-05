@@ -1,0 +1,198 @@
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"M4A1 + M203"
+	"viewmodel"			"models/weapons/v_m4a1m203.mdl"
+	"playermodel"			"models/weapons/w_m4a1m203.mdl"
+	"anim_prefix"			"shotgun"
+	"bucket"				"2"
+	"bucket_position"		"5"
+
+
+	"clip_size"			"30"
+	"clip2_size"			"-1"
+
+	"default_clip"			"30"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"CustomAmmo3"
+	"secondary_ammo"		"SMG1_Grenade"
+
+	"weight"			"3"
+	"item_flags"			"0"
+
+	"BuiltRightHanded"		"0"
+	"AllowFlipping"			"1"
+
+	"CSViewModel"			"1"
+	"MuzzleType"			"CSRIFLE"
+	"MuzzleSize"			"1.5"
+	"MuzzleAttach"			"1"
+	"LagScale"			".5"
+	"CSWorldModel"			"1"
+
+
+	// SMOD Ironsight setting.
+	IronSight
+	{
+		"right"		"2"
+		"up"		"0.96"
+		"forward"	"-2.8"
+		"fov"		"-10"
+	}
+
+
+		// SMOD Adjust View model postion
+	Adjust
+	{
+		"right"		"1.50"
+		"up"		"0.480"
+		"forward"	"-0.40"
+
+	}
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+//		"reload"		"Weapon_Pistol.Reload"
+		"reload_npc"		"Weapon_Pistol.NPC_Reload"
+		"empty"			"Default.ClipEmpty_Rifle"
+		"single_shot"		"Weapon_M4A1.Single"
+		"single_shot_npc"	"Weapon_M4A1.Single"
+		"special2"			"Weapon_SMG1.Double"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"a"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"a"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"p"
+		}
+		"ammo2"
+		{
+				"font"		"WeaponIcons"
+				"character"	"t"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	
+	"WeaponSpec"
+	{
+		//	0 : single
+		//	1 : automatic
+		//	2 : shotgun
+		//	3 : autoshotgun
+		"WeaponType"	"1"
+		"FireRate"	"0.085714286"
+		"UnderWater"	"0"
+		"AttachedGL"	"1"
+
+		
+	
+		"Scope" {
+			"Type"		"4"
+			"Switch"	"1"
+			"ZoomFact"	"2.0"
+			"CrosshairOff"	"1"
+			"AccBonus"	"0.02"
+			"Drift" ".1"
+			"FireRate"	"0.085714286"
+			"DrawViewmodel"	"0"
+			"IronsightIsScope" "1"
+		}
+
+//		"Burst" {
+//			"FireCount"	"3"
+//			"Delay"		"0.085714286"
+//		}
+		
+		"Options" {
+			"ReloadSound"	"0"
+			"LastFireSound"	"0"
+			"TurnoffScope"	"0"
+			"TurnoffIron"	"0"
+			"TimeScale"	"100"
+		}
+
+		
+		"Activities" {
+			"GLFire"	"ACT_VM_SECONDARYATTACK"
+		}
+
+		"Recoil" {
+			"PunchPitch"	"-0.5 1"
+			"PunchYaw"	"-0.5 0.5"
+			"EnableSnap"	"0"
+			"SnapPitch"	"-0.0 0.0"
+			"SnapYaw"	"-0.0 0.0"
+			"Crouch"	".5"
+			"Amp"		"1"
+			"PunchLimit"	"4"
+		}
+		
+		"Spread" {
+			"Default"	"0"
+			"MaxSpread"	"0"
+			"Run"		"0"
+			"RunSpeed"	"100"
+			"Crouch"	"0"
+			"Fire"		"0"
+		}
+		
+		"Bullet" {
+			"AmmoType"	"ak47"
+			"Damage"	"25"
+			"ShotCount"	"1"
+			"Tracer"	"1"
+			"Force"		".2"
+			"Penetrate"	"5"
+		}
+
+		"BulletEntitySpawn" {
+			"Class"		"custom_explosive"
+			"Type"		"SMG1Grenade"
+//			"Type"		"q2styleGL"
+			"ZVector"	"40"	//	Correction throw vector
+			"Power"		"8000"
+			"NpcZVector"	"100"
+			"AngVelocity"	"1000"
+		}
+
+		"Npc" {
+			"UseGL"		"1"
+			"RifleAnim"	"1"
+			"BurstMax"	"1"
+			"BurstMin"	"2"
+			"FireRate"	"0.075"
+			"Range"		"2048"
+			"MuzzleFire"	"1"
+		}
+	}
+	
+}
+
+

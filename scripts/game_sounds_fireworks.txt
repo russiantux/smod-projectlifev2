@@ -1,0 +1,48 @@
+"Fireworks.pon"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_GUNFIRE"
+	"pitch"			"60,100"
+
+	"wave"	"misc/fireworks/pon.wav"
+}
+
+"Fireworks.don"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_GUNFIRE"
+	"pitch"			"80,110"
+
+	"rndwave"
+	{
+		"wave"	"misc/fireworks/don.wav"
+		"wave"	"misc/fireworks/donpari.wav"
+		"wave"	"misc/fireworks/donbari.wav"
+	}
+}
+
+"Fireworks.pari"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_GUNFIRE"
+	"pitch"			"60,120"
+
+	"rndwave"
+	{
+		"wave"	"misc/fireworks/paripari.wav"
+		"wave"	"misc/fireworks/baribari.wav"
+	}
+}
+
+"Fireworks.hyuun"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_GUNFIRE"
+	"pitch"			"70,140"
+
+	"wave"	"misc/fireworks/hyuun.wav"
+}

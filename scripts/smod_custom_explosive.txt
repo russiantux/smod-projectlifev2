@@ -1,0 +1,229 @@
+//
+//	SMOD custom explosive entity data (sample)
+//
+CustomExplosive
+{
+
+
+	"SMG1Grenade" {
+		//	Explosion spec
+		"Damage"		"2000"
+		"Radius"		"600"
+		//	Entity behavior
+		"Model"		"models/items/ar2_grenade.mdl"
+		"Bounce"	"0"			//	-1:never detonate
+		"GLFuse"	"600"
+		"BoundingSound"		""
+		"Timer"		"10"
+		"ExplosionType"	"1"			//	0:none 1:fireball 2:pulse
+		"TrailType"	"1"			//	0:none 1:smoke 2:fire 3:beam
+		"Bullet" {
+			"AmmoType"	"buckshot"
+			"Damage"	"100"
+			"ShotCount"	"50"
+			"Angle"		"-1 -15"
+			"Tracer"	"0"
+			"Force"		"1.0"
+			"TraceLength"	"2000"
+			"Penetrate"	"2"
+			"Attenuate"	"1000"
+		}
+	}
+
+	"CSFragGrenade" {
+		//	Explosion spec
+		"Damage"		"80"
+		"Radius"		"300"
+		//	Entity behavior
+		"Model"			"models/weapons/w_eq_fraggrenade_thrown.mdl"
+		"Bounce"		"-1"			//	-1:never detonate
+		"BoundingSound"		"HEGrenade.Bounce"
+		"IsPenetrateGlass"	"1"
+		"Timer"			"3"
+		"ExplosionType"		"1"			//	0:none 1:fireball 2:pulse
+		"TrailType"		"0"			//	0:none 1:smoke 2:fire 3:beam
+	}
+
+	"Rocket" {
+		//	Explosion spec
+		"Damage"		"200"
+		"Radius"		"400"
+		//	Entity behavior
+		"Model"			"models/weapons/w_eq_fraggrenade_thrown.mdl"
+		"Bounce"		"0"			//	-1:never detonate
+		"BoundingSound"		"HEGrenade.Bounce"
+		"IsPenetrateGlass"	"1"
+		"Timer"			"0"
+		"ExplosionType"		"1"			//	0:none 1:fireball 2:pulse
+		"TrailType"		"0"			//	0:none 1:smoke 2:fire 3:beam
+	}
+
+
+
+	"RPG" {
+		//	Explosion spec
+		"Damage"	"1000"
+		"Radius"	"3000"
+		//	Entity behavior
+		"Model"		"models/weapons/w_c4_planted.mdl"
+		"Bounce"	"-1"			//	-1:never detonate
+		"BoundingSound"	""
+		"Timer"		"30"
+		"ExplosionType"	"1"			//	0:none 1:fireball 2:pulse
+		"TrailType"	"0"			//	0:none 1:smoke 2:fire 3:beam
+		"SpawnMass"	"1000"
+	}
+
+	"C4sub" {
+		//	Explosion spec
+		"Damage"	"20"
+		"Radius"	"3000"
+		"SpawnMass"	"1"
+		//	Entity behavior
+		"Model"		"models/props_debris/impact_debris1.mdl"
+		"Bounce"	 "1"			//	-1:never detonate
+		"BoundingSound"		""
+		"Timer"		"0.5"
+		"ExplosionType"	"1"			//	0:none 1:fireball 2:pulse
+		"TrailType"	"0"			//	0:none 1:smoke 2:fire 3:beam
+		"Bullet" {
+			"AmmoType"	"buckshot"
+			"Damage"	"30"
+			"ShotCount"	"2"
+			"Angle"		"-1 -15"
+			"Tracer"	"1"
+			"Force"		"1.0"
+			"TraceLength"	"2000"
+			"Penetrate"	"2"
+			"Attenuate"	"1000"
+		}
+	}
+
+	"q2styleGL" {
+		//	Explosion spec
+		"Damage"	"1000"
+		"Radius"	"1000"
+		//	Entity behavior
+		"Model"		"models/props_debris/impact_debris1.mdl"
+		"Bounce"	"-1"			//	-1:never detonate
+		"BoundingSound"		""
+		"Timer"		"1"
+		"ExplosionType"	"1"			//	0:none 1:fireball 2:pulse
+		"TrailType"	"1"			//	0:none 1:smoke 2:fire 3:beam
+	}
+
+	"ClusterGrenade" {
+		//	Explosion spec
+		"Damage"	"100"
+		"Radius"	"100"
+		//	Entity behavior
+		"Model"		"models/props_debris/impact_debris1.mdl"
+		"Bounce"	"-1"			//	-1:never detonate
+		"BoundingSound"		""
+		"Timer"		"3"
+		"ExplosionType"	"0"			//	0:none 1:fireball 2:pulse
+		"TrailType"	"3"			//	0:none 1:smoke 2:fire 3:beam
+		"EntitySpawn" {
+			"SpawnEntity"	"custom_explosive"		//	ClassName
+			"SpawnType"	"q2styleGL"			//	Custom explosive type
+			"SpawnCount"	"4"
+			"ThrowPower"	"400"
+			"ThrowType"	"0"			//	0:Ring 1:Spherical
+			"SpawnAngle"	"-70"			//	Ring type only
+		}
+	}
+
+
+	"SignCluster" {
+		//	Explosion spec
+		"Damage"	"100"
+		"Radius"	"100"
+		//	Entity behavior
+		"Model"		"models/props_c17/streetsign002b.mdl"
+		"Bounce"	"2"			//	-1:never detonate
+		"BoundingSound"		""
+		"Timer"		"1.5"
+		"ExplosionType"	"0"			//	0:none 1:fireball 2:pulse
+		"TrailType"	"0"			//	0:none 1:smoke 2:fire 3:beam
+		"EntitySpawn" {
+			"SpawnEntity"	"prop_physics"		//	ClassName
+			"SpawnModel"	"models/props_c17/streetsign002b.mdl"
+			"SpawnType"	""			//	Custom explosive type
+			"SpawnCount"	"8"
+			"ThrowPower"	"1000"
+			"ThrowType"	"1"			//	0:Ring 1:Spherical
+			"SpawnAngle"	"0"			//	Ring type only
+			"RemoveTimer"	"2"
+			"SpawnMass"	"100000"
+		}
+	}
+	
+	"C4" {
+		//	Explosion spec
+		"Damage"	"1000"
+		"Radius"	"1000"
+		//	Entity behavior
+		"Model"		"models/weapons/w_c4_planted.mdl"
+		"Bounce"	"-1"			//	-1:never detonate
+		"BoundingSound"	""
+		"Timer"		"30"
+		"ExplosionType"	"1"			//	0:none 1:fireball 2:pulse
+		"TrailType"	"0"			//	0:none 1:smoke 2:fire 3:beam
+		"SpawnMass"	"1000"
+		"EntitySpawn" {
+			"SpawnEntity"	"custom_explosive"		//	ClassName
+			"SpawnType"	"C4sub"			//	Custom explosive type
+			"SpawnCount"	"10"
+			"ThrowPower"	"3000"
+			"ThrowType"	"1"			//	0:Ring 1:Spherical
+			"SpawnAngle"	"-70"			//	Ring type only
+		}
+		"Bullet" {
+			"AmmoType"	"buckshot"
+			"Damage"	"30"
+			"ShotCount"	"20"
+			"Angle"		"-1 -15"
+			"Tracer"	"1"
+			"Force"		"1.0"
+			"TraceLength"	"2000"
+			"Penetrate"	"2"
+			"Attenuate"	"1000"
+		}
+	}
+
+	
+"npc_combine_s" {
+   "keyvalues" {
+      "GrenadeClass"   "custom_explosive"
+      "GrenadeExploType"   "CSFragGrenade2"
+   }
+}
+
+	"CSFragGrenade2" {
+		//	Explosion spec
+		"Damage"		"2000"
+		"Radius"		"600"
+		//	Entity behavior
+		"Model"			"models/weapons/w_eq_fraggrenade_thrown.mdl"
+		"SubModel"		"1"
+		"Bounce"		"-1"			//	-1:never detonate
+		"BoundingSound"		"HEGrenade.Bounce"
+		"IsPenetrateGlass"	"1"
+		"Timer"			"3"
+		"ExplosionType"		"1"			//	0:none 1:fireball 2:pulse
+		"TrailType"		"0"			//	0:none 1:smoke 2:fire 3:beam
+		"Bullet" {
+			"AmmoType"	"buckshot"
+			"Damage"	"100"
+			"ShotCount"	"50"
+			"Angle"		"-1 -15"
+			"Tracer"	"0"
+			"Force"		"1.0"
+			"TraceLength"	"2000"
+			"Penetrate"	"2"
+			"Attenuate"	"1000"
+		}
+	}
+
+}
+

@@ -1,0 +1,181 @@
+
+"NPC_MonkF.die"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/ravenholm/monk_pain04.wav"
+		"wave"	"vo/ravenholm/monk_pain09.wav"
+	}
+}
+
+"NPC_MonkF.pain"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/ravenholm/monk_pain01.wav"
+		"wave"	"vo/ravenholm/monk_pain02.wav"
+		"wave"	"vo/ravenholm/monk_pain03.wav"
+		"wave"	"vo/ravenholm/monk_pain04.wav"
+		"wave"	"vo/ravenholm/monk_pain05.wav"
+		"wave"	"vo/ravenholm/monk_pain06.wav"
+		"wave"	"vo/ravenholm/monk_pain07.wav"
+		"wave"	"vo/ravenholm/monk_pain08.wav"
+		"wave"	"vo/ravenholm/monk_pain09.wav"
+	}
+}
+
+
+
+"NPC_MonkF.enemy"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/ravenholm/madlaugh01.wav"
+		"wave"	"vo/ravenholm/madlaugh02.wav"
+		"wave"	"vo/ravenholm/madlaugh03.wav"
+		"wave"	"vo/ravenholm/madlaugh04.wav"
+		"wave"	"vo/ravenholm/monk_danger01.wav"
+		"wave"	"vo/ravenholm/monk_danger03.wav"
+	}
+}
+
+
+
+"NPC_KleinerF.die"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/k_lab/kl_ahhhh.wav"
+		"wave"	"vo/k_lab2/kl_greatscott.wav"
+		"wave"	"vo/k_lab/kl_getoutrun01.wav"
+	}
+}
+
+
+"NPC_KleinerF.enemy"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/k_lab/kl_ahhhh.wav"
+		"wave"	"vo/k_lab/kl_getoutrun03.wav"
+		"wave"	"vo/k_lab/kl_getoutrun01.wav"
+	}
+}
+
+"NPC_KleinerF.pain"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"scientist/sci_pain1.wav"
+		"wave"	"scientist/sci_pain2.wav"
+		"wave"	"scientist/sci_pain3.wav"
+		"wave"	"scientist/sci_pain4.wav"
+		"wave"	"scientist/sci_pain5.wav"
+	}
+}
+
+
+"NPC_CombineF.Gappoi"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"95, 105"
+
+	"soundlevel"	"SNDLVL_90DB"
+
+	"rndwave"
+	{
+		"wave"	"player/dialogue/a_bunch_of_them.wav"
+		"wave"	"player/dialogue/alright_lets_do_this.wav"
+		"wave"	"player/dialogue/alright2.wav"
+		"wave"	"player/dialogue/attacking_enemies.wav"
+		"wave"	"player/dialogue/aww_man.wav"
+		"wave"	"player/dialogue/hes_dead.wav"
+		"wave"	"player/dialogue/hes_down.wav"
+		"wave"	"player/dialogue/i_see_our_target.wav"
+		"wave"	"player/dialogue/in_combat2.wav"
+		"wave"	"player/dialogue/in_combat.wav"
+		"wave"	"player/dialogue/neutralized.wav"
+		"wave"	"player/dialogue/returning_fire.wav"
+		"wave"	"player/dialogue/target_spotted.wav"
+		"wave"	"player/dialogue/the_actions_hot_here.wav"
+		"wave"	"player/dialogue/you_heard_the_man_lets_go.wav"
+	}
+}
+
+
+"NPC_CombineF.pain"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"95, 105"
+
+	"soundlevel"	"SNDLVL_90DB"
+
+	"rndwave"
+	{
+		"wave"	"player/dialogue/i_could_use_some_help.wav"
+		"wave"	"player/dialogue/i_could_use_some_help_over_here.wav"
+		"wave"	"player/dialogue/im_in_trouble.wav"
+		"wave"	"player/dialogue/im_pinned_down.wav"
+		"wave"	"player/dialogue/need_help2.wav"
+		"wave"	"player/dialogue/need_help.wav"
+		"wave"	"player/dialogue/oh_boy.wav"
+		"wave"	"player/dialogue/noo.wav"
+		"wave"	"player/dialogue/oh_boy2.wav"
+		"wave"	"player/dialogue/oh_boy.wav"
+		"wave"	"player/dialogue/oh_man.wav"
+		"wave"	"player/dialogue/oh_my_god.wav"
+		"wave"	"player/dialogue/oh_no_sad.wav"
+		"wave"	"player/dialogue/oh_no_sad.wav"
+		"wave"	"player/dialogue/ouch.wav"
+		"wave"	"player/dialogue/ow.wav"
+		"wave"	"player/dialogue/taking_fire_need_assistance2.wav"
+		"wave"	"player/dialogue/thats_not_good.wav"
+		"wave"	"player/dialogue/theres_too_many.wav"
+		"wave"	"player/dialogue/theres_too_many_of_them.wav"
+		"wave"	"player/dialogue/theyre_all_over_the_place2.wav"
+		"wave"	"player/dialogue/theyre_everywhere2.wav"
+		"wave"	"player/dialogue/too_many2.wav"
+		"wave"	"player/dialogue/uh_oh.wav"
+		"wave"	"player/dialogue/what_happened.wav"
+		"wave"	"player/dialogue/whoa.wav"
+		"wave"	"player/dialogue/yikes.wav"
+	}
+}

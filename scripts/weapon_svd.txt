@@ -1,0 +1,83 @@
+// SNAYPERSKAYA VINTOVKA DRAGUNOVA SNIPER RIFLE
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"#HL2_SVD"
+	"viewmodel"			"models/weapons/v_snip_awp.mdl"
+	"playermodel"			"models/weapons/w_svd.mdl"	//FIXME: 
+	"anim_prefix"			"ar2"
+	"bucket"			"3"
+	"bucket_position"		"6"
+
+	"clip_size"			"10"
+	"clip2_size"			"-1"
+
+	"default_clip"			"10"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"XBowBolt"
+	"secondary_ammo"		"None"
+
+	"weight"			"4"
+	"item_flags"			"0"
+
+	"BuiltRightHanded"		"0"
+	"AllowFlipping"			"1"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"empty"			"Weapon_SMG1.Empty"
+		"single_shot"		"Weapon_SVD.Fire"
+		"single_shot_npc"	"Weapon_SVD.NPC_Single"
+		"special1"		"Weapon_Crowbar.Single"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+			"file"		"sprites/hud_weapons"
+			"x"			"64"
+			"y"			"32"
+			"width"		"64"
+			"height"	"32"
+		}
+		"weapon_s"
+		{
+			"file"		"sprites/hud_weapons"
+			"x"			"64"
+			"y"			"32"
+			"width"		"64"
+			"height"	"32"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"r"
+		}
+		"ammo2"
+		{
+				"font"		"WeaponIcons"
+				"character"	"t"
+		}
+		"crosshair"
+		{
+			"file"		"sprites/hud_weapons"
+			"x"			"0"
+			"y"			"0"
+			"width"		"32"
+			"height"	"32"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/hud_weapons"
+			"x"			"0"
+			"y"			"0"
+			"width"		"32"
+			"height"	"32"
+		}
+	}
+}

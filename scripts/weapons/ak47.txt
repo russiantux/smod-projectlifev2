@@ -1,0 +1,71 @@
+"Weapon_AK47.mag.in"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\havoc-ak\magin.wav"
+	
+}
+"Weapon_AK47.mag.out"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\havoc-ak\magout.wav"
+	
+}
+"Weapon_AK47.mag.tap"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\havoc-ak\magtap.wav"
+	
+}
+"Weapon_AK47.bolt.pull"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		".7"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\havoc-ak\boltpull.wav"
+	
+}
+"Weapon_AK47.bolt.rel"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		".5"
+	"CompatibilityAttenuation"	"1.0"
+	"pitch"			"95,105"
+
+	"wave"			"weapons\jen.ak\bolt.rel.wav"
+	
+}
+"Weapon_AK47.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"0.52"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\havoc-ak\fire.wav"
+	
+}
+
+"3rd_Weapon_AK47.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"0.52"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons\havoc-ak\fire.wav"
+	
+}

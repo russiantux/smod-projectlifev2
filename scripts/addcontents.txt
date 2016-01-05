@@ -1,0 +1,32 @@
+"Additional contents list"
+{
+	"Contents" {
+		"HL2MP" {
+			"path"	"hl2mp"
+			"id"	"320"
+		}
+//		"LostCoast" {
+//			"path"	"lostcoast"
+//			"id"	"340"
+//		}		
+		"hl2" {
+			"path"	"hl2"
+			"id"	"220"
+		}				
+//		"HL1:S" {
+//			"path"	"hl1"
+//			"id"	"280"
+//		}
+		"CS:S" {
+			"path"	"cstrike"
+			"id"	"240"
+		}
+//		"DOD:S" {
+//			"path"	"dod"
+//			"id"	"300"
+//		}
+//       	"Episode 1"{
+//       		"path" "episodic"
+//          		"id"   "380"
+//		}
+}

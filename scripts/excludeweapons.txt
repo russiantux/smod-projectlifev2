@@ -1,0 +1,70 @@
+"Weapon exclusion list"
+{
+//	Describe weapon classname here. Weapon is excluded from game.
+//	If you want to use sample, comment out the "without" section.
+
+	"without" {
+
+//	SMOD Weapons
+	"weapon_stcannon" {}
+	"weapon_physgun" {}
+	"weapon_flaregun" {}
+	"weapon_physlauncher" {}
+	"weapon_gauss" {}
+	"weapon_kar98" {}
+	"weapon_lasergun" {}
+	"weapon_nodemaker" {}
+	"weapon_msbomb" {}
+	"weapon_grease" {}
+	"weapon_gravgren" {}
+	"weapon_ak47" {}
+	"weapon_flamethrower" {}
+	"weapon_bananna" {}
+	"weapon_anm14" {}
+	"weapon_bugspawner" {}
+	"weapon_abgun" {}
+	"weapon_hopwire" {}
+	"weapon_hopwire_old" {}
+	"weapon_lstick" {}
+	"weapon_mp5" {}
+	"weapon_psp" {}
+	"weapon_scissor" {}
+	"weapon_shovel" {}
+	"weapon_soy" {}
+	"weapon_stickybomb" {}
+	"weapon_svd" {}
+	"weapon_gcrowbar" {}
+	
+//	Custom Weapons
+	"weapon_custom1" {}
+	"weapon_custom2" {}
+	"weapon_custom3" {}
+	"weapon_custom4" {}
+	"weapon_custom5" {}
+	"weapon_custom6" {}
+	"weapon_custom7" {}
+	"weapon_custom8" {}
+	"weapon_custom9" {}
+	"weapon_custom10" {}
+	"weapon_custom11" {}
+	"weapon_custom12" {}
+	"weapon_custom13" {}
+	"weapon_custom14" {}
+	"weapon_custom15" {}
+	"weapon_custom16" {}
+	"weapon_custom17" {}
+	"weapon_custom18" {}
+	"weapon_custom19" {}
+	"weapon_custom20" {}
+	"weapon_custom21" {}
+	"weapon_custom22" {}
+	"weapon_custom23" {}
+	"weapon_custom24" {}
+	"weapon_custom25" {}
+	"weapon_custom26" {}
+	"weapon_custom27" {}
+	"weapon_custom28" {}
+	"weapon_custom29" {}
+	"weapon_custom30" {}
+	}
+}

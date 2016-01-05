@@ -1,0 +1,155 @@
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"Dual Shotguns"
+	"viewmodel"			"models/weapons/v_shotgun_2x.mdl"
+	"playermodel"			"models/weapons/w_shot_m3super90.mdl"
+	"anim_prefix"			"smg2"
+	"bucket"				"4"
+	"bucket_position"		"2"
+
+	"clip_size"			"16"
+	"clip2_size"			"-1"
+
+	"default_clip"			"32"
+	"default_clip2"			"-1"
+
+	"primary_ammo"			"Buckshot"
+	"secondary_ammo"		"None"
+
+	"weight"			"0"
+	"item_flags"			"0"
+
+	"BuiltRightHanded"		"0"
+	"AllowFlipping"			"1"
+
+	"CSViewModel"			"1"
+	"MuzzleType"			"CSSMG"
+	"MuzzleSize"			"1.5"
+//	"MuzzleAttach"			"0"
+	"LagScale"			".9"
+	"CSWorldModel"			"1"
+
+	// SMOD Ironsight setting.
+	IronSight
+	{
+		"right"			"0"
+		"up"			"0"
+		"forward"		"-5"
+		"fov"			"6"
+	}
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"empty"			"Weapon_Shotgun.Empty"
+		"reload"		"Weapon_Shotgun.Reload"
+		"special1"		"Weapon_Shotgun.Special1"
+		"single_shot"		"Weapon_Shotgun.Single"
+		"double_shot"		"Weapon_Shotgun.Double"
+		// NPC WEAPON SOUNDS
+		"reload_npc"		"Weapon_Shotgun.NPC_Reload"
+		"single_shot_npc"	"Weapon_Shotgun.NPC_Single"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"a"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"a"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"p"
+		}
+		"ammo2"
+		{
+				"font"		"WeaponIcons"
+				"character"	"t"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+	
+	"WeaponSpec"
+	{
+		//	0 : single
+		//	1 : automatic
+		//	2 : shotgun
+		//	3 : autoshotgun
+		"WeaponType"	"0"
+		"FireRate"	"0.05"
+		"UnderWater"	"0"
+		"Akimbo"	"1"
+		
+	
+		"Options" {
+			"ReloadSound"	"1"
+			"LastFireSound"	"0"
+			"TurnoffScope"	"0"
+			"TurnoffIron"	"0"
+			"TimeScale"	"0"
+		}
+
+
+		"Recoil" {
+			"PunchPitch"	"-0.5 0.1"
+			"PunchYaw"	"-0.5 0.5"
+			"EnableSnap"	"0"
+			"SnapPitch"	"0 0"
+			"SnapYaw"	"0 0"
+			"Crouch"	"-0.2 0"
+			"Amp"		"1.1"
+			"PunchLimit"	"1"
+		}
+		
+		"Spread" {
+			"Default"	"0.1"
+			"MaxSpread"	"1"
+			"Run"		".5"
+			"RunSpeed"	"100"
+			"Crouch"	"0.3"
+			"Fire"		"1.0"
+		}
+		
+		"Bullet" {
+			"AmmoType"	"smg1"
+			"Damage"	"9"
+			"ShotCount"	"9"
+			"Tracer"	"1"
+			"Force"		".2"
+			"Penetrate"	"8"
+		}
+
+		"Npc" {
+			"RifleAnim"	"1"
+			"BurstMax"	"5"
+			"BurstMin"	"3"
+			"FireRate"	"0.075"
+			"Range"		"80000"
+			"MuzzleFire"	"1"
+		}
+	}
+	
+}
+
+

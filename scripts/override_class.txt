@@ -1,0 +1,181 @@
+//	weapon_custom1		Kimber 1911
+//	weapon_custom2		H&K UMP
+//	weapon_custom3		M4A1
+//	weapon_custom4		M598
+//	weapon_custom5		M249 PARA
+//	weapon_custom6		AWM
+//	weapon_custom7		AK47
+//	weapon_custom8		M4A1-M203
+//	weapon_custom9		Glock 19
+//	weapon_custom10	MP5-SD
+//	weapon_custom11	FN P90
+//	weapon_custom12	UZI
+//	weapon_custom13	PUNCH
+//	weapon_custom14	Dual FN Five Seven
+//	weapon_custom15	FN Five Seven
+//	weapon_custom16	M4A1 Suppressed
+//	weapon_custom17	Frag Grenade
+//	weapon_custom18	Dual MP5
+//	weapon_custom19	Dual Shotguns
+//	weapon_custom20	RPG-7
+//	weapon_custom21	Desert Eagle
+//	weapon_custom22	C-4 30sec Timer
+//	weapon_custom23	.357
+//	weapon_custom24	Mini-Gun
+//	weapon_custom25	Kbar
+
+OverrideClasses
+{
+	"default_map" {
+		"item_health"		{
+			"item_ammo_custom3"	"50"
+			"item_ammo_custom4"	"50"
+			"item_ammo_custom5"	"50"
+		}
+		"item_healthvial"	{
+			"item_ammo_custom3"	"50"
+		}
+
+		"item_battery"		{
+			"weapon_custom17"	"100"
+		}
+
+		"weapon_frag"		{
+			"weapon_custom17"	"100"
+		}
+
+		"weapon_crowbar"	{
+			"weapon_custom25"	"100"
+		}
+
+		"weapon_357"	{
+			"weapon_custom1"	"33"
+			"weapon_custom9"	"33"
+			"weapon_custom15"	"34"
+		}
+		"weapon_shotgun"	{
+			"weapon_custom4"	"100"
+		}
+		"weapon_crossbow"	{
+			"weapon_custom6"	"40"
+			"weapon_custom20"	"30"
+			"weapon_custom21"	"30"
+		}
+		"weapon_pistol"	{
+			"weapon_custom1"	"33"
+			"weapon_custom9"	"33"
+			"weapon_custom15"	"34"
+		}
+		"weapon_smg1"	{
+			"weapon_custom2"	"25"
+			"weapon_custom10"	"25"
+			"weapon_custom11"	"25"
+			"weapon_custom12"	"25"
+		}
+		"item_ammo_ar2_altfire"	{
+			"item_ammo_custom3"	"60"
+			"weapon_frag"		"30"
+			"weapon_custom22"	"10"
+		}
+		"weapon_ar2"	{
+			"weapon_custom3"	"20"
+			"weapon_custom5"	"20"
+			"weapon_custom7"	"20"
+			"weapon_custom8"	"20"
+			"weapon_custom13"	"20"
+		}
+		"item_ammo_pistol"	{
+			"item_ammo_custom1"	"50"
+			"item_ammo_custom2"	"50"
+		}
+		"item_ammo_smg1"	{
+			"item_ammo_custom2"	"25"
+			"item_ammo_custom5"	"25"
+			"item_ammo_custom3"	"25"
+			"item_ammo_custom4"	"25"
+		}
+		"item_ammo_ar2_altfire"	{
+			"item_ammo_custom3"	"50"
+			"item_ammo_custom4"	"50"
+		}
+		"weapon_kimber"	{
+			"weapon_custom1"	"100"
+		}
+		"weapon_ump"	{
+			"weapon_custom2"	"100"
+		}
+		"weapon_m4a1"	{
+			"weapon_custom3"	"100"
+		}
+		"weapon_m249"	{
+			"weapon_custom5"	"100"
+		}
+		"weapon_awm"	{
+			"weapon_custom6"	"100"
+		}
+		"weapon_akm47"	{
+			"weapon_custom7"	"100"
+		}
+		"weapon_m4m203"	{
+			"weapon_custom8"	"100"
+		}
+		"weapon_glock"	{
+			"weapon_custom9"	"100"
+		}
+		"weapon_mp5sd"	{
+			"weapon_custom10"	"100"
+		}
+		"weapon_p90"	{
+			"weapon_custom11"	"100"
+		}
+		"weapon_uzi"	{
+			"weapon_custom12"	"100"
+		}
+		"weapon_punch"	{
+			"weapon_custom13"	"100"
+		}
+		"weapon_dual57"	{
+			"weapon_custom14"	"100"
+		}
+		"weapon_fiveseven"	{
+			"weapon_custom15"	"100"
+		}
+		"weapon_m4sup"	{
+			"weapon_custom16"	"100"
+		}
+		"weapon_mp5dual"	{
+			"weapon_custom18"	"100"
+		}
+		"weapon_dualshotguns"	{
+			"weapon_custom19"	"100"
+		}
+		"weapon_rpg7"	{
+			"weapon_custom20"	"100"
+		}
+		"weapon_deagle"	{
+			"weapon_custom21"	"100"
+		}
+		"weapon_c4"	{
+			"weapon_custom22"	"100"
+		}
+		"weapon_python"	{
+			"weapon_custom23"	"100"
+		}
+		"weapon_minigun"	{
+			"weapon_custom24"	"100"
+		}
+		"weapon_knife"	{
+			"weapon_custom25"	"100"
+		}
+	}
+
+
+	"NOAMZ" {
+		"npc_zombie"	{
+			"npc_zombie2"	"1"
+		}
+		"npc_fastzombie"	{
+			"npc_zombie2"	"100"
+		}
+	}
+}
