@@ -1,0 +1,299 @@
+//	map arrange data
+//	location: d3_c17_06b
+"precache" {
+	"entity"	"setmsbomb"
+	"entity"	"npc_metropolice"
+}
+
+
+"entities" {
+	"instant_trig" {
+		"origin" "2970 1345 4"
+		"keyvalues" {
+			"touchname" "citizen_2_ct"
+			"radius"	"20"
+			"label"	"preshoot"
+		}
+	}
+	
+	
+	"npc_citizen" {
+		"origin" "2433 1334 0"
+		"alwaysthink"
+		"keyvalues" {
+			"additionalequipment"	"weapon_shotgun"
+			"targetname"		"knpc1"
+			"spawnflags" "1052674"
+		}		
+	}
+	"info_target" {
+		"origin" "2206 1211 -5"
+		"keyvalues" { "targetname" "goalnpc1" }
+	}
+
+	"ai_goal_follow" {
+		"keyvalues" {
+			"startactive"	"1"
+			"searchtype"	"0"
+			"MaximumState"	"3"
+			"actor"		"knpc1"
+			"goal"		"goalnpc1"
+		}
+	}
+	
+	"instant_trig" {
+		"origin" "3113 -602 208"
+		"keyvalues" {
+			"touchname"	"cameo_strider_1"
+			"label"	"set1"
+			"radius"	"500"
+		}
+	}
+	
+	
+	"npc_zombie" {
+		"origin" "2699 2085 128"
+		"angle" "0 -70 0"	
+	}
+	
+	"npc_fastzombie" {
+		"origin" "2997 1715 140"
+		"angle" "0 81 0"
+	}
+	
+
+	"prop_ragdoll" {
+		"origin" "3073 2311 156" "angle" "60 86 0"
+		"keyvalues" {
+			"model" "models/Humans/Group03m/female_06.mdl"
+		}
+	}
+
+	"prop_ragdoll" {
+		"origin" "2972 1482 176" "angle" "50 90 0"
+		"keyvalues" {
+			"model" "models/Humans/Group03m/female_03.mdl"
+		}
+	}
+		
+	"food_cornedbeef" {
+		"origin" "2947.3 2027.9 167.1"  "angle" "-0 174 2"
+		"keyvalues" {
+		"model" "models/misc/foods/cornedbeef.mdl"
+		}
+	}
+	"food_cornedbeef" {
+		"origin" "2956.0 2027.2 167.1"  "angle" "0 -128 360"
+		"keyvalues" {
+			"model" "models/misc/foods/cornedbeef.mdl"
+		}
+	}
+	
+
+	"instant_trig" {
+		"origin" "3444 988 256"
+		"keyvalues" {
+			"label"	"en1"
+			"radius"	"50"
+		}
+	}
+
+}
+
+"entities:en1" {
+	"npc_metropolice" {
+		"origin" "4150 1723 480" "angle" "0 -143 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_ak47"
+		}
+	}
+	
+
+	"npc_metropolice" {
+		"origin" "3577 1560 512" "angle" "0 -90 0"
+
+		"keyvalues" {
+			"additionalequipment"	"weapon_ak47"
+		}
+	}
+	
+	"setmsbomb" {
+		"origin" "3778.5 1345.0 210.7"  "angle" "0 90 0"
+		"keyvalues" {
+		"model" "models/weapons/w_msbomb.mdl"
+		}
+	}
+	"setmsbomb" {
+		"origin" "3777.2 1345.0 224.8"  "angle" "0 90 0"
+		"keyvalues" {
+		"model" "models/weapons/w_msbomb.mdl"
+		}
+	}
+	"setmsbomb" {
+		"origin" "3778.1 1345.0 241.3"  "angle" "0 90 0"
+		"keyvalues" {
+		"model" "models/weapons/w_msbomb.mdl"
+		}
+	}
+
+	"setmsbomb" {
+		"origin" "3778.1 1345.0 267.9"  "angle" "0 90 0"
+		"keyvalues" {
+		"model" "models/weapons/w_msbomb.mdl"
+		}
+	}
+	"setmsbomb" {
+		"origin" "3778.6 1345.0 285.9"  "angle" "0 90 0"
+		"keyvalues" {
+		"model" "models/weapons/w_msbomb.mdl"
+		}
+	}
+	"setmsbomb" {
+		"origin" "3777.9 1345.0 303.8"  "angle" "0 90 0"
+		"keyvalues" {
+		"model" "models/weapons/w_msbomb.mdl"
+		}
+	}
+
+	"setmsbomb" {
+		"origin" "3789.5 1791.0 16.1"  "angle" "0 270 0"
+		"keyvalues" {
+		"model" "models/weapons/w_msbomb.mdl"
+		}
+	}
+	"setmsbomb" {
+		"origin" "3787.2 1561.0 28.1"  "angle" "0 90 0"
+		"keyvalues" {
+		"model" "models/weapons/w_msbomb.mdl"
+		}
+	}
+
+
+	"prop_physics" {
+		"origin" "3996.4 1635.6 148.5"  "angle" "0 -180 360"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate002a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "3994.3 1579.5 188.9"  "angle" "-90 -98 198"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate002a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "3999.0 1577.2 148.4"  "angle" "-0 -89 0"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate002a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "4249.1 1531.5 192.0"  "angle" "54 106 160"
+		"keyvalues" {
+		"model" "models/props_junk/plasticbucket001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "4250.3 1525.9 177.2"  "angle" "-0 81 1"
+		"keyvalues" {
+		"model" "models/props_junk/PlasticCrate01a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "4244.5 1529.1 149.3"  "angle" "1 1 180"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate002a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "4285.2 1536.2 162.9"  "angle" "-1 180 90"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate002a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "4286.6 1578.2 162.7"  "angle" "-0 -86 90"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate002a.mdl"
+		}
+	}
+
+}
+
+
+
+"entities:set1" {
+
+	"event" {
+		"targetname"	"cameo_strider_1"
+		"action"	"sethealth"
+		"value"		"1"
+	}
+	
+	
+	"npc_citizen" {
+		"origin" "3301 -1045 0"  "angle" "0 88 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_rpg"
+			"targetname"	"rpgnp1"
+			"spawnflags" "1052674"
+		}
+	}
+	
+	"event" {
+		"targetname"	"rpgnp1"
+		"action"	"sethealth"
+		"value"		"4000"
+	}
+	
+	
+}
+
+"entities:preshoot" {
+
+//	"instant_trig" {
+//		"keyvalues" {
+//			"timer"	"8"
+//			"label"	"shoot"
+//		}
+//	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"timer"	"3.5"
+			"label"	"explode"
+		}
+	}
+	
+}
+
+"entities:explode" {
+	
+	"env_explosion" {
+		"origin" "3645 1440 288"
+		"keyvalues" {
+			"targetname"	"exp1"
+			"iMagnitude" "80"
+		}
+	}
+
+	"event" {
+		"targetname"	"exp1"
+		"action"	"explode"
+		"value"		"0"
+	}
+
+}
+
+"entities:shoot" {
+
+
+	"shoot_bullet" {
+		"origin" "2965 1290 66"
+		"angle" "-1 91 0"		"keyvalues" {
+			"damage"	"300"
+			"force"		"0"
+			"tracer"	"0"
+		}
+	}
+}

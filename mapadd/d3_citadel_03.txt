@@ -1,0 +1,10 @@
+"precache"{
+}
+
+"entities" {
+
+	"weapon_minigun"
+	{
+		"origin" "7348.92 344.7 2128"		
+	}
+}

@@ -1,0 +1,9 @@
+========================
+AKS74U
+========================
+Model: TheLama
+Skin: Thanez & Dark Nemesis
+Sounds: Vunsunta
+Animations: Jeniffer!!
+Compile: Pete
+========================

@@ -1,0 +1,167 @@
+//	map arrange data
+//	location: d2_prison_05
+// Many thanks to Business for the code references
+
+"entities" {
+
+	"npc_combine_e" {
+		"origin" "-662.7 1675 448" "angle" "0 -2 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_oicw"
+			"numgrenade"	"5"
+		}
+	}
+
+    "instant_trig" {
+        "origin" "-150 1920 411"
+        "keyvalues" {
+            "radius"    "250"
+            "label"        "washroom_fight"
+        }
+    }
+
+    "point_servercommand" {
+        "origin" "-104 231 703"
+        "angle" "0 0 0"
+        "keyvalues" {
+            "targetname" "healthset"
+        }
+    }
+
+	"npc_metropolice" {
+		"origin" "77.32 1479 407.49" "angle" "0 150 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp40"
+		}
+	}
+
+	"npc_metropolice" {
+		"origin" "43.11 1285 407.49" "angle" "0 150 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp40"
+		}
+	}
+
+	"npc_zombine" {
+		"origin" "-808.91 771 400.22" "angle" "0 0 0"
+	}
+
+	"item_item_crate"
+	{
+		"origin"	"-1071.25 -951.45 573.09"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_hrifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+
+		"item_item_crate"
+	{
+		"origin"	"-947.81 -731.82 576.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_rifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+}
+
+"entities:washroom_fight" {
+    
+    "instant_trig" {
+        "keyvalues" {
+            "timer"    "0.05"
+            "label"    "boss_sethealth"
+        }
+    }
+    
+    "instant_trig" {
+        "keyvalues" {
+            "timer"    "0.1"
+            "label"    "boss_spawn"
+        }
+    }
+    
+    "instant_trig" {
+        "keyvalues" {
+            "timer"    "0.125"
+            "label"    "boss_healthreset"
+        }
+    }
+
+    "instant_trig" {
+      "origin"	"-261.15 1726.31 409.34"    
+        "keyvalues" {
+            "radius"    "150"        
+            "label"    "assassinfightmusic"
+        }
+    }
+}    
+
+"entities:boss_sethealth" {
+    
+    "event" {
+        "targetname" "healthset"
+        "action"    "Command"
+        "value"        "sk_combine_ace_health 200"
+    }
+}
+
+"entities:boss_spawn" {
+//Introducing: the Combine Aces.
+    "npc_combine_ace" {
+        "origin" "-265.5 151.3 512.0"
+        "angle" "0 87 0"
+        "keyvalues" {
+            "targetname" "boss"
+            "additionalequipment" "weapon_pulsemg"
+            "squadname" "squad1"
+        }
+    }
+
+    "npc_combine_ace" {
+        "origin" "-275.5 151.3 512.0"
+        "angle" "0 87 0"
+        "keyvalues" {
+            "targetname" "boss"
+            "additionalequipment" "weapon_pulsemg"
+            "squadname" "squad1"
+        }
+    }
+    
+    "removeentity" {
+        "classname"    "npc_antlion_template_maker"
+        "targetname" "laundry_death_counter"
+        //"classname"    "npc_antlion"        
+    }    
+}
+
+"entities:boss_healthreset" {
+
+    "event" {
+        "targetname" "healthset"
+        "action"    "Command"
+        "value"        "sk_combine_ace_health 100"
+    }
+}
+
+"entities:assassinfightmusic" {
+
+    "player" {
+        "music"    "assassinfight"
+    }
+}
+
+
+
+
+
+	
+
+
+

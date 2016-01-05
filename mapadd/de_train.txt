@@ -1,0 +1,221 @@
+//ORIGINAL SCRIPT BY SMOD AUTHOR http://accept.hopto.org/smod/
+//MODIFICATION BY FITZROY_DOLL JANUARY 2007 http://www.amphibian.myzen.co.uk/home/
+"precache" {	"entity"	"item_suit"
+	"entity"	"npc_citizen"
+	"entity"	"npc_combine_e"
+	"entity"	"npc_combine_s"
+	"entity"	"npc_metropolice"
+	"entity"	"item_item_crate"
+	"entity"	"npc_manhack"
+	"entity"	"npc_rollermine"
+	"entity"	"combine_mine"
+	"entity"	"npc_cscanner"
+	}
+
+"randomspawn" {
+//these removenodes do not remove navigation nodes. Instead, they remove nodes from consideration when doing the randomspawn. This prevents zombies and rollermines from spawning in your lap when the map starts.
+	"removenodes" {
+		"origin" "1650 -1250 -200"
+		"radius" "1500"
+	}
+
+	"removenodes" {
+		"origin" "-1750 1450 -150"
+		"radius" "1500"
+	}
+//zombie and combine tool spawn points - the spawn point entities themselves are arbitrary, and have been chosen because they do not appear in CS:S maps and can repeat many times over in the same map. Remember to increase this number if you increase the number of tools or zombies in the lua.
+	"info_npc_spawn_destination" {
+	"count" "10"
+	}
+
+}
+
+
+"entities" {
+
+	lua {
+		"callfunc"	"Init"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"initialize"
+			"timer"	"0.1"
+		}
+	}
+	"npc_headcrab" {
+		"origin" "-1023 1650 -118" "angle" "0 -92 0"
+	}
+	"npc_headcrab" {
+		"origin" "-760 299 78" "angle" "0 -174 0"
+	}
+	"npc_zombie" {
+		"origin" "-1281 1604 -153" "angle" "0 -91 0"
+	}
+	"npc_zombie" {
+		"origin" "960 1840 -184" "angle" "0 1 0"
+	}
+	"npc_zombie" {
+		"origin" "1166 963 -151" "angle" "0 -96 0"
+	}
+	"npc_gman" {
+		"origin" "-566 -1267 -27" "angle" "0 1 0"
+			"keyvalues" {
+			"targetname" "gman"
+		}
+	}
+	"npc_metropolice" {
+		"origin" "246 659 102" "angle" "0 -90 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_pistol"
+			"squadname" "csquad1"
+			"targetname" "csquad1"
+			"manhacks" "1"
+		}
+	}
+	"npc_metropolice" {
+		"origin" " -871 707 -32" "angle" "0 -1 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_pistol"
+			"squadname" "csquad1"
+			"targetname" "csquad1"
+			"manhacks" "1"
+		}
+	}
+	"npc_turret_floor" {
+		"origin" "1105 -166 -150" "angle" "0 180 0"
+		"stabilize"	"30"
+				"keyvalues" {
+			"targetname" "turret"
+		}
+	}
+	"npc_turret_floor" {
+		"origin" "1469 -156 -150" "angle" "0 0 0"
+		"stabilize"	"30"
+				"keyvalues" {
+			"targetname" "turret"
+		}
+	}
+	"npc_turret_floor" {
+		"origin" "-157 -1280 -285" "angle" "0 180 0"
+		"stabilize"	"30"
+				"keyvalues" {
+			"targetname" "turret"
+		}
+	}
+	"npc_turret_floor" {
+		"origin" "225 -1277 -285" "angle" "0 0 0"
+		"stabilize"	"30"
+		"keyvalues" {
+			"targetname" "turret"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"csquad*"
+			"target"	"gman"
+			"disposition" "4"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+		"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"turret"
+			"target"	"gman"
+			"disposition" "4"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+}
+
+"entities:roundstart" {
+
+	"player" {
+		"music" 	"song_c17_02_street"
+		"message"	"Lock and load!"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+	"event" {
+		"targetname" "relationship"
+		"action" "applyrelationship"
+	}
+}
+
+"entities:initialize" {
+
+	"player" {
+		"message"	"-- Counter Combine: Train --"
+		"fadein"	"10"
+	}
+
+
+	lua {
+		"callfunc"	"RoundInit"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"roundstart"
+			"timer"	"3"
+		}
+	}
+}
+
+"entities:movenext" {
+
+	lua {
+		"callfunc"	"MoveCombine"
+	}
+}
+
+
+
+"entities:cmovestop" {
+
+	"removeentity" {
+		"targetname"	"mv*"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"premove"
+			"timer"	"10"
+		}
+	}
+
+}
+
+"entities:premove" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"1"
+		}
+	}
+
+}
+
+
+
+"entities:clear" {
+
+	"player" {
+		"music" 	"song3"
+		"message"	"Targets eliminated! Gordon Freeman wins!"
+	}
+}

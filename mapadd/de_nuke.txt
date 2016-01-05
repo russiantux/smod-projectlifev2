@@ -1,0 +1,404 @@
+//ORIGINAL SCRIPT BY SMOD AUTHOR http://accept.hopto.org/smod/
+//MODIFICATION BY FITZROY_DOLL JANUARY 2007 http://www.amphibian.myzen.co.uk/home/
+"precache" {	"entity"	"item_suit"
+	"entity"	"npc_citizen"
+	"entity"	"npc_combine_e"
+	"entity"	"npc_combine_s"
+	"entity"	"npc_metropolice"
+	"entity"	"item_item_crate"
+	"entity"	"npc_manhack"
+	"entity"	"npc_rollermine"
+	"entity"	"combine_mine"
+	"entity"	"npc_cscanner"
+	"entity"	"npc_combinegunship"
+	}
+
+"randomspawn" {
+//these removenodes do not remove navigation nodes. Instead, they remove nodes from consideration when doing the randomspawn. This prevents zombies and rollermines from spawning in your lap when the map starts.
+	"removenodes" {
+		"origin" "3350 -550 -250"
+		"radius" "2000"
+	}
+
+	"removenodes" {
+		"origin" "-2700 -1000 -300"
+		"radius" "2000"
+	}
+//zombie and combine tool spawn points - the spawn point entities themselves are arbitrary, and have been chosen because they do not appear in CS:S maps and can repeat many times over in the same map. Remember to increase this number if you increase the number of tools or zombies in the lua.
+	"info_npc_spawn_destination" {
+	"count" "10"
+	}
+
+}
+
+
+"entities" {
+
+	lua {
+		"callfunc"	"Init"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"initialize"
+			"timer"	"0.1"
+		}
+	}
+	"weapon_rpg" {
+	"origin" "-1171 -1221 -315"
+	}
+		"item_item_crate"{
+	"origin" "-1120 -1220 -315"
+	"KeyValues" {
+		"ItemClass" "item_healthkit"
+		"ItemCount"		"5"
+		}
+	}	
+	"item_item_crate"{
+	"origin" "-1059 -1220 -315"
+	"KeyValues" {
+		"ItemClass" "item_rpg_round"
+		"ItemCount"		"5"
+		}
+	}
+	"npc_combine_s"{
+		"origin" "1061 -1467 -40" "angle" "0 -90 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_svd"
+			"squadname" "csquad1"
+			"targetname" "csquad1"
+			"NumGrenades" "12"
+			}
+	}
+	"npc_zombie" {
+		"origin" "-2897 -381 -337" "angle" "0 -68 0"
+		}
+	"npc_zombie" {
+		"origin" "-779 -697 -352" "angle" "0 -62 0"
+		}
+	"npc_zombie" {
+		"origin" "-843 -2037 -352" "angle" "0 -3 0"
+		}
+	"npc_zombie" {
+		"origin" "2437 -1903 -352" "angle" "0 91 0"
+		}
+	"npc_zombie" {
+		"origin" "-1829 -1656 -351" "angle" "0 80 0"
+		}
+	"prop_ragdoll" {
+			"origin" "627 -793 -885" "angle" "0 33 0"
+		"keyvalues" {
+		"model" "models/Humans/Charple01.mdl"
+		}
+	}
+		
+	"path_track" {
+		"origin" "-4153 647 -220"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_2"
+			"target" "ship_3"
+		}
+	}
+	"path_track" {
+		"origin" "-2965 363 -319"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_3"
+			"target" "ship_4"
+		}
+	}
+	"path_track" {
+		"origin" "-2633 -545 -8"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_4"
+			"target" "ship_5"
+		}
+	}
+	"path_track" {
+		"origin" "-2168 -1017 350"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_5"
+			"OnPass" "ship1,SetTrack,ship_6,0,-1"
+			}
+	}
+	"path_track" {
+		"origin" "-1345 -1134 388"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_6"
+			"target" "ship_10"
+			"OnPass" "ship1,flytospecifictrackviapath,ship_19,0,-1"
+		}
+	}
+	"path_track" {
+		"origin" "-1294 -2010 300"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_10"
+			"target" "ship_11"
+		}
+	}
+	"path_track" {
+		"origin" "-996 -2825 300"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_11"
+			"target" "ship_12"
+		}
+	}
+	"path_track" {
+		"origin" "-142 -2842 300"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_12"
+			"target" "ship_13"
+		}
+	}
+	"path_track" {
+		"origin" "994 -2911 300"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_13"
+			"target" "ship_14"
+		}
+	}
+	"path_track" {
+		"origin" "1922 -2237 300"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_14"
+			"target" "ship_15"
+		}
+	}
+	"path_track" {
+		"origin" "1829 -1849 350"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_15"
+			"target" "ship_16"
+		}
+	}
+	"path_track" {
+		"origin" "1281 -1059 350"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_16"
+			"target" "ship_17"
+			"OnPass" "ship1,Blindfireoff,,0,0"
+		}
+	}
+	"path_track" {
+		"origin" "1196 -656 350"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_17"
+			"target" "ship_18"
+			"OnPass" "ship1,DisableGroundAttack,,0,0"
+			"OnPass" "ship1,Blindfireon,,0,0"
+		}
+	}
+	"path_track" {
+		"origin" "796 -642 350"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_18"
+			"target" "ship_19"
+			"OnPass" "ship1,EnableGroundAttack,,0,0"
+		}
+	}
+	"path_track" {
+		"origin" "473 -652 350"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_19"
+			"OnPass" "ship1,EnableGroundAttack,,0,0"
+			"OnPass" "ship1,GunOn,,0,-1"
+			"OnPass" "ship1,startbreakablemovement,,0,-1"
+			"OnPass" "ship1,choosenearestpathpoint,,0,-1"
+			"OnPass" "ship1,OmniscientOn,,0,-1"
+		}
+	}
+	"npc_combinegunship" {
+		"origin" "-4153 647 -220"
+		"angle" "0 -52 0"
+		"longrange"
+		"alwaysthink"
+		"keyvalues" {
+			"targetname"	"ship1"
+			"spawnflags" "5120"
+			"target"	"ship_2"
+		}
+	}
+	"event" {
+		"targetname" "ship1"
+		"action" "DisableRotorSound"
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"ship1"
+			"target"	"!player"
+			"disposition" "1"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"ship1"
+			"target"	"citizen"
+			"disposition" "1"
+			"rank" "80"
+			"StartActive" "0"
+			"Reciprocal" "1"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"ship1"
+			"target"	"teamalyx"
+			"disposition" "1"
+			"rank" "85"
+			"StartActive" "0"
+			"Reciprocal" "1"
+		}
+	}
+	"item_ammo_crate"{
+		"origin" "493 -591 -400"
+		"angle" "0 172 0"
+		"KeyValues" {
+		"AmmoType" "3"
+		}
+	}
+}
+
+"entities:roundstart" {
+
+	"player" {
+		"music" 	"song_c17_02_street"
+		"message"	"Lock and load!"
+	}
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"shipmove"
+			"timer"	"8"
+		}
+	}
+}
+
+"entities:initialize" {
+
+	"player" {
+		"message"	"-- Counter Combine: Nuke --"
+		"fadein"	"5"
+	}
+	lua {
+		"callfunc"	"RoundInit"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"roundstart"
+			"timer"	"3"
+		}
+	}
+
+}
+
+"entities:movenext" {
+
+	lua {
+		"callfunc"	"MoveCombine"
+	}
+}
+
+
+
+"entities:cmovestop" {
+
+	"removeentity" {
+		"targetname"	"mv*"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"premove"
+			"timer"	"10"
+		}
+	}
+
+}
+
+"entities:premove" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"1"
+		}
+	}
+
+}
+
+
+
+"entities:clear" {
+
+	"player" {
+		"music" 	"song3"
+		"message"	"Targets eliminated! Gordon Freeman wins!"
+	}
+}
+
+"entities:shipmove" {
+	"event" {
+		"targetname" "ship1"
+		"action" "EnableRotorSound"
+	}
+	"event" {
+		"targetname" "ship1"
+		"action" "SetTrack"
+		"value" "ship_2"
+	}
+	"event" {
+		"targetname" "ship1"
+		"action" "FlyToSpecificTrackViaPath"
+		"value" "ship_5"
+	}
+	"event" {
+		"targetname" "relationship"
+		"action" "applyrelationship"
+	}
+	"event" {
+		"targetname" "ship1"
+		"action" "GunOff"
+	}
+}

@@ -1,0 +1,157 @@
+//	map arrange data
+//	location: d1_canals_06
+
+"precache"{
+	"entity"	"npc_combine_s"
+	"model"		"models/buggy.mdl"
+}
+
+
+
+"randomspawn" {
+
+	"npc_metropolice" {
+		"count"		"6"
+		"weapon"	"weapon_pistol"
+		"patrol"
+	}
+
+	"npc_metropolice" {
+		"count"		"2"
+		"weapon"	"weapon_pistol"
+		"patrol"
+		"values"	"squadname mp1"
+	}
+
+	"npc_metropolice" {
+		"count"		"2"
+		"weapon"	"weapon_pistol"
+		"patrol"
+		"values"	"squadname mp2"
+	}
+
+	"npc_metropolice" {
+		"count"		"2"
+		"weapon"	"weapon_smg1"
+		"patrol"
+		"values"	"squadname mp3"
+	}
+
+	"npc_combine_s" {
+		"count"		"3"
+		"weapon"	"weapon_smg1"
+		"grenade"	"5"
+	}
+
+	"npc_citizen" {
+		"count"		"1"
+		"weapon"	"weapon_smg1"
+	}
+
+}
+
+
+"entities:boatremove"{
+
+	"removeentity" {
+		"classname"	"prop_vehicle_airboat"
+	}
+
+}
+
+"entities:minieps" {
+	"player" {
+		"message"	"MINI EPISODE - Where is my boat?"
+		"music"		"song19"
+	}
+
+	"prop_vehicle_jeep" {
+		"origin" "4505 1431 -300"
+		"angle" "0 -50 0"
+		"keyvalues" {
+			"model"	"models/buggy.mdl"
+			"solid" "6"
+			"vehiclescript" "scripts/vehicles/jeep_test.txt"
+		}
+	}
+	
+	
+	"npc_metropolice" {
+		"origin" "7982 1394 -256" "angle" "0 -8 0"
+		"longrange"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+}
+
+"entities" {
+
+	"npc_turret_floor" {
+		"origin" "7941.5 1719.0 -255.2"  "angle" "0 2 0"
+		"stabilize"	"100"
+	}
+
+	"instant_trig" {
+		"origin" "9625 1697 -224"
+		"keyvalues" {
+			"radius"	"50"
+			"label"	"boatremove"
+		}
+	}
+
+	"prop_physics" {
+		"origin" "10364 845 -196"
+		"keyvalues" {
+			"model" "models/props_vehicles/car003a_physics.mdl"
+			"mass" "10000"
+		}
+	}
+
+
+	"instant_trig" {
+		"origin" "7618 1717 -257"
+		"keyvalues" {
+			"radius"	"50"
+			"label"	"spawn1"
+		}
+	}
+}
+
+"entities:spawn1" {
+	"npc_combine_s"
+	{
+		"origin" "7787 1191 -128"	"angle" "0 149 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_shotgun"
+		}
+	}
+	"npc_combine_s"
+	{
+		"origin" "7762 1098 -128"	"angle" "0 58 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_shotgun"
+		}
+	}
+	"npc_combine_s"
+	{
+		"origin" "7766 1002 -128"	"angle" "0 44 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_shotgun"
+		}
+	}
+	
+	"instant_trig" {
+		"origin" "11309 2076 -256"
+		"keyvalues" {
+			"radius"	"50"
+			"label"	"minieps"
+		}
+	}
+
+}

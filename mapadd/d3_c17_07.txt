@@ -1,0 +1,130 @@
+//	map arrange data
+//	location: d3_c17_07
+"precache" {
+	"entity"	"npc_kscanner"
+	"sound"		"novaprospekt.al_letsgetgoing"
+}
+
+
+"entities" {
+	
+	"instant_trig" {
+		"keyvalues" {
+			"timer"		"2"
+			"label"		"sethealth"
+			"noclear"	"1"
+			"group"		"2"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "4576.0 720.0 128.0"
+		"keyvalues" {
+			"label"		"start"
+			"radius"	"40"
+			"touchname"	"alyx"
+			"group"		"2"
+			"removegroup"	"1"
+		}
+	}
+}
+
+"entities:sethealth" {
+	"event" {
+		"targetname"	"alyx"
+		"action"	"sethealth"
+		"value"		"80"
+	}
+}
+
+
+"entities:start" {
+
+	"instant_trig" {
+		"origin" "4692 670 128"
+		"keyvalues" {
+			"radius"	"50"
+			"label"		"alyxtalk1"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "5366 1272 0"
+		"keyvalues" {
+			"radius"	"50"
+			"label"		"outside"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "6472.0 1539.0 -4.0"
+			"keyvalues" {
+			"label"		"stage1"
+			"radius"	"40"
+			"touchname"	"alyx"
+		}
+	}
+}
+
+"entities:outside" {
+	"npc_kscanner" {
+		"origin" "6604 1477 442" "angle" "0 179 0"
+	}
+	
+	"npc_metropolice" {
+		"origin" "6786 1995 928" "angle" "0 -139 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+
+	"npc_metropolice" {
+		"origin" "5569 1524 650" "angle" "0 0 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "7229 956 830" "angle" "0 154 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_svd"
+		}
+	}
+
+
+}
+
+"entities:stage1" {
+
+}
+
+
+"entities:alyxtalk1" {
+	"sound" {
+		"targetname"	"alyx"
+		"soundname"	"novaprospekt.al_letsgetgoing"
+	}
+	
+	"npc_combine_ace" {
+		"origin" "4805 1269 128" "angle" "0 -24 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp5"
+		}
+	}
+	
+	"npc_combine_ace" {
+		"origin" "4246 1412 128" "angle" "0 9 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp5"
+		}
+	}
+
+	"npc_combine_ace" {
+		"origin" "4976 1128 0" "angle" "0 108 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp5"
+		}
+	}
+
+}

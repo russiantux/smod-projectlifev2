@@ -1,0 +1,60 @@
+//	map arrange data
+//	location: d2_prison_03
+
+"entities" {
+
+	"npc_laser_turret" {
+		"origin" "-3609.4 4871.3 64"  "angle" "0 -89 0"
+		"stabilize"	"75"
+	}
+
+	"npc_combine_e" {
+		"origin" "-3854 6152 64"
+		"angle" "0 -98 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_oicw"
+		}
+	}
+
+	"item_item_crate"
+	{
+		"origin"	"-2783.50 3135.73 225.77"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_rifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"-3326.32 4729.73 192.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_hrifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"1"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"-3976.47 1842.05 64.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_gauss"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+
+}
+
+
+
+	
+
+
+

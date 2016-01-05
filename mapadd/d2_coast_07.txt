@@ -1,0 +1,293 @@
+//	map arrange data
+//	location: d1_coast_07
+
+"precache" {
+	"entity"	"npc_citizen"
+	"entity"	"npc_f_monk"
+}
+
+"randomspawn" {
+
+	"removenodes" {
+		"origin" "-2735 5694 1600"
+		"radius"	"2000"
+	}
+
+	"npc_combine_s" {
+		"count"		"7"
+		"patrol"
+		"weapon"	"weapon_smg1"
+	}
+
+	"npc_combine_s" {
+		"count"		"5"
+		"patrolrandom"
+		"weapon"	"weapon_grease"
+	}
+
+	"npc_combine_s" {
+		"count"		"3"
+		"weapon"	"weapon_ak47"
+	}
+
+	"npc_f_combine" {
+		"count"		"1"
+		"weapon"	"weapon_kar98"
+	}
+
+}
+
+
+"entities" {
+
+	"removeentity" {
+		"targetname" "jeep_fall_trigger"
+	}
+
+	"item_item_crate"
+	{
+		"origin" "936 3858 1696"
+		"keyvalues"
+		{
+			"ItemClass"		"weapon_svd"
+			"ItemCount"		"1"
+		}
+	}
+
+	"food_sankaba"
+	{
+		"origin" "657.57 3865.74 1674.32"
+	}
+
+//Train is broken in the 215 engine.
+	"removeentity" {
+		"targetname"	"game_of_chicken_trigger"
+	}	
+
+"prop_physics" {
+	"origin" "830.0 7338.9 1709.5"  "angle" "0 -118 180"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+	}
+}
+"prop_physics" {
+	"origin" "776.7 7312.5 1709.5"  "angle" "-0 172 180"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+	}
+}
+"prop_physics" {
+	"origin" "694.8 7332.4 1709.5"  "angle" "-0 -174 180"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+	}
+}
+"prop_physics" {
+	"origin" "677.7 7287.0 1664.5"  "angle" "0 151 0"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+	}
+}
+"prop_physics" {
+	"origin" "549.6 7282.8 1664.5"  "angle" "0 60 0"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+	}
+}
+"prop_physics" {
+	"origin" "483.7 7250.7 1664.5"  "angle" "-0 -55 360"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+	}
+}
+"prop_physics" {
+	"origin" "457.7 7233.5 1664.5"  "angle" "-0 -134 360"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+	}
+}
+
+
+"prop_physics" {
+	"origin" "722.8 6008.0 1611.9"  "angle" "4 -93 9"
+	"freeze"
+	"keyvalues" {
+	"model" "models/props_wasteland\cargo_container01c.mdl"
+	}
+}
+
+
+"prop_physics" {
+	"origin" "1379.6 5274.4 1627.5"  "angle" "-65 122 168"
+	"keyvalues" {
+	"model" "models\props_vehicles\apc001.mdl"
+	}
+}
+
+
+"prop_physics" {
+	"origin" "954.7 5284.7 1598.4"  "angle" "-20 -25 34"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+	}
+}
+"prop_physics" {
+	"origin" "989.1 5346.0 1592.0"  "angle" "-6 41 360"
+	"keyvalues" {
+	"model" "models\props_vehicles\trailer002a.mdl"
+	}
+}
+
+
+"prop_physics" {
+	"origin" "18.4 7255.1 1718.4"  "angle" "1 -30 0"
+	"freeze"
+	"keyvalues" {
+	"model" "models/props_wasteland/wood_fence01a.mdl"
+	}
+}
+
+"prop_physics" {
+	"origin" "-159.7 7360.4 1706.0"  "angle" "4 150 360"
+	"freeze"
+	"keyvalues" {
+	"model" "models/props_wasteland/wood_fence01a.mdl"
+	}
+}
+"prop_physics" {
+	"origin" "-399.0 7449.5 1710.7"  "angle" "6 18 2"
+	"freeze"
+	"keyvalues" {
+	"model" "models/props_wasteland/wood_fence01a.mdl"
+	}
+}
+	"instant_trig" {
+		"origin" "-3633 4700 1600"
+		"keyvalues" {
+			"label"	"music"
+			"radius"	"400"
+		}
+	}
+
+	"npc_houndeye" {
+		"origin" "3356.07 3720.74 1599.96" 
+	}
+
+	"npc_combine_s" {
+		"origin" "5585.5 -8769 1847.2" "angle" "0 180 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_rpg"
+			"numgrenade"	"3"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "-1212 7483 1696" "angle" "19 88 0"
+		"keyvalues" {
+			"label"	"spawn1"
+			"radius"	"50"
+		}
+	}
+
+	"npc_sniper" {
+		"origin" "1093 3862 1711" "angle" "0 93 0"
+		"keyvalues" {
+			"targetname"	"snp1"
+		}
+	}
+
+	"npc_citizen" {
+		"origin" "-2782 4649 1555"
+		"keyvalues" { "targetname"	"nakama1"
+			"additionalequipment"	"weapon_kar98"
+			"citizentype"	"3"
+		}
+	}
+	"npc_f_combine" {
+		"origin" "-2674 4568 1496"
+		"keyvalues" { "targetname"	"nakama1"
+			"additionalequipment"	"weapon_ak47"
+		}
+	}
+
+	"npc_citizen" {
+		"origin" "-2539 4589 1453"
+		"keyvalues" { "targetname"	"nakama1"
+			"additionalequipment"	"weapon_ak47"
+			"citizentype"	"3"
+		}
+	}
+
+	"npc_citizen" {
+		"origin" "-2656 5015 1563"
+		"keyvalues" { "targetname"	"nakama1"
+			"additionalequipment"	"weapon_kar98"
+			"citizentype"	"2"
+		}
+	}
+
+	"npc_f_monk" {
+		"origin" "-2361 5003 1479"
+		"keyvalues" { "targetname"	"nakama1"
+			"additionalequipment"	"weapon_grease"
+		}
+	}
+
+	"info_target" {
+		"origin" "1423 3844 1591"
+		"keyvalues" { "targetname" "goalnpc1" }
+	}
+
+	"ai_goal_follow" {
+		"keyvalues" {
+			"startactive"	"1"
+			"searchtype"	"0"
+			"MaximumState"	"2"
+			"actor"		"nakama*"
+			"goal"		"goalnpc1"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "1070 4402 1560"
+		"keyvalues" {
+			"radius"	"500"
+			"label"		"erasesniper"
+		}
+	}
+
+}
+
+"entities:erasesniper" {
+	"removeentity" {
+		"targetname"	"snp1"
+	}
+}
+
+"entities:music" {
+	"player" {
+		"music" "song12_long"
+	}
+
+}
+
+"entities:spawn1" {
+
+	"npc_combine_s" {
+		"origin" "-1044 7402 1675" "angle" "0 86 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_shotgun"
+			"numgrenade"	"3"
+		}
+	}
+
+
+	"npc_combine_s" {
+		"origin" "-989 7366 1673" "angle" "0 161 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_shotgun"
+			"numgrenade"	"3"
+		}
+	}
+
+}

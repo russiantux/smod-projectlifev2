@@ -1,0 +1,31 @@
+//	map arrange data
+//	location: d1_town_02a
+
+
+"precache" {
+	"entity"	"npc_f_combine"
+}
+
+
+"randomspawn" {
+	
+	"npc_zombie" {
+		"count"		"6"
+	}
+	"npc_kheadcrab" {
+		"count"		"2"
+	}
+
+
+}
+
+
+
+"entities" {
+	"npc_f_combine" {
+		"origin" "-7010 589 -3264" "angle" "0 -79 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_grease" 
+		}
+	}
+}

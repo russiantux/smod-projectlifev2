@@ -1,0 +1,279 @@
+//ORIGINAL SCRIPT BY SMOD AUTHOR http://accept.hopto.org/smod/
+//MODIFICATION BY FITZROY_DOLL JANUARY 2007 http://www.amphibian.myzen.co.uk/home/
+"precache" {	"entity"	"item_suit"
+	"entity"	"npc_citizen"
+	"entity"	"npc_combine_e"
+	"entity"	"npc_combine_s"
+	"entity"	"npc_metropolice"
+	"entity"	"item_item_crate"
+	"entity"	"npc_manhack"
+	"entity"	"npc_rollermine"
+	"entity"	"combine_mine"
+	"entity"	"npc_cscanner"
+	}
+
+"randomspawn" {
+//these removenodes do not remove navigation nodes. Instead, they remove nodes from consideration when doing the randomspawn. This prevents zombies and rollermines from spawning in your lap when the map starts.
+	"removenodes" {
+		"origin" "-2250 -1800 100"
+		"radius" "2000"
+	}
+
+	"removenodes" {
+		"origin" "200 2500 -100"
+		"radius" "2000"
+	}
+//zombie and combine tool spawn points - the spawn point entities themselves are arbitrary, and have been chosen because they do not appear in CS:S maps and can repeat many times over in the same map. Remember to increase this number if you increase the number of tools or zombies in the lua.
+	"info_npc_spawn_destination" {
+	"count" "10"
+	}
+	"npc_stalker" {
+	"count" "2"
+	"targetname" "combine1"
+	}
+
+}
+
+
+"entities" {
+
+	lua {
+		"callfunc"	"Init"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"initialize"
+			"timer"	"0.1"
+		}
+	}
+	"prop_vehicle_apc" {
+		"origin" "464 -1032 -100"		
+		"angle" "0 -176 0"
+		"keyvalues" {
+			"vehiclescript"	"scripts/vehicles/apc_npc.txt"
+			"model"		"models/combine_apc.mdl"
+			"targetname"	"apc1"
+			"solid"		"6"
+		}
+	}
+	"npc_apcdriver" {
+		"keyvalues" {
+			"spawnflags" "256"
+			"vehicle" "apc1"
+			"target" "ap4"
+			"targetname" "apd1"
+		}
+	}
+	"path_corner" {
+		"origin" "464 -1032 -100"
+		"keyvalues" {
+			"targetname" "ap4"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"apd1"
+			"target"	"!player"
+			"disposition" "1"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"apd1"
+			"target"	"citizen"
+			"disposition" "1"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"apd1"
+			"target"	"teamalyx"
+			"disposition" "1"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+		"prop_vehicle_apc" {
+		"origin" "247 1493 0"		
+		"angle" "0 130 0"
+		"keyvalues" {
+			"vehiclescript"	"scripts/vehicles/apc_npc.txt"
+			"model"		"models/combine_apc.mdl"
+			"targetname"	"apc2"
+			"solid"		"6"
+		}
+	}
+	"npc_apcdriver" {
+		"keyvalues" {
+			"spawnflags" "256"
+			"vehicle" "apc2"
+			"target" "ap1"
+			"targetname" "apd2"
+		}
+	}
+	"path_corner" {
+		"origin" "247 1493 0"
+		"keyvalues" {
+			"targetname" "ap1"
+		}
+	}
+	"item_ammo_crate"{
+		"origin" "-530 430 15"
+		"angle" "0 180 0"
+		"KeyValues" {
+		"AmmoType" "5"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"apd2"
+			"target"	"!player"
+			"disposition" "1"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"apd2"
+			"target"	"citizen"
+			"disposition" "1"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"apd2"
+			"target"	"teamalyx"
+			"disposition" "1"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+	"npc_combine_s"{
+		"origin" "-1287 2622 384" "angle" "0 -131 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_svd"
+			"squadname" "csquad1"
+			"targetname" "csquad1"
+			}
+	}
+
+
+}
+
+
+
+"entities:roundstart1" {
+
+	"player" {
+		"music" 	"song_prison_crusher"
+		"message"	"All right let's move out!"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+}
+
+"entities:roundstart2" {
+
+	"player" {
+		"music" 	"song_c17_02_street"
+		"message"	"Lock and load!"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+}
+
+"entities:initialize" {
+
+	"player" {
+		"message"	"-- Counter Combine: Cobble --"
+		"fadein"	"10"
+	}
+
+
+	lua {
+		"callfunc"	"RoundInit"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"roundstart1:roundstart2"
+			"timer"	"3"
+		}
+	}
+}
+
+"entities:movenext" {
+
+	lua {
+		"callfunc"	"MoveCombine"
+	}
+}
+
+
+
+"entities:cmovestop" {
+
+	"removeentity" {
+		"targetname"	"mv*"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"premove"
+			"timer"	"10"
+		}
+	}
+
+}
+
+"entities:premove" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"1"
+		}
+	}
+
+}
+
+
+
+"entities:clear" {
+
+	"player" {
+		"music" 	"song3"
+		"message"	"Targets eliminated! Gordon Freeman wins!"
+	}
+}

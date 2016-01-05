@@ -1,0 +1,35 @@
+(CSS)Tactical Colt 1911
+__________________________________________________________
+
+Models:
+_______
+Iono
+Wannabe
+Yamantaka
+Foxmike
+
+
+Skins:
+______
+Yamantaka
+sHiBaN
+Rosa Jonas
+Stoke
+Foxmike
+
+Compilers:
+__________
+sHiBaN
+
+Anims:
+______
+SureShot
+
+Sounds:
+_______
+sHiBaN
+XLongWayHome
+
+__________________________________________________________
+Contact: 
+http://www.fpsbanana.com/?section=viewitem.members.users.main.69108

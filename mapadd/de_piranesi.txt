@@ -1,0 +1,267 @@
+//ORIGINAL SCRIPT BY SMOD AUTHOR http://accept.hopto.org/smod/
+//MODIFICATION BY FITZROY_DOLL JANUARY 2007 http://www.amphibian.myzen.co.uk/home/
+"precache" {	"entity"	"item_suit"
+	"entity"	"npc_citizen"
+	"entity"	"npc_combine_e"
+	"entity"	"npc_combine_s"
+	"entity"	"npc_metropolice"
+	"entity"	"item_item_crate"
+	"entity"	"npc_manhack"
+	"entity"	"npc_rollermine"
+	"entity"	"combine_mine"
+	"entity"	"npc_cscanner"
+	"entity"	"npc_combinegunship"
+	}
+
+"randomspawn" {
+//these removenodes do not remove navigation nodes. Instead, they remove nodes from consideration when doing the randomspawn. This prevents zombies and rollermines from spawning in your lap when the map starts.
+	"removenodes" {
+		"origin" "-2600 15 200"
+		"radius" "1500"
+	}
+
+	"removenodes" {
+		"origin" "1950 1000 350"
+		"radius" "1500"
+	}
+//zombie and combine tool spawn points - the spawn point entities themselves are arbitrary, and have been chosen because they do not appear in CS:S maps and can repeat many times over in the same map. Remember to increase this number if you increase the number of tools or zombies in the lua.
+	"info_npc_spawn_destination" {
+	"count" "10"
+	}
+	"npc_stalker" {
+	"count" "2"
+	"targetname" "combine1"
+	}
+}
+
+
+"entities" {
+
+	lua {
+		"callfunc"	"Init"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"initialize"
+			"timer"	"0.1"
+		}
+	}
+	"prop_physics" {
+		"origin" "2052 1500 120"  "angle" "0 90 90"
+		"keyvalues" {
+		"model" "models/props_wasteland/wood_fence02a.mdl"
+		"spawnflags" "8"
+		"minhealthdmg" "99999"
+		}
+	}
+	"npc_fastzombie" {
+		"origin" "2338 2095 337" "angle" "0 -115 0"
+		}
+	"npc_fastzombie" {
+		"origin" "2087 2050 312" "angle" "0 -82 0"
+		}
+	"path_track" {
+		"origin" "93 -400 750"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_2"
+			"target" "ship_4"
+			"OnPass" "ship1,StartPatrol,,0,-1"
+			"OnPass" "relationship,applyrelationship,,0,-1"
+			"OnPass" "ship1,blindfireon,,0,-1"
+			"OnPass" "ship1,omniscienton,,0,-1"
+		}
+	}
+	"path_track" {
+		"origin" "152 -411 750"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_4"
+			"target" "ship_5"
+		}
+	}
+	"path_track" {
+		"origin" "187 184 750"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_5"
+			"target" "ship_6"
+			}
+	}
+	"path_track" {
+		"origin" "206 980 750"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_6"
+			"target" "ship_7"
+			}
+	}
+	"path_track" {
+		"origin" "211 1200 750"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_7"
+		}
+	}
+	"npc_combinegunship" {
+		"origin" "275 -607 355"
+		"angle" "0 55 0"
+		"longrange"
+		"alwaysthink"
+		"keyvalues" {
+			"targetname"	"ship1"
+			"spawnflags" "5120"
+			"target"	"ship_2"
+		}
+	}
+	"item_ammo_crate"{
+		"origin" "63 314 528"
+		"angle" "0 79 0"
+		"KeyValues" {
+		"AmmoType" "3"
+		}
+	}
+	"item_item_crate"{
+	"origin" "80 370 525"
+	"KeyValues" {
+		"ItemClass" "item_healthkit"
+		"ItemCount"		"5"
+		}
+	}
+	"npc_stalker"
+	{
+		"origin" "247 176 575" "angle" "0 -42 0"
+		"longrange"
+		"keyvalues"
+		{
+			"squadname" "csquad1"
+			"targetname" "csquad1"
+		}
+	}
+	"weapon_rpg" {
+	"origin" "2027 1594 172"
+	}
+	"item_rpg_round" {
+		"origin" "2027 1594 190"
+	}
+	
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"ship1"
+			"target"	"!player"
+			"disposition" "1"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"ship1"
+			"target"	"citizen"
+			"disposition" "1"
+			"rank" "90"
+			"StartActive" "0"
+			"Reciprocal" "1"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"ship1"
+			"target"	"teamalyx"
+			"disposition" "1"
+			"rank" "95"
+			"StartActive" "0"
+			"Reciprocal" "1"
+		}
+	}
+}
+
+"entities:roundstart" {
+
+	"player" {
+		"music" 	"song_c17_02_street"
+		"message"	"All right let's move out!"
+	}
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+}
+
+"entities:initialize" {
+
+	"player" {
+		"message"	"-- Counter Combine: Piranesi --"
+		"fadein"	"10"
+	}
+
+
+	lua {
+		"callfunc"	"RoundInit"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"roundstart"
+			"timer"	"3"
+		}
+	}
+
+}
+
+"entities:movenext" {
+
+	lua {
+		"callfunc"	"MoveCombine"
+	}
+}
+
+
+
+"entities:cmovestop" {
+
+	"removeentity" {
+		"targetname"	"mv*"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"premove"
+			"timer"	"10"
+		}
+	}
+
+}
+
+"entities:premove" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"1"
+		}
+	}
+
+}
+
+
+
+"entities:clear" {
+
+	"player" {
+		"music" 	"song3"
+		"message"	"Targets eliminated! Gordon Freeman wins!"
+	}
+}

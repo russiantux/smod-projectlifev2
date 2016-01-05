@@ -1,0 +1,366 @@
+//	map arrange data
+//	location: d3_c17_06a
+"precache" {
+	"entity"		"npc_houndeye"
+	"entity"		"npc_combine_ace"
+	"entity"		"npc_kscanner"
+	"entity"		"npc_barnacle"
+	"entity"		"npc_fastzombie"
+	
+}
+
+
+"entities" {
+
+	"npc_barnacle" {
+		"origin" "2555 4943 -64"
+	}
+
+	"npc_barnacle" {
+		"origin" "2557 4431 -64"
+	}
+
+	"npc_headcrab_poison" {
+		"origin" "2556 4746 -256"
+		"angle" "0 93 0"
+	}
+
+	"prop_physics" {
+		"origin" "3297.9 -642.0 -282.5"  "angle" "-3 171 270"
+		"keyvalues" {
+		"model" "models/props_vehicles/car005a_physics.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "3363.9 -515.6 -297.8"  "angle" "0 70 360"
+		"keyvalues" {
+		"model" "models/props_vehicles/car005a_physics.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "2970.3 -226.1 -281.7"  "angle" "-2 18 243"
+		"keyvalues" {
+		"model" "models/props_vehicles/car005a_physics.mdl"
+		}
+	}
+
+//
+//
+
+	"prop_physics" {
+		"origin" "4082.0 -5409.3 -224.1"  "angle" "12 -106 360"
+		"keyvalues" {
+		"model" "models/props_vehicles/car003a_physics.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "4176.8 -5314.1 -236.6"  "angle" "0 158 360"
+		"keyvalues" {
+		"model" "models/props_vehicles/car003a_physics.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "3811.4 -5296.1 -158.0"  "angle" "-3 -29 268"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "3765.4 -5301.5 -199.1"  "angle" "-90 172 145"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "3824.6 -5297.1 -197.9"  "angle" "1 135 93"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "3874.6 -5308.3 -197.9"  "angle" "-84 180 87"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "3890.9 -5312.2 -236.9"  "angle" "-4 -41 94"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "3834.4 -5282.6 -239.6"  "angle" "90 2 180"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "3834.8 -5340.1 -238.2"  "angle" "87 131 125"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "3792.1 -5306.8 -239.5"  "angle" "-90 -3 180"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "3751.1 -5308.6 -239.6"  "angle" "-0 -94 0"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate001a.mdl"
+		}
+	}
+
+	"npc_headcrab" {
+		"origin" "3766 -6059 -260" "angle" "0 -89 0"
+		"relation"	"pl1 gl1 vl1"
+		"keyvalues" {
+			"targetname"	"hound1"
+		}
+	}
+
+
+	"instant_trig" {
+		"origin" "3548 -6435 -240"
+		"keyvalues" {
+			"label"	"init"
+			"radius"	"50"
+		}
+	}
+
+	"npc_vortigaunt" {
+		"origin" "4232 -5971 -258"
+		"relation"	"ln1"
+		"keyvalues" {
+			"targetname"	"vort1"
+		}
+	}
+	
+	
+	"instant_trig" {
+		"origin" "3969 -5002 -222"
+		"keyvalues" {
+			"label"	"combwave1"
+			"radius"	"500"
+		}
+	}
+
+}
+
+
+"entities:combwave1" {
+	"npc_combine_s" {
+		"origin" "4105 -4657 271" "angle" "0 -90 0"
+		"keyvalues" {
+			"targetname"		"rp1"
+			"waitingtorappel"	"1"
+			"additionalequipment"	"weapon_ar2"
+			"grenade"		"5"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "3772 -4704 271" "angle" "0 -93 0"
+		"keyvalues" {
+			"targetname"		"rp1"
+			"waitingtorappel"	"1"
+			"additionalequipment"	"weapon_ar2"
+			"grenade"		"5"
+		}
+	}
+
+	"event" {
+		"targetname"	"rp1*"
+		"action"	"BeginRappel"
+		"value"		"0.5"
+	}
+
+	"npc_combine_s" {
+		"origin" "3637 -4198 128" "angle" "0 -31 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_ak47"
+			"grenade"		"5"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "4296 -3783 0" "angle" "0 -145 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_ak47"
+			"grenade"		"5"
+		}
+	}
+
+
+}
+
+"entities:init" {
+
+	"relation" {
+		"classname"	"npc_citizen"
+		"relation"	"ln1"
+	}
+
+	"ai_goal_follow" {
+		"Keyvalues" {
+			"Formation" "1"
+			"MaximumState" "1"
+			"StartActive" "1"
+			"actor""vort1"
+			"targetname" "bfollow_goal"
+			"SearchType" "0"
+		}
+	}	
+
+	"npc_combine_ace" {
+		"origin" "4162 -5199 -260" "angle" "0 -94 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_grease"
+		}
+	}
+	"npc_combine_ace" {
+		"origin" "3841 -5172 -260" "angle" "4 -87 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_ak47"
+		}
+	}
+	
+	"instant_trig" {
+		"origin" "3082 -1709 -288"
+		"keyvalues" {
+			"label"	"inf1"
+			"radius"	"50"
+		}
+	}
+	
+}
+
+
+"entities:gogo" {
+
+
+	"npc_kscanner" {
+		"origin" "3061 546 116"
+	}
+
+
+	"npc_kscanner" {
+		"origin" "2827 433 102"	
+	}
+
+	"info_target" {
+		"origin" "2943 1425 -320"
+		"keyvalues" { "targetname" "goalnpc1" }
+	}
+
+	"ai_goal_follow" {
+		"keyvalues" {
+			"startactive"	"1"
+			"searchtype"	"0"
+			"MaximumState"	"3"
+			"actor"		"ass*"
+			"goal"		"goalnpc1"
+		}
+	}
+	
+	"instant_trig" {
+		"origin" "2687 5487 -252"
+		"keyvalues" {
+			"label"	"zombie"
+			"radius"	"50"
+		}
+	}
+	
+}
+
+"entities:zombie" {
+	"npc_fastzombie" {
+		
+"origin" "2656 4475 -126"
+ "angle" "0 89 0"
+	}
+
+//	"npc_barnacle" {
+//		"origin" "2535 4706 -64"
+//	}
+	
+	
+	"instant_trig" {
+		"origin" "2575 3400 -256"
+		"keyvalues" {
+			"label"	"enemy1"
+			"radius"	"50"
+		}
+	}
+}
+
+
+"entities:enemy1" {
+	"npc_combine_ace" {
+		"origin" "3227 2827 -324" "angle" "0 -178 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp5"
+		}
+	}
+	"npc_combine_ace" {
+		"origin" "3138 2936 -324" "angle" "0 -163 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp5"
+		}
+	}
+	
+
+	"relation" {
+		"classname"	"npc_citizen"
+		"relation"	"lh1"
+	}
+	
+}
+
+"entities:inf1" {
+
+	"instant_trig" {
+		"origin" "2988 83 -320"
+		"keyvalues" {
+			"label"	"gogo"
+			"radius"	"500"
+		}
+	}
+
+	"npc_citizen" {
+		"origin" "3694 -1720 -324"
+		"keyvalues" {
+			"targetname"	"ass1"
+			"additionalequipment"	"weapon_ak47"
+			"spawnflags" "1052674"
+		}
+	}
+	"npc_citizen" {
+		"origin" "3192 -1648 -324"
+		"keyvalues" {
+			"targetname"	"ass1"
+			"additionalequipment"	"weapon_grease"
+			"spawnflags" "1052674"
+		}
+	}
+	"npc_citizen" {
+		"origin" "3403 -1456 -320"
+		"keyvalues" {
+			"targetname"	"ass1"
+			"additionalequipment"	"weapon_grease"
+			"spawnflags" "1052674"
+		}
+	}
+	"npc_citizen" {
+		"origin" "3652 -1388 -324"
+		"keyvalues" {
+			"targetname"	"ass1"
+			"additionalequipment"	"weapon_grease"
+			"spawnflags" "1052674"
+		}
+	}
+	
+}

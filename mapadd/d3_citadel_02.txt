@@ -1,0 +1,25 @@
+//	map arrange data
+//	location: d3_citadel_02
+"precache" {
+}
+
+
+"entities" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"timer"	"5"
+			"label"	"unlockpod"
+		}
+	}
+}
+
+"entities:unlockpod" {
+
+	"event" {
+		"targetname"	"pod_player"
+		"action"	"unlock"
+	}
+	
+
+}

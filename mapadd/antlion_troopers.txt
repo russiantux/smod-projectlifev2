@@ -1,0 +1,50 @@
+"precache" {
+	"entity"	"weapon_bananna"
+	"entity"	"weapon_lasergun"
+	"entity"	"item_battery"
+}
+
+
+
+"entities" {
+
+	"weapon_bananna" {
+		"origin" "145 -150 18"
+	}
+
+	"weapon_lasergun" {
+		"origin" "492 -90 23"
+		"angle" "35 132 0"
+	}
+	
+	"instant_trig" {
+		"keyvalues" {
+			"timer"	"30"
+			"label"	"battery"
+			"noclear"	"1"
+		}
+	}
+	
+	"npc_combine_s" {
+		"origin" "-18 304 153"
+		"angle" "0 120 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_lasergun" 
+		}
+	}
+	
+	
+	"item_battery" {
+		"origin" "492 -90 23"
+		"angle" "35 132 0"
+	}
+}
+
+"entities:battery" {
+
+	"item_battery" {
+		"origin" "492 -90 103"
+		"angle" "35 132 0"
+	}
+
+}

@@ -1,0 +1,724 @@
+//ORIGINAL SCRIPT BY SMOD AUTHOR http://accept.hopto.org/smod/
+//MODIFICATION BY FITZROY_DOLL JANUARY 2007 http://www.amphibian.myzen.co.uk/home/
+"precache" {	"entity"	"item_suit"
+	"entity"	"npc_citizen"
+	"entity"	"npc_combine_e"
+	"entity"	"npc_combine_s"
+	"entity"	"npc_metropolice"
+	"entity"	"item_item_crate"
+	"entity"	"npc_manhack"
+	"entity"	"npc_rollermine"
+	"entity"	"combine_mine"
+	"entity"	"npc_cscanner"
+	"entity"	"npc_combinegunship"
+	"entity"	"env_headcrabcanister"
+	}
+	
+"randomspawn" {
+//these removenodes do not remove navigation nodes. Instead, they remove nodes from consideration when doing the randomspawn. This prevents zombies and rollermines from spawning in your lap when the map starts. This is especially important in a cs map so that zombies and manhacks don't kill the hostages before you get to them. It also helps to not have enemies spawning in one another's line of sight, as this can cause crashes on map start.
+	"removenodes" {
+		"origin" "296 -2454 -101"
+		"radius" "2000"
+	}
+
+	"removenodes" {
+		"origin" "201 911 48"
+		"radius" "2000"
+	}
+	"removenodes" {
+		"origin" "524 899 -97"
+		"radius" "2000"
+	}
+	"removenodes" {
+		"origin" "1018 491 -88"
+		"radius" "2000"
+	}
+//zombie and combine tool spawn points - the spawn point entities themselves are arbitrary, and have been chosen because they do not appear in CS:S maps and can repeat many times over in the same map. Remember to increase this number if you increase the number of tools or zombies in the lua.
+	"info_npc_spawn_destination" {
+	"count" "10"
+	}
+
+}
+
+"entities" {
+	lua {
+		"callfunc"	"Init"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"initialize"
+			"timer"	"0.1"
+		}
+	}
+	
+	"npc_combine_s"
+	{
+		"origin" "1880 -417 258" "angle" "0 -81 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_smg1"
+			"squadname" "csquad1"
+			"targetname" "csquad1"
+		}
+	}
+	"npc_headcrab_black" {
+		"origin" "1284 313 13" "angle" "0 113 0"
+		"keyvalues" {
+			"spawnflags" "2"
+			"squadname" "zsquad1"
+									"targetname" "tunnelzombie10"
+		}
+	}
+	"npc_headcrab_black" {
+		"origin" "738 -1211 -253" "angle" "0 0 0"
+		"keyvalues" {
+			"spawnflags" "2"
+			"squadname" "zsquad1"
+									"targetname" "tunnelzombie9"
+		}
+	}
+	"npc_headcrab_black" {
+		"origin" "884 1206 -236" "angle" "0 113 0"
+		"keyvalues" {
+			"spawnflags" "2"
+			"squadname" "zsquad1"
+									"targetname" "tunnelzombie8"
+		}
+	}
+	"npc_headcrab_black" {
+		"origin" "-3 283 -97" "angle" "0 11 0"
+		"keyvalues" {
+			"spawnflags" "2"
+			"squadname" "zsquad1"
+									"targetname" "tunnelzombie7"
+		}
+	}
+	"npc_fastzombie" {
+		"origin" "1923 438 -232" "angle" "0 -178 0"
+		"keyvalues" {
+			"spawnflags" "2"
+			"squadname" "zsquad1"
+						"targetname" "tunnelzombie6"			
+		}
+	}
+	"npc_fastzombie" {
+		"origin" "1935 297 -230" "angle" "0 103 0"
+		"keyvalues" {
+			"spawnflags" "2"
+			"squadname" "zsquad1"
+			"targetname" "tunnelzombie5"
+			
+		}
+	}
+	"npc_fastzombie" {
+		"origin" "1914 594 -235" "angle" "0 -109 0"
+		"keyvalues" {
+			"spawnflags" "2"
+						"squadname" "zsquad1"
+						"targetname" "tunnelzombie4"
+		}
+	}
+	"npc_poisonzombie" {
+		"origin" "1014 -396 -256" "angle" "0 -9 0"
+		"keyvalues" {
+			"spawnflags" "2"
+			"squadname" "zsquad1"
+						"targetname" "tunnelzombie3"
+		}
+	}
+	"npc_poisonzombie" {
+		"origin" "351 1779 -229" "angle" "0 45 0"
+		"keyvalues" {
+			"spawnflags" "2"
+			"squadname" "zsquad1"
+			"targetname" "tunnelzombie2"			
+		}
+	}
+	"npc_zombie" {
+		"origin" "1250 2634 42" "angle" "0 -116 0"
+	}
+	"npc_zombie" {
+		"origin" "1017 2642 28" "angle" "0 -101 0"
+	}
+	"npc_zombie" {
+		"origin" "919 2659 19" "angle" "0 -83 0"
+	}
+	"npc_barnacle" {
+	"origin" "327 -1855 -3"
+	}
+	"env_headcrabcanister" {
+	"origin" "398 258 22"
+	"angle" "58 -81 0"
+	"keyvalues" {
+			"SmokeLifetime" "120"
+			"targetname" "cannister03"
+			"DamageRadius" "100"
+			"Damage" "100"
+			"SkyboxCannisterCount" "1"
+			"StartingHeight" "0"
+			"FlightTime" "1.5"
+			"FlightSpeed" "2700"
+			"HeadcrabCount" "4"
+			"HeadcrabType" "1"
+			"angles" "-60 57 0"
+			"OnImpacted" "cannister03,OpenCanister,,0.5,-1"
+			"OnOpened" "cannister03,SpawnHeadcrabs,,1,-1"
+		}
+	}
+	"env_headcrabcanister" {
+	"origin" "1034 1064 -94"
+	"angle" "58 -81 0"
+	"keyvalues" {
+			"SmokeLifetime" "120"
+			"targetname" "cannister01"
+			"DamageRadius" "100"
+			"Damage" "100"
+			"SkyboxCannisterCount" "1"
+			"StartingHeight" "0"
+			"FlightTime" "1.5"
+			"FlightSpeed" "2700"
+			"HeadcrabCount" "4"
+			"HeadcrabType" "1"
+			"angles" "308 138 0"
+			"OnImpacted" "cannister01,OpenCanister,,0.5,-1"
+			"OnOpened" "cannister01,SpawnHeadcrabs,,1,-1"
+		}
+	}
+	"env_headcrabcanister" {
+	"origin" "484 -157 -105"
+	"angle" "58 -81 0"
+	"keyvalues" {
+			"SmokeLifetime" "120"
+			"targetname" "cannister02"
+			"DamageRadius" "100"
+			"Damage" "100"
+			"SkyboxCannisterCount" "1"
+			"StartingHeight" "0"
+			"FlightTime" "1.5"
+			"FlightSpeed" "2700"
+			"HeadcrabCount" "4"
+			"HeadcrabType" "1"
+			"angles" "308 138 0"
+			"OnImpacted" "cannister02,OpenCanister,,0.5,-1"
+			"OnOpened" "cannister02,SpawnHeadcrabs,,1,-1"
+		}
+	}
+	"weapon_rpg" {
+	"origin" "536 798 10"
+	}
+		"item_item_crate"{
+	"origin" "607 881 1"
+	"KeyValues" {
+		"ItemClass" "item_healthkit"
+		"ItemCount"		"5"
+		}
+	}	
+	"item_item_crate"{
+	"origin" "607 881 50"
+	"KeyValues" {
+		"ItemClass" "item_healthkit"
+		"ItemCount"		"5"
+		}
+	}
+	"item_item_crate"{
+	"origin" "669 1095 1"
+	"KeyValues" {
+		"ItemClass" "item_ammo_smg1"
+		"ItemCount"		"5"
+		}
+	}
+	"item_item_crate"{
+	"origin" "690 856 1"
+	"KeyValues" {
+		"ItemClass" "item_rpg_round"
+		"ItemCount"		"5"
+		}
+	}
+	"item_item_crate"{
+	"origin" "691 1082 1"
+	"KeyValues" {
+		"ItemClass" "item_rpg_round"
+		"ItemCount"		"5"
+		}
+	}
+	"item_item_crate"{
+	"origin" "683 968 1"
+	"KeyValues" {
+		"ItemClass" "item_rpg_round"
+		"ItemCount"		"5"
+		}
+	}
+	"item_item_crate"{
+	"origin" "581 1081 1"
+	"KeyValues" {
+		"ItemClass" "item_rpg_round"
+		"ItemCount"		"5"
+		}
+	}
+	"path_track" {
+		"origin" "-917 2514 500"
+		"angle" "0 0 0"		
+		"keyvalues" {
+			"orientationtype" "1"
+			"radius" "200"
+			"targetname" "ship_2"
+			"target" "ship_3"
+		}
+	}
+	"path_track" {
+		"origin" "515 2926 500"
+		"angle" "0 0 0"		
+		"keyvalues" {
+			"orientationtype" "1"
+			"radius" "200"
+			"targetname" "ship_3"
+			"target" "ship_4"
+		}
+	}
+	"path_track" {
+		"origin" "1443 2638 500"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"radius" "200"
+			"targetname" "ship_4"
+			"target" "ship_5"
+		}
+	}
+	"path_track" {
+		"origin" "2118 1665 500"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"radius" "200"
+			"targetname" "ship_5"
+			"target" "ship_6"
+		}
+	}
+		"path_track" {
+		"origin" "2331 980 500"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"radius" "200"
+			"targetname" "ship_6"
+			"target" "ship_7"
+		}
+	}
+		"path_track" {
+		"origin" "2299 157 600"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"radius" "200"
+			"targetname" "ship_7"
+			"target" "ship_8"
+		}
+	}
+	"path_track" {
+		"origin" "2400 180 600"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_8"
+			"OnPass" "gunship1,StartPatrolBreakable,,0,-1"
+			"OnPass" "gunship1,OmniscientOn,,0,-1"
+			"OnPass" "gunship1,BlindFireOn,,0,-1"
+//	lucky for you bullet penetration does not seem to work
+			"OnPass" "gunship1,SetPenetrationDepth,100,0,-1"
+			"OnPass" "relationship,ApplyRelationship,,0,-1"
+			"OnPass" "relationship2,ApplyRelationship,,0,-1"
+			"OnPass" "relationship3,ApplyRelationship,,0,-1"
+			"OnPass" "relationship4,ApplyRelationship,,0,-1"
+			"OnPass" "relationship5,ApplyRelationship,,0,-1"
+			"OnPass" "relationship6,ApplyRelationship,,0,-1"
+			
+		}
+	}
+	//1 These are all the combine spawn points below. The default terrorist spawns trapped them all upstairs because the doors use different entities than in HL2.
+	"assault_rallypoint"{
+		"origin" "220 253 48"
+		"angle" "0 -88 0"
+	}
+	//2
+	"assault_rallypoint"{
+		"origin" "325 234 48"
+		"angle" "0 -92 0"
+	}
+	//3
+	"assault_rallypoint"{
+		"origin" "433 228 48"
+		"angle" "0 -88 0"
+	}
+	//4
+	"assault_rallypoint"{
+		"origin" "235 1106 48"
+		"angle" "0 87 0"
+	}
+	//5
+	"assault_rallypoint"{
+		"origin" "287 1103 48"
+		"angle" "0 94 0"
+	}
+	//6
+	"assault_rallypoint"{
+		"origin" "693 813 48"
+		"angle" "0 -91 0"
+	}
+	//7
+	"assault_rallypoint"{
+		"origin" "37 303 46"
+		"angle" "0 163 0"
+	}
+	//8
+	"assault_rallypoint"{
+		"origin" "-97 619 46"
+		"angle" "0 83 0"
+	}
+	//9
+	"assault_rallypoint"{
+		"origin" "-87 918 46"
+		"angle" "0 88 0"
+	}
+	//10
+	"assault_rallypoint"{
+		"origin" "-97 1183 46"
+		"angle" "0 -88 0"
+	}
+	//11
+	"assault_rallypoint"{
+		"origin" "52 1235 46"
+		"angle" "0 -2 0"
+	}
+	//12
+	"assault_rallypoint"{
+		"origin" "183 1212 46"
+		"angle" "0 85 0"
+	}
+	//13
+	"assault_rallypoint"{
+		"origin" "389 513 -89"
+		"angle" "0 -179 0"
+	}
+	//14
+	"assault_rallypoint"{
+		"origin" "51 1020 -89"
+		"angle" "0 -85 0"
+	}
+	//15
+	"assault_rallypoint"{
+		"origin" "245 743 -89"
+		"angle" "0 -177 0"
+	}
+	//16
+	"assault_rallypoint"{
+		"origin" "340 316 -89"
+		"angle" "0 -91 0"
+	}
+	//hostage1 - the default locations put them in too much danger from the combine. It would be possible to trip the hostage trigger before entering the house, leading to all the hostages being gunned down before you get to them.
+	"assault_assaultpoint"{
+		"origin" "904 531 -89"
+		"angle" "0 79 0"
+	}
+	//hostage2
+	"assault_assaultpoint"{
+		"origin" "1120 619 -89"
+		"angle" "0 91 0"
+	}
+}
+
+
+"entities:roundstart1" {
+
+	"player" {
+		"music" 	"song20_submix0"
+		"message"	"All right let's move out!"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+}
+
+"entities:roundstart2" {
+
+	"player" {
+		"music" 	"song12_long"
+		"message"	"Lock and load!"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+}
+
+"entities:initialize" {
+
+	"player" {
+		"message"	"-- Hostage Rescue: Militia --"
+		"fadein"	"10"
+	}
+
+
+	lua {
+		"callfunc"	"RoundInit"
+	}
+
+"instant_trig" {
+		"keyvalues" {
+			"label"	"gameover"
+			"islived" "hostage"
+			"group"		"3"
+			"removegroup"	"1"
+		}
+	}
+
+//	Hostage Extract Point
+	"instant_trig" {
+		"origin" "468 -2473 -105"
+		"keyvalues" {
+			"label"	"clear"
+			"touchname"	"hostage"
+			"radius" "200"
+			"group"		"3"
+			"removegroup"	"1"
+		}
+	}
+
+	
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"roundstart1:roundstart2"
+			"timer"	"3"
+		}
+	}
+	
+
+}
+
+"entities:movenext" {
+
+	lua {
+		"callfunc"	"MoveCombine"
+	}
+}
+
+
+
+"entities:cmovestop" {
+
+	"removeentity" {
+		"targetname"	"mv*"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"premove"
+			"timer"	"10"
+		}
+	}
+
+}
+
+"entities:premove" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"1"
+		}
+	}
+
+}
+
+
+"entities:premove" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"1"
+		}
+	}
+
+}
+
+"entities:gunship" {
+
+	"npc_combinegunship" {
+		"origin" "-1361 2422 150"
+		"angle" "0 0 0"
+		"squadname" "gunship"
+		"longrange"
+		"alwaysthink"
+		"keyvalues" {
+			"spawnflags" "5120"
+			"targetname" "gunship1"
+			"target" "ship_2"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"gunship1"
+			"target" "tunnelzombie*"
+			"disposition" "4"
+			"rank" "99"
+			"StartActive" "1"
+			"Reciprocal" "1"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship2"
+			"subject"	"gunship1"
+			"target"	"!player"
+			"disposition" "1"
+			"rank" "99"
+			"StartActive" "1"
+			"Reciprocal" "1"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship3"
+			"subject"	"gunship1"
+			"target"	"hostage"
+			"disposition" "1"
+			"rank" "70"
+			"StartActive" "1"
+			"Reciprocal" "0"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship4"
+			"subject"	"hostage"
+			"target"	"gunship1"
+			"disposition" "2"
+			"rank" "99"
+			"StartActive" "1"
+			"Reciprocal" "0"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship5"
+			"subject"	"gunship1"
+			"target"	"citizen"
+			"disposition" "1"
+			"rank" "50"
+			"StartActive" "1"
+			"Reciprocal" "0"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship6"
+			"subject"	"gunship1"
+			"target"	"teamalyx"
+			"disposition" "1"
+			"rank" "60"
+			"StartActive" "1"
+			"Reciprocal" "0"
+		}
+	}
+	"event" {
+		"targetname" "gunship1"
+		"action" "FlyToSpecificTrackViaPath"
+		"value" "ship_8"
+	}
+}
+
+"entities:takeshostage" {
+
+	lua {
+		"callfunc"	"EscortHostage"
+	}
+
+	"player" {
+		"message"	"ESCORT HOSTAGES TO EXTRACT POINT"
+	}
+	
+	"sound" {
+		"targetname"	"hostage"
+		"soundname"	"npc_citizen.abouttime01"
+	}
+}
+
+"entities:clear" {
+
+	"player" {
+		"message"	"HOSTAGE HAS BEEN RESCUED"
+		"music" 	"song_credits_2"
+	}
+	
+	"removeentity" {
+		"targetname"	"csquad*"
+	}
+	
+	"removeentity" {
+		"targetname"	"gunship1"
+	}
+	
+	"sound" {
+		"targetname"	"hostage"
+		"soundname"	"odessa.nlo_cheer03"
+	}
+
+	"scripted_sequence" {
+		"keyvalues" {
+			"m_iszplay"	"cheer1"
+			"m_iszEntity" "hostage"
+			"targetname" "ga1"
+		}
+	}
+
+	"event" {
+		"targetname"	"ga1"
+		"action"	"beginsequence"
+	}
+
+}
+
+
+"entities:gameover" {
+
+	"player" {
+		"message"	"HOSTAGES KILLED. MISSION FAILURE..."
+		"music"		"song_hl1_stinger8"
+		"fadeout"	"5"
+		"kill"
+	}
+	
+	
+}
+"entities:cann1" {
+	
+	"event" {
+		"targetname"	"cannister01"
+		"action"	"firecanister"
+	}
+}
+"entities:cann2" {
+	
+	"event" {
+		"targetname"	"cannister02"
+		"action"	"firecanister"
+	}
+
+}
+"entities:cann3" {
+	
+	"event" {
+		"targetname"	"cannister03"
+		"action"	"firecanister"
+	}
+}

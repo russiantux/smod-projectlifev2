@@ -1,0 +1,69 @@
+//	map arrange data
+//	location: d1_canal_03
+//	police rush
+
+"Precache" {
+}
+
+"randomspawn" {
+
+	"removenodes" {
+		"origin" "-818 2966 -864"
+		"radius" "500"
+	}
+
+	"npc_metropolice" {
+		"count"		"15"
+		"weapon"	"weapon_pistol"
+		"patrol"
+	}
+
+	"npc_citizen" {
+		"count"		"5"
+		"weapon"	"weapon_pistol"
+		"patrol"
+	}
+
+}
+
+
+"entities:shoot" {
+
+
+	"shoot_bullet" {
+		"origin" "-681 2862 -780"
+		"angle" "25 157 0"
+		"keyvalues" {
+//			"type"	"pistol"
+			"damage"	"400"
+			"force"		"20"
+			"tracer"	"0"
+		}
+	}
+}
+
+
+"entities" {
+
+	"instant_trig" {
+		"origin" "-654 2834 -845"
+		"keyvalues" {
+			"label"	"spawn"
+			"touchname"	"manhack_4matt"
+			"radius"	"500"
+		}
+	}
+
+}
+
+"entities:spawn" {
+
+	"npc_kscanner" {
+		"origin" "49 2823 -768"
+		"keyvalues" {
+			"targetname"	"manhack_4matt"
+			"laserdamage"	"2"
+		}
+	}
+}
+

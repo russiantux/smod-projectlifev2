@@ -1,0 +1,23 @@
+Lonewolf & Birdhouse AWP + Jens anims
+-------------------------------------------------
+Model: Lonewolf
+Skin: birdhouse
+Animations: Jennifer!!
+Sounds: Vunsunta
+Compile & hand convert: Soul_Slayer 
+
+==============
+Installation
+==============
+
+Simply unzip the file to the directory:
+../SteamApps/(YOUR EMAIL)/counter-strike source/cstrike/
+
+
+==============
+Provided By:
+==============
+
+Counter-Strike-DL - Your Number 1 Counter Strike Source
+
+www.counter-strike-dl.com

@@ -1,0 +1,39 @@
+I only converted those world models for ak47 and ar2  or pistol incomplete .
+
+credits
+__________________________________________________________________________
+G36K Uber For AUG(w_G36K.mdl)
+ 
+http://www.fpsbanana.com/?section=viewitem.skins.skins.main.8839
+
+
+Heckler & Koch Usp Compact(w_usp.mdl)
+
+http://www.fpsbanana.com/?section=viewitem.skins.skins.main.10222
+
+
+LoneWolf's LR300 W/M203 Grenade laucher(w_lr300.mdl)
+
+http://www.fpsbanana.com/?section=viewitem.skins.skins.main.8138
+
+------------M4 Scoped---------------
+Model: Sas.stu and JIHAD
+scope model: soul-slayer
+Skin: -X- (editted by enin)
+scope skin: wannabe (editted by enin)
+
+------------Silenced/Scoped MP5------
+Base MP5 -
+	Model: Short_Fuse
+	Scope edits: Bullet_head
+	Skin: Snake
+	Scope Skin: Stoke
+	Firing sounds added by Schfifty Five
+
+Compile - 
+	Bullet_Head
+
+
+____________________________________________________________________________
+
+Thanks .

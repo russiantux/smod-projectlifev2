@@ -1,0 +1,105 @@
+//	map arrange data
+//	location: d3_c17_08
+"entities" {
+
+	"npc_metropolice" {
+		"origin" "-1420 -2393 170" "angle" "0 -92 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_jackhammer"
+		}
+	}
+
+	"npc_metropolice" {
+		"origin" "-1510 -2389 177" "angle" "0 -92 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_jackhammer"
+		}
+	}
+
+	"npc_combine_e" {
+		"origin" "-1027 -1851 333" "angle" "0 -92 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_pulsemg"
+		}
+	}
+
+	"npc_bullsquid" {
+		"origin" "-1463 -2267 146.27" "angle" "0 92 0"
+	}
+
+	"npc_bullsquid" {
+		"origin" "1401 -1246 -337.27" "angle" "0 0 0"
+	}
+
+	"npc_zombine" {
+		"origin" "939 -328 127.27" "angle" "0 92 0"
+	}
+	
+	"item_item_crate"
+	{
+		"origin"	"-1475.06 -1482.77 169.12"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_flare"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"-2636 -1930.29 168.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_hrifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"646.80 -863.60 -415.97"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_rifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"1618.78 452.96 128.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_gauss"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"1558.88 -781.77 143.92"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_rifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"1741.67 -2.74 831.96"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_hrifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"1"
+		}
+	}
+
+}

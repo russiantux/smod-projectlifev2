@@ -1,0 +1,109 @@
+//	map arrange data
+//	location: d1_trainstation_02
+"precache" {
+	"model" "models/props_junk/terracotta01.mdl"
+}
+
+"entities:init" {
+
+	"removeentity" {
+		"targetname" "cupcop_can"
+	}
+
+	"prop_physics" {
+//		"origin" "-3719.23 -908.308 110.75"
+//		"angle" "0 180 0"
+		"origin" "-3705.9 -915.3 115.8"  "angle" "1 -165 1"
+		//"stabilize"	"90"
+		"keyvalues" {
+			"fadescale" "0"
+			"targetname" "cupcop_can"
+			"spawnflags" "261"
+			"model" "models/props_junk/gascan001a.mdl"
+			"fademindist" "-1"
+			"inertiaScale" "1.0"
+			"physdamagescale" "80"
+			"OnPhysGunPickup" "cupcop_can_pickup,Trigger,,0,-1"
+		}
+	}
+}
+
+
+"entities:cop1" {
+
+
+//	"event" {
+//		"targetname"	"cupcop_fail_relay"
+//		"action"	"Trigger"
+//		"delaytime"	"0.5"
+//	}
+	"event" {
+		"targetname"	"lcs_cupcop_01"
+		"action"	"start"
+		"delaytime"	"2.0"
+	}
+}
+
+"entities:d" {
+
+	"instant_trig" {
+		"origin" "-3103 -2048 64"
+		"keyvalues" {
+			"label"	"drop"
+			"radius"	"100"
+		}
+	}
+
+}
+
+
+"entities:drop" {
+
+	"prop_physics" {
+		"origin" "-2903 -2049 439"
+		"angle" "89 -68 0"
+		"keyvalues" {
+			"model" "models/props_junk/terracotta01.mdl"
+		}
+	}
+}
+
+
+"entities"
+{
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"init"
+			"timer"	"0.1"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "-4320 -748 64"
+		"keyvalues" {
+			"label"	"cop1"
+			"radius"	"100"
+		}
+	}
+	
+	
+	"instant_trig" {
+		"origin" "-3103 -2048 64"
+		"keyvalues" {
+			"label"	"drop"
+			"radius"	"100"
+		}
+	}
+	
+	"npc_combine_s" {
+		"origin" "-1209 -2005 640" "angle" "0 170 0"
+		"relation" "gn1 pn1"
+		"keyvalues" {
+			"additionalequipment"	"weapon_ar2"
+		}
+	}
+	
+	
+}

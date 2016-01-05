@@ -1,0 +1,116 @@
+//	map arrange data
+//	location: d1_coast_08
+
+"precache" {
+}
+
+"randomspawn" {
+
+	"npc_stalker" {
+		"count"		"5"
+		"beampower"	"2"
+		"patrol"
+	}
+
+}
+
+"entities" {
+
+	"instant_trig" {
+		"origin" "-5639 -286 -22"
+		"keyvalues" {
+			"label"	"ambush"
+			"radius"	"500"
+		}
+	}
+
+	"prop_ragdoll" {
+		"origin" "-7979 -1149 -198" "angle" "10 160 0"
+		"keyvalues" {
+			"model"	"models/combine_f_soldier.mdl"
+		}
+	}
+
+	"prop_ragdoll" {
+		"origin" "-7402 -713 -198" "angle" "10 -160 0"
+		"keyvalues" {
+			"model"	"models/combine_f_soldier.mdl"
+		}
+	}
+
+	"item_item_crate"
+	{
+		"origin"	"-9116.64 -637.33 -193.80"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_hrifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"-4662.22 327.30 -255.97"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_rifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"-5235.97 167.22 128.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_gauss"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"-4309.96 487.16 158.57"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_flare"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+}
+
+"entities:ambush" {
+
+	"npc_combine_e" {
+		"origin" "-5629 165 64" "angle" "0 -98 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_pulsemg"
+		}
+	}
+	
+	"npc_combine_s" {
+		"origin" "-4789 58 64" "angle" "0 173 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_jackhammer"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "-5180 265 64" "angle" "0 -126 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_jackhammer"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "-6203 55 256" "angle" "0 -3 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_oicw"
+		}
+	}
+}

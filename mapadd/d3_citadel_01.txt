@@ -1,0 +1,106 @@
+"precache"{
+}
+
+"randomspawn" {
+
+	"removeairnodes" {
+	}
+	
+	"removenodes" {
+		"origin" "7357 4245 632"
+		"radius"	"500"
+	}
+
+	"removenodes" {
+		"origin" "6905 5109 97"
+		"radius"	"500"
+	}
+
+	"removenodes" {
+		"origin" "6384 4294 -304"
+		"radius"	"500"
+	}
+
+
+	"prop_physics" {
+		"count"		"8"
+		"model" "models/props_junk/wood_crate001a.mdl"
+		"stabilize"	"30"
+	}
+
+
+	"npc_turret_floor" {
+		"count"		"5"
+		"stabilize"	"90"
+	}
+
+
+	"npc_stalker" {
+		"count"		"2"
+		"patrol"
+		"values"	"beampower 1 squadname stk1"
+	}
+
+	"npc_combine_e" {
+		"count"		"2"
+		"grenade"	"5"
+		"weapon"	"weapon_ar2"
+		"patrolrandom"
+		"values" "squadname cb1"
+	}
+
+
+	"npc_combine_s" {
+		"count"		"2"
+		"grenade"	"5"
+		"patrolrandom"
+		"weapon"	"weapon_ar2"
+		"values" "squadname cb2"
+	}
+
+	"npc_combine_s" {
+		"count"		"2"
+		"grenade"	"5"
+		"patrolrandom"
+		"weapon"	"weapon_smg1"
+		"values" "squadname cb3"
+	}
+
+
+	"npc_combine_s" {
+		"count"		"1"
+		"patrolrandom"
+		"weapon"	"weapon_lasergun"
+	}
+
+}
+
+"entities:init" {
+
+	"player" {
+		"music"		"song_hl1_19"
+	}
+
+}
+
+
+
+"entities" {
+
+
+	"npc_combine_s" {
+		"origin" "6464 5073 779" "angle" "0 -90 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_svd"
+		}
+	}
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"timer"	"13"
+			"label"	"init"
+		}
+	}
+}
+

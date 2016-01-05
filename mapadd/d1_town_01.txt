@@ -1,0 +1,82 @@
+//	map arrange data
+//	location: d1_town_01
+//		zombie town
+
+"precache" {
+	"entity"	"npc_f_combine"
+}
+
+
+"randomspawn" {
+
+	"removenodes" {
+		"origin" "4362 -2192 -3793"
+		"radius" "1000"
+	}
+
+	"npc_zombie" {
+		"count"		"10"
+		"values" "HeadCrabLess 1 runspeedmod 1.6"
+	}
+
+	"npc_zombie" {
+		"count"		"10"
+		"values" "HeadCrabLess 1 runspeedmod 1.5 health 100"
+	}
+
+	"npc_headcrab_fast" {
+		"count"		"10"
+	}
+
+	"npc_fastzombie" {
+		"count"		"10"
+		"values" "HeadCrabLess 1 runspeedmod 1.2"
+	}
+
+	"npc_poisonzombie" {
+		"count"		"3"
+		"values" "runspeedmod 1.2"
+	}
+}
+
+
+
+"entities" {
+
+
+	lua {
+		"callfunc"	"Init"
+	}
+
+
+	"npc_f_combine" {
+		"origin" "3623 -2265 -3904"
+		"angle" "0 9 0"	
+		"keyvalues" { "targetname"	"nakama1"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+	"npc_f_combine" {
+		"origin" "3623 -2265 -3804"
+		"angle" "0 9 0"	
+		"keyvalues" { "targetname"	"nakama1"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+	
+	"info_target" {
+		"origin" "4269 -1232 -3840"
+		"keyvalues" { "targetname" "goalnpc1" }
+	}
+
+	"ai_goal_follow" {
+		"keyvalues" {
+			"startactive"	"1"
+			"searchtype"	"0"
+			"MaximumState"	"2"
+			"actor"		"nakama*"
+			"goal"		"goalnpc1"
+		}
+	}
+
+}

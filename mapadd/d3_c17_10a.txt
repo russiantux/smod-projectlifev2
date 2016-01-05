@@ -1,0 +1,14 @@
+"precache" {
+	"entity"	"npc_f_kleiner"
+}
+
+
+"entities" {
+	"npc_f_kleiner" {
+		"origin" "-2669 6832 512"
+		"angle" "0 1 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_lasergun" 
+		}
+	}
+}

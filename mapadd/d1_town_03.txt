@@ -1,0 +1,105 @@
+//	map arrange data
+//	location: d1_town_03
+
+
+"precache" {
+	"model"	"npc_f_combine"
+}
+
+
+"randomspawn" {
+	"npc_fastzombie" {
+		"count"	"6"
+	}
+}
+
+
+"entities:drop1" {
+
+	"player" {
+		"music"	"song2"
+	}
+
+	"prop_ragdoll" {
+		"origin" "-3597 -882 -3327"
+		"keyvalues" {
+			"model"	"models/Humans/corpse1.mdl"
+		}
+	}
+	
+	
+	"instant_trig" {
+		"origin" "-1049 -1149 -3520"
+		"keyvalues" {
+			"radius"	"50"
+			"label"		"drop3"
+		}
+	}
+}
+
+"entities:drop3" {
+	"prop_ragdoll" {
+		"origin" "-972 -1016 -3259"
+		"keyvalues" {
+			"model"	"models/Humans/corpse1.mdl"
+		}
+	}
+}
+
+"entities:drop2" {
+	"prop_ragdoll" {
+		"origin" "-1824 -1644 -3504"
+		"velocity"	"0 -10000 0"
+		"keyvalues" {
+			"model"	"models/Humans/corpse1.mdl"
+		}
+	}
+	
+	"npc_fastzombie" {
+		"origin" "-1998 -1660 -3504" "angle" "0 -1 0"
+	}
+	
+}
+
+
+"entities" {
+
+
+	"instant_trig" {
+		"origin" "-3602 -692 -3584"
+		"keyvalues" {
+			"radius"	"60"
+			"label"		"drop1"
+		}
+	}
+	
+	"npc_stalker" {
+		"origin" "-2120 -1166 -3392" "angle" "0 175 0"
+		"keyvalues" {
+			"beampower"	"2"
+		}
+	}
+	
+	"item_item_crate"
+	{
+		"origin" "-2077 -1827 -3504" "angle" "0 177 0"
+		"keyvalues"
+		{
+			"ItemClass"		"npc_headcrab_poison"
+			"ItemCount"		"1"
+		}
+	}
+	
+	"npc_citizen" {
+		"origin" "-3024 -905 -3600" "angle" "0 -178 0"
+	}
+	
+	"instant_trig" {
+		"origin" "-1967 -1870 -3632"
+		"keyvalues" {
+			"radius"	"60"
+			"label"		"drop2"
+		}
+	}
+
+}

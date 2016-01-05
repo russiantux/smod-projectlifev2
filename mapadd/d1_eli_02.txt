@@ -1,0 +1,27 @@
+//	map arrange data
+//	location: d1_eli_02.txt
+
+"entities"
+{
+
+	lua {
+		"callfunc"	"Init"
+	}
+
+
+	"npc_headcrab"
+	{
+		"origin"	"-872.253235 444.629089 -2599.560059"
+	}
+	
+	"item_item_crate"
+	{
+		"origin"	"-826.811768 542.667969 -2559.968750"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"weapon_lasergun"
+			"ItemCount"		"1"
+		}
+	}
+}

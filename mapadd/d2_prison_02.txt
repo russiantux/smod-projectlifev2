@@ -1,0 +1,191 @@
+//	map arrange data
+//	location: d2_prison_02
+
+"precache" {
+	"entity"	"npc_combine_s"
+	"entity"	"npc_zombie"
+	"entity"	"setmsbomb"
+	"entity"	"npc_fastzombie"
+	"model"		"models/combine_super_soldier.mdl"
+}
+
+
+"entities:trap2" {
+	"setmsbomb" {
+		"origin" "-2399.0 3253.0 284.1"  "angle" "0 0 0"
+	}
+	"setmsbomb" {
+		"origin" "-2399.0 3253.8 294.0"  "angle" "0 0 0"
+	}
+
+	"prop_ragdoll" {
+		"origin" "-1950 2846 896"
+		"keyvalues" {
+			"model"	"models/combine_super_soldier.mdl"
+		}
+	}
+
+	"npc_fastzombie" {
+		"origin" "-1945 3037 925"
+	}
+	
+}
+
+
+"entities" {
+
+	"instant_trig" {
+		"origin" "-2117 3468 512"
+		"keyvalues" {
+			"radius"	"50"
+			"label"		"trap2"
+		}
+	}
+
+
+
+	"setmsbomb" {
+		"origin" "-1725.0 3568.7 520.9"  "angle" "0 180 0"
+	}
+	"setmsbomb" {
+		"origin" "-1747.8 3647.0 517.8"  "angle" "0 270 0"
+	}
+
+	"npc_combine_s" {
+		"origin" "-895 3118 384" "angle" "0 179 0"
+		"keyvalues" {
+			"model"	"models/soldier_camo.mdl"
+			"additionalequipment"	"weapon_smg1"
+			"numgrenade"	"5"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "-880 2692 384" "angle" "0 179 0"
+		"keyvalues" {
+			"model"	"models/soldier_camo.mdl"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "-1112 3034 256" "angle" "0 -100 0"
+		"keyvalues" {
+			"model"	"models/soldier_camo.mdl"
+			"additionalequipment"	"weapon_lasergun"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "-1895 1341 754" "angle" "0 96 0"
+		"keyvalues" {
+			"model"	"models/soldier_camo.mdl"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "-1975 2565 384" "angle" "0 -88 0"
+		"keyvalues" {
+			"label"	"assault1"
+			"radius"	"100"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "-1378 3169 464"
+		"keyvalues" {
+			"label"	"zombie"
+			"radius"	"50"
+		}
+	}
+}
+
+"entities:zombie" {
+	"npc_zombie" {
+		"origin" "-1301 3772 514" "angle" "0 -98 0"
+	}
+}
+
+
+"entities:assault1" {
+
+	"info_target" {
+		"origin" "-1961 2422 384"
+		"keyvalues" { "targetname" "goalnpc1" }
+	}
+
+	"ai_goal_follow" {
+		"keyvalues" {
+			"startactive"	"1"
+			"searchtype"	"0"
+			"MaximumState"	"2"
+			"actor"		"teki1*"
+			"goal"		"goalnpc1"
+		}
+	}
+	
+	"npc_combine_s" {
+		"origin" "-1677 1374 384" "angle" "0 118 0"
+		"keyvalues" { "targetname" "teki11"
+			"model"	"models/soldier_camo.mdl"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+	
+	"npc_combine_s" {
+		"origin" "-1506 1386 384" "angle" "0 86 0"
+		"keyvalues" { "targetname" "teki11"
+			"model"	"models/soldier_camo.mdl"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+	
+	"instant_trig" {
+		"origin" "-1411 2945 384"
+		"keyvalues" {
+			"label"	"assault2"
+			"radius"	"50"
+		}
+	}
+	
+
+}
+
+
+"entities:assault2" {
+
+	"info_target" {
+		"origin" "-1411 2945 384"
+		"keyvalues" { "targetname" "goalnpc2" }
+	}
+
+	"ai_goal_follow" {
+		"keyvalues" {
+			"startactive"	"1"
+			"searchtype"	"0"
+			"MaximumState"	"2"
+			"actor"		"teki2*"
+			"goal"		"goalnpc2"
+		}
+	}
+	
+	"npc_combine_s" {
+		"origin" "-1367 2595 384"
+		"keyvalues" { "targetname" "teki2"
+			"model"	"models/soldier_camo.mdl"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+	
+	"npc_combine_s" {
+		"origin" "-1263 3307 384"
+		"keyvalues" { "targetname" "teki2"
+			"model"	"models/soldier_camo.mdl"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+	
+
+}
+

@@ -1,0 +1,5 @@
+Model: Enin
+Skin: Enin
+Animations: Strykerwolf (Taken from Ghost Ops http://www.ghostopsmod.com/ )
+Sounds: Vunsunta (Taken from Ghost Ops http://www.ghostopsmod.com/ ) 
+Compile\Armhackage: Soul_Slayer

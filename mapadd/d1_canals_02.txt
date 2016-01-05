@@ -1,0 +1,34 @@
+//	map arrange data
+//	location: d1_canal_02
+
+"randomspawn" {
+
+	"npc_metropolice" {
+		"count"		"10"
+		"weapon"	"weapon_pistol"
+		"partol"
+	}
+	"npc_combine_s" {
+		"count"		"5"
+		"weapon"	"weapon_smg1"
+		"grenade"	"2"
+		"partol"
+	}
+
+}
+
+"entities" {
+
+	"prop_physics" {
+		"origin" "796.2 -406.2 -739.3"  "angle" "-18 -16 27"
+		"freeze"
+		"keyvalues" {
+		"model" "models/props_wasteland\cargo_container01c.mdl"
+		}
+	}
+
+	"npc_barnacle" {
+		"origin" "2897 -2346 -384"
+	}
+}
+

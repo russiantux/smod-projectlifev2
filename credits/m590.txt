@@ -1,0 +1,29 @@
+----Ope's Tac Shotgun----
+
+Model:  Ope 
+Skin/Mesh:  Creeping_Jesus 
+Foregrip model:  Version_2 (Vee) 
+Foregrip skin:  pr0d!gy 
+Stock model:  Dark Hunter 
+Stock skin:  N|rvy 
+Stock hack:  ??? 
+CS:S compile:  HellSpike 
+Silvers, adjusted refs and sounds synchro:  ziomek jebiesuki nabosaka 
+Sounds:  HK, modified by ziomek jebiesuki nabosaka
+
+
+Note: I made the pump longer, the ejector port smaller, tweaked the skin a tiny bit, removed the black lines on the pump (yes it's stretched now, but believe me... it's way better than huge black spots) and fixed the texture alignment.
+
+	- HellSpike
+
+
+   Installation:   
+Simply unzip the file to the directory:
+../SteamApps/(YOUR EMAIL)/counter-strike source/cstrike/
+
+
+Longdistance.nl - Counter-Strike: Source Modification Paradise!
+
+
+Terms and Conditions apply to these files and their usage/redistribution.
+For full details see http://www.csnation.net/skins/terms.html

@@ -1,0 +1,25 @@
+========================
+rp_cscdesert version 1.0
+========================
+
+This map is designed as a post-apocalyptic RP map set in the southwestern U.S. desert after
+a global nuclear war. A small town has emerged on the surface from survivors, while pre-war
+military installations still exist in the area. The valley was sealed off when the tunnels
+leading out of the valley collapsed. If you have any questions, additions or requests,
+please email me captain_super_cow@hotmail.com Enjoy this map.
+
+========================
+Installation
+========================
+
+Extract "rp_cscdesert.bsp" to your $SteamDir\SteamApps\SourceMods\gmod9\maps directory
+
+Thats it, start up gmod9,
+
+Run the map and enjoy!
+
+========================
+
+Credits go to SuperCow for map construction, testing and design, Drexsun for design input,
+
+and Empreror Beld for beta testing, lots and lots of testing.

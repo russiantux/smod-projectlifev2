@@ -1,0 +1,52 @@
+"precache" {
+	"entity"	"npc_f_combine"
+}
+
+"randomspawn" {
+	"npc_headcrab_fast" {
+		"count"		"6"
+	}
+	"npc_kheadcrab" {
+		"count"		"3"
+	}
+
+}
+
+
+"entities" {
+	"npc_f_combine" {
+		"origin" "-2640 1042 -3136"
+		"angle" "0 -148 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_shotgun" 
+		}
+	}
+	
+	"prop_physics" {
+		"origin" "-1472.9 472.4 -3390.5"  "angle" "-0 -90 360"
+		"keyvalues" {
+		"model" "models/misc/kanban/bon.mdl"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "-2080 437 -3456"
+		"keyvalues" {
+			"radius"	"30"
+			"label"		"drop1"
+		}
+	}
+
+
+}
+
+
+"entities:drop1" {
+
+	"prop_ragdoll" {
+		"origin" "-2013 490 -3157"
+		"keyvalues" {
+			"model"	"models/Humans/corpse1.mdl"
+		}
+	}
+}

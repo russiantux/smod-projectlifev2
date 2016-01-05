@@ -1,0 +1,51 @@
+combine_f_soldiers ver.3.0
+
+_______________________________________________________________________________
+
+
+For Half- Life2 SMOD
+
+The model cannot be replaced while you are playing a game. 
+Please overwrite these files (\smod\models) before starting SMOD.
+
+________________________________________________________________________________
+
+
+
+
+
+>model list
+
+: urban
+: gign
+: t_phoenix
+: t_leet
+: SAS
+: NYPD
+: t_arctic
+
+>sample cfg command
+
+bind "f12" "npc_create_equipment weapon_ar2;npc_create npc_f_combine"
+
+>credit
+
+NYPD_model
+
+http://www.fpsbanana.com/?section=viewitem.skins.skins.dl.9418
+thanks
+
+
+>omake
+
+Those files add two replacement models.
+
+
+
+
+
+
+Sorry about my poor english.
+thanks
+
+2006/4/9

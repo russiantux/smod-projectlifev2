@@ -1,0 +1,90 @@
+"precache" {
+	"entity"	"npc_f_combine"
+	"entity"	"npc_fastzombie"
+}
+
+
+"entities" {
+
+	lua {
+		"callfunc"	"Init"
+	}
+
+
+	"npc_f_combine" {
+		"origin" "-465 837 -3280"
+		"angle" "0 -134 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_shotgun" 
+		}
+	}
+
+		
+	"aiscripted_schedule" {
+		"keyvalues" {
+			"spawnflags" "4"
+			"goalent" "!player"
+			"m_iszEntity" "zb*"
+			"schedule" "3"
+			"forcestate" "3"
+			"m_flRadius" "0"
+			"targetname" "zombie_sched"
+		}
+	}
+	
+	"instant_trig" {
+		"origin" "-27 1263 -3471"
+		"keyvalues" {
+			"radius"	"100"
+			"label"		"spawnfastzombie"
+		}
+	}
+
+}
+
+
+"entities:spawnfastzombie" {
+
+	"npc_fastzombie" {
+		"origin" "-695 480 -3545" "angle" "0 0 0"
+		"alwaysthink"
+		"keyvalues" {
+			"targetname"	"zb1"
+			"HeadCrabLess"	"1"
+			"runspeedmod"	"1.5"
+			"spawnflags" "3584"
+			"squadname"	"zbg"
+		}
+	}
+
+	"npc_fastzombie" {
+		"origin" "-518 821 -2940" "angle" "22 3 0"
+		"alwaysthink"
+		"patrol"
+		"keyvalues" {
+			"targetname"	"zb2"
+			"HeadCrabLess"	"1"
+			"runspeedmod"	"1.5"
+			"spawnflags" "3584"
+			"squadname"	"zbg"
+		}
+	}
+
+	"npc_fastzombie" {
+		"origin" "32 -568 -3264" "angle" "8 -179 0"
+		"alwaysthink"
+		"patrol"
+		"keyvalues" {
+			"targetname"	"zb3"
+			"HeadCrabLess"	"1"
+			"runspeedmod"	"1.5"
+			"spawnflags" "3584"
+			"squadname"	"zbg"
+		}
+	}
+
+	"event" {
+		"targetname"	"zombie_sched"
+		"action"	"StartSchedule"
+	}
+}

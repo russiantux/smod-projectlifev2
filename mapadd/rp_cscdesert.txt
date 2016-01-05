@@ -1,0 +1,172 @@
+// ace - green
+// s - soldier
+// e - elite (white suit enemies)
+// c - camouflaged
+
+"precache"{
+	"entity" "npc_combine_s"
+	"entity" "npc_combine_e"
+}
+
+"randomspawn" {
+
+
+	"npc_combine_s" {
+		"count"		"50"
+		"grenade"	"5"
+		"patrolrandom"
+		"values" "squadname cb1"
+		"Flags" "256"
+	}
+
+	"npc_combine_e" {
+		"count"		"10"
+		"grenade"	"5"
+		"patrolrandom"
+		"values" "squadname cb2"
+		"Flags" "256"
+	}
+
+
+}
+
+
+"entities"{
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"label" "initialize"
+			"timer" ".1"
+		}
+	}
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"islived"	"officer"
+			"label"		"clear"
+		}
+	}
+
+
+	
+}
+
+
+"entities:initialize" {
+
+
+	"prop_vehicle_jeep" {
+		"origin"	"162 -13480 77"
+		"angle" "0 -50 0"
+		"keyvalues" {
+			"model"	"models/buggy.mdl"
+			"solid" "6"
+			"vehiclescript"	"scripts/vehicles/jeep_test.txt"
+		}
+		}
+
+	"player" {
+		"origin"	"-110 -13481 80"
+		"angle" "3 -85 0"
+		"message"	"Kill All Commanders"
+	}
+
+	"npc_combine_s" {
+		"origin"	"-1058 6964 80"
+		"count"		"20"
+		"grenade"	"5"
+		"patrolrandom"
+		"values" "squadname cb2"
+			"keyvalues" {
+				"targetname"	"officer"
+				"model"	"models/barney.mdl"
+			}
+		}
+
+	"npc_combine_s" {
+		"origin"	"-2560 5766 -511"
+		"count"		"20"
+		"grenade"	"5"
+		"patrolrandom"
+		"values" "squadname cb2"
+			"keyvalues" {
+				"targetname"	"officer"
+				"model"	"models/breen.mdl"
+			}
+		}
+
+	"npc_combine_s" {
+		"origin"	"-7370 -8785 -15"
+		"count"		"20"
+		"grenade"	"5"
+		"patrolrandom"
+		"values" "squadname cb2"
+			"keyvalues" {
+				"targetname"	"officer"
+				"model"	"models/mossman.mdl"
+			}
+		}
+
+	"npc_combine_s" {
+		"origin"	"1748 -9276 72"
+		"count"		"20"
+		"grenade"	"5"
+		"patrolrandom"
+		"values" "squadname cb2"
+			"keyvalues" {
+				"targetname"	"officer"
+				"model"	"models/monk.mdl"
+			}
+		}
+
+	"item_suit" {
+		"origin"	"-110 -13481 80"
+	}
+
+	"weapon_custom7" {
+		"origin"	"-110 -13481 80"
+	}
+
+	"weapon_custom9" {
+		"origin"	"-110 -13481 80"
+	}
+
+	"item_ammo_ar2" {
+		"origin"	"-110 -13481 80"
+	}
+
+	"item_ammo_ar2" {
+		"origin"	"-110 -13481 80"
+	}
+
+	"item_ammo_ar2" {
+		"origin"	"-110 -13481 80"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"-110 -13481 80"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"-110 -13481 80"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"-110 -13481 80"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"-110 -13481 80"
+	}
+
+}
+
+
+"entities:clear"{
+	"player" {
+		"message"	"Mission Clear!!"
+		"music"		"song3"
+	}
+}

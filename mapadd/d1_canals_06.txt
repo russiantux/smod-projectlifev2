@@ -1,0 +1,179 @@
+//	map arrange data
+//	location: d1_canals_06
+
+"precache"{
+	"entity"	"npc_combine_s"
+}
+
+
+"entities:trap1" {
+	"prop_physics" {
+		"origin" "10410 9109 154"
+		"keyvalues" {
+			"model" "models/props_junk/wood_crate002a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "10410 9109 154"
+		"keyvalues" {
+			"model" "models/props_borealis/bluebarrel002.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "10410 9109 154"
+		"keyvalues" {
+			"model" "models/props_canal/boat001b.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "10410 9109 154"
+		"keyvalues" {
+			"model" "models/props_junk/wood_crate002a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "10410 9109 154"
+		"keyvalues" {
+			"model" "models/props_borealis/bluebarrel002.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "10410 9109 154"
+		"keyvalues" {
+			"model" "models/props_canal/boat001b.mdl"
+		}
+	}
+
+}
+
+"entities:assault1" {
+
+	"npc_combine_s" {
+		"origin" "4575 6581 -320" "angle" "0 -106 0"
+		"keyvalues" { "targetname"	"teki1"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+	"npc_metropolice" {
+		"origin" "4608 6475 -320" "angle" "0 -106 0"
+		"keyvalues" { "targetname"	"teki1"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "4607 6633 -320" "angle" "0 -106 0"
+		"keyvalues" { "targetname"	"teki1"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+	"info_target" {
+		"origin" "4951 5801 -192"
+		"keyvalues" { "targetname" "goalnpc1" }
+	}
+
+	"ai_goal_follow" {
+		"keyvalues" {
+			"startactive"	"1"
+			"searchtype"	"0"
+			"MaximumState"	"2"
+			"actor"		"teki*"
+			"goal"		"goalnpc1"
+		}
+	}
+}
+
+
+
+"entities"{
+
+	"instant_trig" {
+		"origin" "4235 5994 -188"
+		"keyvalues"{
+			"radius"	"50"
+			"label"	"assault1"
+		}
+	}
+
+	"instant_trig" {
+		"keyvalues"{
+			"timer"	".1"
+			"label"	"trap1"
+		}
+	}
+
+
+	"npc_combine_s"
+	{
+		"origin"	"-4983.537109 -1615.141602 -205.050613"
+		"angle"		"0 107 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_rpg"
+		}
+	}
+	
+	"npc_combine_s"
+	{
+		"origin"	"-5200.593262 -1691.040527 -205.050613"
+		"angle"		"0 107 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_rpg"
+		}
+	}
+	
+	"npc_fastzombie"
+	{
+		"origin"	"7897.737305 9057.213867 -243.333557"
+		"angle"		"0 137 0"
+	}
+	
+	"item_item_crate"
+	{
+		"origin"	"-6072.309570 -479.928406 -134.468750"
+		"keyvalues"
+		{
+			"ItemClass"		"weapon_bugspawner"
+			"ItemCount"		"1"
+		}
+	}
+	
+	"npc_metropolice" {
+		"origin" "-106 4209 12" "angle" "0 -89 0"
+		"keyvalues" {
+			"targetname"		"rp1"
+			"waitingtorappel"	"1"
+			"spawnflags"		"33685508"
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+		
+	"npc_metropolice" {
+		"origin" "163 4224 12" "angle" "0 -89 0"
+		"keyvalues" {
+			"targetname"		"rp2"
+			"waitingtorappel"	"1"
+			"spawnflags"		"33685508"
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+	
+	"instant_trig" {
+		"origin" "97 3052 -419"
+		"keyvalues" {
+			"radius"	"1000"
+			"label"		"rappel1"
+		}
+	}
+}
+
+"entities:rappel1" {
+	"event" {
+		"targetname"	"rp*"
+		"action"	"BeginRappel"
+		"value"		"0.5"
+	}
+}

@@ -1,0 +1,30 @@
+HK MP5K
+=======
+
+Model:
+Twinke Masta
+
+Skin:
+Kimono
+Thanez
+
+Animations:
+Jeniffer!!
+
+Sounds:
+Vunsunta
+
+Animation Edits:
+Xero
+
+Compile:
+The End
+
+Info:
+Replaces : Mp5
+World models : Yes
+Custom Animations & Sounds: Yes
+
+Terms and Conditions apply to these files and their usage/redistribution. For full details see http://www.csnation.net/skins/terms.html
+
+Personal Disclaimer: NOT to be re-released ANYWHERE without my own, or the respective author's consent.

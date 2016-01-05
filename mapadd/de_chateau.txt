@@ -1,0 +1,223 @@
+//ORIGINAL SCRIPT BY SMOD AUTHOR http://accept.hopto.org/smod/
+//MODIFICATION BY FITZROY_DOLL JANUARY 2007 http://www.amphibian.myzen.co.uk/home/
+"precache" {	"entity"	"item_suit"
+	"entity"	"npc_citizen"
+	"entity"	"npc_combine_e"
+	"entity"	"npc_combine_s"
+	"entity"	"npc_metropolice"
+	"entity"	"item_item_crate"
+	"entity"	"npc_manhack"
+	"entity"	"npc_rollermine"
+	"entity"	"combine_mine"
+	"entity"	"npc_cscanner"
+	"entity"	"env_headcrabcanister"
+	}
+
+"randomspawn" {
+//these removenodes do not remove navigation nodes. Instead, they remove nodes from consideration when doing the randomspawn. This prevents zombies and rollermines from spawning in your lap when the map starts.
+	"removenodes" {
+		"origin" "1000 2700 50"
+		"radius" "1500"
+	}
+
+	"removenodes" {
+		"origin" "1500 -1000 0"
+		"radius" "1500"
+	}
+//zombie and combine tool spawn points - the spawn point entities themselves are arbitrary, and have been chosen because they do not appear in CS:S maps and can repeat many times over in the same map. Remember to increase this number if you increase the number of tools or zombies in the lua.
+	"info_npc_spawn_destination" {
+	"count" "10"
+	}
+
+
+}
+
+
+"entities" {
+
+	lua {
+		"callfunc"	"Init"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"initialize"
+			"timer"	"0.1"
+		}
+	}
+	"npc_combine_s"{
+		"origin" "130 407 296" "angle" "0 -90 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_svd"
+			"squadname" "csquad1"
+			"targetname" "csquad1"
+			"NumGrenades" "12"
+			}
+	}
+	"npc_combine_s"{
+		"origin" "1156 203 138" "angle" "0 -51 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp5"
+			"squadname" "csquad1"
+			"targetname" "csquad1"
+			"NumGrenades" "12"
+			}
+	}
+	"npc_combine_s"{
+		"origin" "228 802 271" "angle" "0 90 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp5"
+			"squadname" "csquad1"
+			"targetname" "csquad1"
+			"NumGrenades" "12"
+			}
+	}
+	"npc_combine_s"{
+		"origin" "89 -436 24" "angle" "0 16 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp5"
+			"squadname" "csquad1"
+			"targetname" "csquad1"
+			"NumGrenades" "12"
+			}
+	}
+	"npc_poisonzombie" {
+	"origin" "-309 1212 288" 
+	"angle" "0 -58 0"
+	}
+}
+
+"entities:roundstart" {
+
+	"player" {
+		"music" 	"song_c17_02_street"
+		"message"	"Lock and load!"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+	lua {
+		"callfunc"	"cannisters"
+	}
+	
+}
+
+"entities:initialize" {
+
+	"player" {
+		"message"	"-- Counter Combine: Chateau --"
+		"fadein"	"10"
+	}
+
+
+	lua {
+		"callfunc"	"RoundInit"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"roundstart"
+			"timer"	"3"
+		}
+	}
+
+}
+
+"entities:movenext" {
+
+	lua {
+		"callfunc"	"MoveCombine"
+	}
+}
+
+
+
+"entities:cmovestop" {
+
+	"removeentity" {
+		"targetname"	"mv*"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"premove"
+			"timer"	"10"
+		}
+	}
+
+}
+
+"entities:premove" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"1"
+		}
+	}
+
+}
+
+
+
+"entities:clear" {
+
+	"player" {
+		"music" 	"song3"
+		"message"	"Targets eliminated! Gordon Freeman wins!"
+	}
+}
+
+"entities:cann1" {
+	
+	"event" {
+		"targetname"	"cannister01"
+		"action"	"firecanister"
+	}
+}
+
+"entities:cann2" {
+	
+	"event" {
+		"targetname"	"cannister02"
+		"action"	"firecanister"
+	}
+}
+"entities:cann3" {
+	
+	"event" {
+		"targetname"	"cannister03"
+		"action"	"firecanister"
+	}
+}
+"entities:cann4" {
+	
+	"event" {
+		"targetname"	"cannister04"
+		"action"	"firecanister"
+	}
+}
+
+"entities:cann5" {
+	
+	"event" {
+		"targetname"	"cannister05"
+		"action"	"firecanister"
+	}
+}
+
+"entities:cann6" {
+	
+	"event" {
+		"targetname"	"cannister06"
+		"action"	"firecanister"
+	}
+}

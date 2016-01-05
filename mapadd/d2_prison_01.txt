@@ -1,0 +1,121 @@
+//	map arrange data
+//	location: d2_prison_01
+
+"precache" {
+	"model"		"models/vortigaunt.mdl"
+	"entity"	"npc_metropolice"
+	"entity"	"npc_citizen"
+}
+
+"randomspawn" {
+
+	"npc_metropolice" {
+		"count"		"10"
+		"weapon"	"weapon_smg1"
+	}
+
+}
+
+"entities:friend" {
+	"ai_goal_follow" {
+		"Keyvalues" {
+			"Formation""0"
+			"MaximumState""3"
+			"StartActive""1"
+			"actor""friend*"
+			"targetname""bfollow_goal"
+			"SearchType""0"
+		}
+	}	
+	
+	"npc_vortigaunt" {
+		"origin" "1712 -3152 1280"
+		"longrange"
+		"alwaysthink"
+		"keyvalues" {
+			"targetname"	"friend1"
+		}
+	}
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"islived"	"friend1"
+			"label"		"more1:more2"
+			"noclear"	"1"
+		}
+	}
+
+}
+"entities:more2" {
+	
+	"npc_citizen" {
+		"origin" "1807 -3152 1280"
+		"alwaysthink"
+		"relation"	"ch1"
+		"keyvalues" {
+			"targetname"	"friend1"
+			"additionalequipment"	"weapon_rpg"
+			"citizentype"	"3"
+		}
+	}
+	
+}
+
+"entities:more1" {
+	
+	"npc_citizen" {
+		"origin" "1807 -3152 1280"
+		"alwaysthink"
+		"relation"	"ch1"
+		"keyvalues" {
+			"targetname"	"friend1"
+			"additionalequipment"	"weapon_ak47"
+			"citizentype"	"3"
+		}
+	}
+	
+}
+
+
+"entities" {
+
+	"removeentity" {
+		"classname"	"npc_antlion_template_maker"
+		
+	}
+
+	"npc_citizen" {
+		"origin" "1807 -3152 1280"
+		"alwaysthink"
+		"keyvalues" {
+			"targetname"	"friend1"
+			"additionalequipment"	"weapon_grease"
+			"citizentype"	"3"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "1821 -3292 1190"
+		"keyvalues" {
+			"radius"	"30"
+			"label"	"friend"
+		}
+	}
+	
+
+	"instant_trig" {
+		"origin" "3639 -3627 1408"
+		"keyvalues" {
+			"radius"	"200"
+			"label"	"music"
+		}
+	}
+}
+
+
+"entities:music" {
+	"player" {
+		"music" "song16"
+	}
+}

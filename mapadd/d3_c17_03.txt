@@ -1,0 +1,30 @@
+"entities" {
+
+	"npc_f_combine" {
+		"origin" "-5243 -3823 64" "angle" "0 0 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp5"
+		}
+	}
+
+	"prop_ragdoll" {
+		"origin" "-4993 -3651 64" "angle" "10 -158 0"
+		"keyvalues" {
+			"model"	"models/combine_assassin.mdl"
+		}
+	}
+
+	"npc_f_combine" {
+		"origin" "-2966 -2257 128" "angle" "0 0 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_ak47"
+		}
+	}
+
+	"npc_f_combine" {
+		"origin" "-2963 -1812 128" "angle" "0 0 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_grease"
+		}
+	}
+}

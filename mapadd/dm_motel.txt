@@ -1,0 +1,130 @@
+// ace - green
+// s - soldier
+// e - elite (white suit enemies)
+// c - camouflaged
+
+"precache"{
+	"entity" "npc_combine_s"
+	"entity" "npc_combine_e"
+}
+
+"randomspawn" {
+
+
+	"npc_zombie2" {
+		"count"		"60"
+		"targetname"	"Zombies"
+	}
+
+	"item_box_buckshot" {
+		"count"		"60"
+	}
+
+}
+
+
+"entities"{
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"label" "initialize"
+			"timer" ".1"
+		}
+	}
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"islived"	"Zombies"
+			"label"		"clear"
+		}
+	}
+
+
+}
+
+
+"entities:initialize" {
+
+
+
+	"player" {
+		"origin"	"-1074 -254 96"
+		"angle" "6 5 0"
+		"message"	"Kill all Combine!"
+	}
+
+	"item_suit" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"weapon_custom25" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"weapon_custom1" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"weapon_custom4" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"item_box_buckshot" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"item_box_buckshot" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"item_box_buckshot" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"weapon_frag" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"weapon_frag" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"weapon_frag" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"weapon_frag" {
+		"origin"	"-1074 -254 96"
+	}
+
+	"weapon_crowbar" {
+		"origin"	"-1074 -254 96"
+	}
+
+}
+
+
+"entities:clear"{
+	"player" {
+		"message"	"Mission Clear!!"
+		"music"		"song3"
+	}
+}

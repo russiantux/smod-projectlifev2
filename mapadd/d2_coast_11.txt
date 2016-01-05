@@ -1,0 +1,221 @@
+//	map arrange data
+//	location: d1_coast_11
+"precache" {
+	"entity"	"npc_citizen"
+	"model"		"models/buggy.mdl"
+}
+
+"entities:engun" {
+
+	"info_target" {
+		"origin" "5061 5574 532"
+		"keyvalues" { "targetname" "goalnpc1" }
+	}
+
+	"ai_goal_follow" {
+		"keyvalues" {
+			"startactive"	"1"
+			"searchtype"	"0"
+			"MaximumState"	"2"
+			"actor"		"nakama*"
+			"goal"		"goalnpc1"
+		}
+	}
+
+	"npc_citizen" {
+		"origin" "4556 6764 576"
+		"keyvalues" { "targetname"	"nakama1"
+			"additionalequipment"	"weapon_ak47"
+			"citizentype"	"3"
+		}
+	}
+
+	"npc_citizen" {
+		"origin" "4464 6850 571"
+		"keyvalues" { "targetname"	"nakama1"
+			"additionalequipment"	"weapon_mp5"
+			"citizentype"	"3"
+		}
+	}
+
+
+}
+
+"entities" {
+
+	
+	"npc_zombie" {
+		"origin" "3945 -8496 1543" "angle" "0 140 0"	
+	}
+
+	"item_item_crate"
+	{
+		"origin" "936 3858 1696"
+		"keyvalues"
+		{
+			"ItemClass"		"weapon_svd"
+			"ItemCount"		"1"
+		}
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"islived"	"tobias"
+			"label"		"music"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "3815 4736 455"
+		"keyvalues" {
+			"label"	"engun"
+			"radius"	"2000"
+		}
+	}
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"timer"	"2"
+			"label"	"initstage"
+		}
+	}
+}
+
+"entities:initstage" {
+
+	"removeentity" {
+		"classname"	"prop_physics"
+		"origin" "3518 -886 841"
+		"radius"	"8000"
+	}
+
+
+	"prop_physics" {
+		"origin" "5141.9 901.4 245.6"  "angle" "-71 65 187"
+		"freeze"
+		"keyvalues" {
+		"model" "models/props_junk/wood_pallet001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "5266.2 919.6 226.1"  "angle" "74 -101 166"
+		"freeze"
+		"keyvalues" {
+		"model" "models/props_junk/wood_pallet001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "5193.7 913.4 234.8"  "angle" "68 -112 353"
+		"freeze"
+		"keyvalues" {
+		"model" "models/props_junk/wood_pallet001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "5115.2 918.5 244.2"  "angle" "-72 69 184"
+		"freeze"
+		"keyvalues" {
+		"model" "models/props_junk/wood_pallet001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "5269.2 931.9 228.7"  "angle" "3 -0 260"
+		"freeze"
+		"keyvalues" {
+		"model" "models/props_junk/wood_pallet001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "5247.5 940.1 222.8"  "angle" "-81 69 201"
+		"freeze"
+		"keyvalues" {
+		"model" "models/props_junk/wood_pallet001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "5170.8 939.2 229.4"  "angle" "-86 8 69"
+		"freeze"
+		"keyvalues" {
+		"model" "models/props_junk/wood_pallet001a.mdl"
+		}
+	}
+
+	"prop_vehicle_jeep" {
+		"origin" "6488 -1331 388" "angle" "0 111 0"
+		"keyvalues" {
+			"model"	"models/buggy.mdl"
+			"solid" "6"
+			"vehiclescript" "scripts/vehicles/jeep_test.txt"
+		}
+	}
+	
+	"prop_physics" {
+	"origin" "6059.4 -1422.9 456.5"  "angle" "-0 -167 360"
+	"keyvalues" {
+	"model" "models/props_junk/wood_crate001a.mdl"
+	}
+	}
+	"prop_physics" {
+		"origin" "6045.1 -1479.6 456.5"  "angle" "0 179 360"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "6051.2 -1478.8 416.4"  "angle" "-0 -15 0"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate001a.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "6069.0 -1427.0 416.4"  "angle" "-0 -108 0"
+		"keyvalues" {
+		"model" "models/props_junk/wood_crate001a.mdl"
+		}
+	}
+	
+	"prop_physics" {
+		"origin" "6216.0 -1342.9 411.3"  "angle" "2 20 281"
+		"keyvalues" {
+		"model" "models/props_junk/Wheebarrow01a.mdl"
+		}
+	}
+
+
+
+	"prop_physics" {
+		"origin" "6179.1 -1300.2 442.5"  "angle" "20 -90 1"
+		"keyvalues" {
+		"model" "models/props_c17/door01_left.mdl"
+		}
+	}
+	
+	
+	"prop_physics" {
+		"origin" "6129.1 -1355.7 407.1"  "angle" "-0 -89 0"
+		"keyvalues" {
+		"model" "models/props_c17/FurnitureTable003a.mdl"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin" "6070 -1370 396" "angle" "0 -20 0"
+		"keyvalues"
+		{
+			"ItemClass"		"weapon_svd"
+			"ItemCount"		"1"
+		}
+	}
+
+
+}
+
+"entities:music" {
+	"player" {
+		"music"	"song23"
+	}
+
+
+
+}

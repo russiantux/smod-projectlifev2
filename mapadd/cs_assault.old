@@ -1,0 +1,107 @@
+// ace - green
+// s - soldier
+// e - elite (white suit enemies)
+// c - camouflaged
+
+"precache"{
+	"entity" "npc_combine_s"
+	"entity" "npc_combine_e"
+}
+
+"randomspawn" {
+
+
+	"npc_combine_s" {
+		"count"		"30"
+		"grenade"	"5"
+		"patrolrandom"
+		"values" "squadname cb1 GrenadeClass custom_explosive GrenadeExploType CSFragGrenade2"
+		"model"	"models/urban_combine.mdl"		"values" "squadname cb1 GrenadeClass custom_explosive GrenadeExploType CSFragGrenade2"
+		"model"	"models/urban_combine.mdl"
+		"targetname"	"combine"
+
+	}
+
+
+}
+
+
+"entities"{
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"label" "initialize"
+			"timer" ".1"
+		}
+	}
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"islived"	"combine"
+			"label"		"clear"
+		}
+	}
+
+
+}
+
+
+"entities:initialize" {
+
+	"player" {
+		"origin"	"5313 5016 -767"
+		"angle" "6 5 0"
+		"message"	"Destroy all Combine"
+	}
+
+	"item_suit" {
+		"origin"	"5313 5016 -767"
+	}
+
+	"weapon_custom7" {
+		"origin"	"5313 5016 -767"
+	}
+
+	"weapon_custom9" {
+		"origin"	"5313 5016 -767"
+	}
+
+	"item_ammo_ar2" {
+		"origin"	"5313 5016 -767"
+	}
+
+	"item_ammo_ar2" {
+		"origin"	"5313 5016 -767"
+	}
+
+	"item_ammo_ar2" {
+		"origin"	"5313 5016 -767"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"5313 5016 -767"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"5313 5016 -767"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"5313 5016 -767"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"5313 5016 -767"
+	}
+
+}
+
+
+"entities:clear"{
+	"player" {
+		"message"	"Mission Clear!!"
+		"music"		"song3"
+	}
+}

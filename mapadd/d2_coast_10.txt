@@ -1,0 +1,155 @@
+//	map arrange data
+//	location: d1_coast_10
+"precache" {
+	"entity"	"npc_zombie"
+	"entity"	"npc_headcrab_poison"
+	"entity"	"npc_helicopter"
+	"sound"	"rubble.ba_nag_wall02"
+}
+
+"randomspawn" {
+}
+
+
+"entities:heli" {
+	"npc_combinegunship" {
+
+		"origin" "7235 2261 222"
+		"relation"	"ph5 gh5"
+		"longrange"
+		"keyvalues" {
+			"targetname"	"gunship1"
+			"GracePeriod" "2.0"
+		}
+	}
+}
+
+
+"entities" {
+
+
+	"combine_mine" {
+		"origin" "5156.8 -501.2 994.6"  "angle" "-23 24 46"
+		"keyvalues" {
+			"StartDisarmed" "1"
+			"LockSilently" "0"
+			"bounce" "1"
+			"ExplosionDamage" "150"
+			"ExplosionRadius" "125"
+		}
+	}
+	"combine_mine" {
+		"origin" "5153.4 -538.6 978.6"  "angle" "-35 171 27"
+		"keyvalues" {
+			"StartDisarmed" "1"
+			"LockSilently" "0"
+			"bounce" "1"
+			"ExplosionDamage" "150"
+			"ExplosionRadius" "125"
+		}
+	}
+	"combine_mine" {
+		"origin" "5162.2 -565.6 992.6"  "angle" "1 172 332"
+		"keyvalues" {
+			"StartDisarmed" "1"
+			"LockSilently" "0"
+			"bounce" "1"
+			"ExplosionDamage" "150"
+			"ExplosionRadius" "125"
+		}
+	}
+	"combine_mine" {
+		"origin" "5160.7 -591.3 1020.3"  "angle" "-28 -115 270"
+		"keyvalues" {
+			"StartDisarmed" "1"
+			"LockSilently" "0"
+			"bounce" "1"
+			"ExplosionDamage" "150"
+			"ExplosionRadius" "125"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "8301 1356 2216"
+		"keyvalues" {
+			"radius"	"50"
+			"label"		"heli"
+		}
+	}
+
+
+	"npc_citizen" {
+		"origin" "8182 1624 2496" "angle" "0 -158 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_svd"
+			"citizentype"	"3"
+		}
+	}
+	
+	"instant_trig" {
+		"origin" "8225 1747 960"
+		"keyvalues" {
+			"radius"	"50"
+			"label"		"spawn1"
+		}
+	}
+
+	"npc_barney" {
+		"origin" "4857 1083 916"
+		"keyvalues" {
+			"additionalequipment"	"weapon_ak47"
+			"targetname"	"barney"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "4876 -242 916"
+		"keyvalues" {
+			"radius" "100"
+			"label"	"barn"
+		}
+	}
+
+}
+
+"entities:barn" {
+	"ai_goal_follow" {
+		"Keyvalues" {
+			"Formation""0"
+			"MaximumState""3"
+			"StartActive""1"
+			"actor""barney*"
+			"targetname""bfollow_goal"
+			"SearchType""0"
+		}
+	}
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"timer"	"20"
+			"label"	"talk1"
+		}
+	}
+}
+
+"entities:talk1" {
+	"sound" {
+		"targetname"	"barney"
+		"soundname"	"rubble.ba_nag_wall02"
+	}
+}
+
+
+"entities:spawn1" {
+
+	"npc_zombie" {
+		"origin" "8304 1763 960" "angle" "0 142 0"
+	}
+
+	"npc_headcrab_poison" {
+		"origin" "7496 1665 745"
+	}
+
+}

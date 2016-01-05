@@ -1,0 +1,64 @@
+//	map arrange data
+//	location: d1_coast_03
+"precache" {
+	"entity"	"npc_bullsquid"
+}
+
+"entities" {
+
+	"item_item_crate"
+	{
+		"origin"	"-4263.47 3838.02 532.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_hrifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	
+	"item_item_crate"
+	{
+		"origin"	"-5125.18 4414.98 320.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_flare"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	
+	"item_item_crate"
+	{
+		"origin"	"8816.85 4185.17 320.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_rifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"1"
+		}
+	}
+	
+	"weapon_ak47"
+	{
+		"origin"	"8351.00 4381.92 353.83"
+	}
+
+	"weapon_scissor"
+	{
+		"origin"	"6740.46 4799.50 353.83"
+	}
+
+	"npc_bullsquid"
+	{
+		"origin"	"426.50 9643.00 337.61"
+	}
+
+	"npc_bullsquid"
+	{
+		"origin"	"579.50 9643.00 337.61"
+	}
+}

@@ -1,0 +1,13 @@
+TheLama Fiveseven - Elite Replacement
+
+Model: TheLama
+Skin: Numb Rider
+Sounds: Hk & Vunsunta
+Animations: Jennifer!!
+Compile: !NC!Furious
+
+Installation: Extract all folders to you /cstrike folder. 
+When it asks to overwrite.....Click "YES".....Done.
+
+Terms and Conditions apply to these files and their usage/redistribution. 
+For full details see http://www.csnation.net/skins/terms.html

@@ -1,0 +1,136 @@
+//	map arrange data
+//	location: d1_canals_11
+
+"precache"{
+}
+
+"randomspawn" {
+	"removenodes" {
+		"origin" "6414 4907 -894"
+		"radius"	"2000"
+	}
+	
+	"removenodes" {
+		"origin" "1872 -7717 -842"
+		"radius"	"2000"
+	}
+	
+	
+	"npc_metropolice" {
+		"count"		"10"
+		"weapon"	"weapon_pistol"
+	}
+
+}
+
+"entities:spawn1" {
+	"npc_metropolice" {
+		"origin" "2218 -8691 -768" "angle" "0 92 0"
+		"activate"
+		"keyvalues" {
+			"targetname"	"teki11"
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+}
+
+"entities:timer" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"label" "spawn1"
+			"timer"	"5"
+			"noclear"	"1"
+			"group"	"1"
+		}
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"timer"	"60"
+			"group"	"1"
+			"removegroup"	"1"
+		}
+	}
+
+
+}
+
+"entities" {
+
+	"weapon_scissor" {
+		"origin" "785 -7018 -890"
+	}
+
+	"setmsbomb" {
+		"origin" "10217 7307 -392"
+		"angle" "90 0 0"
+	}
+
+	"setmsbomb" {
+		"origin" "9319 8190 -691"
+		"angle" "0 270 0"
+	}
+
+
+	"instant_trig" {
+		"origin" "1068 -7079 -928"
+		"keyvalues" {
+			"label"	"timer"
+			"radius" "50"
+		}
+	}
+
+
+	"ai_goal_follow" {
+		"keyvalues" {
+			"startactive"	"1"
+			"searchtype"	"0"
+			"MaximumState"	"2"
+			"actor"		"teki1*"
+			"goal"		"goalnpc1"
+		}
+	}
+
+	"info_target" {
+		"origin" "1935 -8165 -864"
+		"keyvalues" { "targetname" "goalnpc1" }
+	}
+
+
+	"npc_metropolice" {
+		"origin" "9713 8140 -256" "angle" "0 -48 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+
+	"npc_metropolice" {
+		"origin" "9339 7304 -104" "angle" "0 73 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+
+	"npc_metropolice" {
+		"origin" "9471 7304 -104" "angle" "0 75 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+
+	"npc_metropolice" {
+		"origin" "2914 -491 -676" "angle" "0 52 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+	"npc_metropolice" {
+		"origin" "4405 -1617 -438" "angle" "0 99 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+}

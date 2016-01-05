@@ -1,0 +1,64 @@
+//	map arrange data
+//	location: d2_prison_04
+"precache" {
+	"entity"	"npc_citizen"
+}
+
+
+
+"randomspawn" {
+
+	"removenodes" {
+		"origin" "-2016 258 -145"
+		"radius"	"600"
+	}
+	"removenodes" {
+		"origin" "-1358 -219 -128"
+		"radius"	"300"
+	}
+
+	"npc_combine_s" {
+		"count"		"5"
+		"model"	"models/combine_super_soldier.mdl"
+		"grenade"	"5"
+		"weapon"	"weapon_ar2"
+	}
+	"npc_combine_s" {
+		"count"		"5"
+		"model"	"models/soldier_camo.mdl"
+		"grenade"	"5"
+		"weapon"	"weapon_mp5"
+	}
+	"npc_combine_s" {
+		"count"		"5"
+		"grenade"	"5"
+		"weapon"	"weapon_smg1"
+	}
+	"npc_combine_ace" {
+		"count"		"5"
+		"weapon"	"weapon_ar2"
+	}
+	"npc_combine_s" {
+		"count"		"1"
+		"model"	"models/gman.mdl"
+		"grenade"	"5"
+		"weapon"	"weapon_mp5"
+	}
+
+}
+
+
+"entities" {
+
+	"removeentity" {
+		"classname"	"npc_antlion_template_maker"
+		
+	}
+	
+}
+
+"entities:music" {
+	"player" {
+		"music"	"song23"
+	}
+}

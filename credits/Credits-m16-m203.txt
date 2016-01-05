@@ -1,0 +1,13 @@
+Credits
+
+SIRS M4A1
+
+Model: TheLama
+Skin: !NC!Furious
+Silencer+UVUnwrap: SureShot
+
+M203: Twinke Masta
+
+Sounds: Raven-Shield
+Animations JenniferV3
+

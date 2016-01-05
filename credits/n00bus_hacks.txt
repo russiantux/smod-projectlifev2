@@ -1,0 +1,38 @@
+Shields:
+
+Arm - SMOD
+
+Face - SMOD
+
+Bullet Proof - Knuckles
+
+
+
+Skins:
+
+Rebel Urban - SWAT Base: Icue 
+              Urban Base: Darkelfa
+
+Helghast - Joshbjoshingu, Karmapolice and G.A.M.E.R
+
+Dark urban - Darkelfa
+
+H&K Para - Base Model -Twinke Masta
+	   Base Skin - NZ-Reason
+	   Animations - Hav0c
+	   Compile v - Hav0c
+	   Compile w -  Mullet
+	   Sounds - Valve and vunsunta
+
+Knife - Model: Will
+	Recolour / Texture Editing: Naomi
+	Original Skin: Mr. T
+	Valve Compile: Andeh
+	Jennifer Compile: Mullet™
+	Animations: Jennifer!!
+	W_model & Ref maps: ziomek jebiesuki nabosaka
+
+Bullet Decals - Texture: toxine
+		Normal maps: n00buss
+
+Flashlight - n00buss

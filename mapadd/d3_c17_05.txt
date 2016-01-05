@@ -1,0 +1,200 @@
+//	map arrange data
+//	location: d3_c17_05
+"precache" {
+	"entity"	"npc_combinegunship"
+}
+
+
+"randomspawn" {
+
+	"removenodes" {
+		"origin" "1540 -6925 128"
+		"radius" "2000"
+	}
+
+
+	"npc_combine_ace" {
+		"count"		"5"
+		"weapon"	"weapon_mp5"
+	}
+	
+}
+
+
+"entities" {
+
+	"npc_combine_s" {
+		"origin" "1608 -3597 993"
+		"angle" "0 -103 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_svd"
+		}
+	}
+	
+	
+	"npc_combine_s" {
+		"origin" "988 -5096 384" "angle" "0 -85 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_ak47"
+			"grenades"	"5"
+		}
+	}
+	
+	"npc_citizen" {
+		"origin" "1335 -6670 336"	"angle" "0 99 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_grease"
+			"spawnflags" "1052674"
+		}
+	}
+	
+	"npc_combine_s" {
+		"origin" "216 -6281 384"
+		"keyvalues" {
+			"targetname"	"comb1"
+			"additionalequipment"	"weapon_grease"
+		}
+	}
+	
+	
+	"npc_combine_s" {
+		"origin" "217 -6107 512"
+		"keyvalues" {
+			"targetname"	"comb1"
+			"additionalequipment"	"weapon_grease"
+		}
+	}
+	
+	
+	"npc_combine_s" {
+		"origin" "51 -6098 512"
+		"keyvalues" {
+			"targetname"	"comb1"
+			"additionalequipment"	"weapon_grease"
+		}
+	}
+	
+	"info_target" {
+		"origin" "1583 -6913 130"
+		"keyvalues" { "targetname" "goalnpc1" }
+	}
+
+	"ai_goal_follow" {
+		"keyvalues" {
+			"startactive"	"1"
+			"searchtype"	"0"
+			"MaximumState"	"3"
+			"actor"		"comb1"
+			"goal"		"goalnpc1"
+		}
+	}
+
+	"npc_houndeye" {
+		"origin" "1810 -5922 64" "angle" "0 -63 0"
+	}
+
+	"npc_houndeye" {
+		"origin" "1973 -5971 64" "angle" "0 -89 0"
+	}
+	
+	"food_sankaba" {
+		"origin" "1792 -5871 360"
+	}
+
+	"instant_trig" {
+		"origin" "886 -4375 384"
+		"keyvalues" {
+			"label"	"spawn1:spawn2"
+			"radius"	"50"
+		}
+	}
+	
+	
+	"instant_trig" {
+		"origin" "1371 -4001 180"
+		"keyvalues" {
+			"label"	"gunship"
+			"radius"	"50"
+		}
+	}
+
+}
+
+
+"entities:gunship" {
+
+	"npc_combinegunship" {
+		"origin" "1877 -6823 639"
+		"keyvalues" {
+			"targetname"	"gunship1"
+		}
+	}
+
+	"path_track" {
+		"origin" "1792 -3947 1073"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname"	"ship1"
+		}
+	}
+
+
+	"event" {
+		"targetname"	"gunship1"
+		"action"	"FlyToSpecificTrackViaPath"
+		"value"		"ship1"
+	}
+
+}
+
+
+"entities:spawn1" {
+
+	"npc_combine_s" {
+		"origin" "611 -3594 544" "angle" "0 -68 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_ak47"
+		}
+	}
+	
+	"npc_combine_s" {
+		"origin" "769 -4076 512" "angle" "0 15 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp5"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "1997 -3730 577" "angle" "0 -168 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_grease"
+		}
+	}
+
+}
+
+
+"entities:spawn2" {
+	"npc_combine_s" {
+		"origin" "1050 -3580 672" "angle" "0 -115 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_ak47"
+		}
+	}
+	
+	"npc_combine_s" {
+		"origin" "1064 -4097 512" "angle" "0 126 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_mp5"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "2016 -4366 672" "angle" "0 150 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_grease"
+		}
+	}
+
+}

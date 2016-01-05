@@ -1,0 +1,148 @@
+//	map arrange data
+//	location: d1_coast_05
+
+"precache" {
+	"entity"	"npc_metropolice"
+	"entity"	"prop_vehicle_apc"
+	"model"		"models/combine_apc.mdl"
+}
+
+"randomspawn" {
+
+	"npc_metropolice" {
+		"count"		"15"
+		"weapon"	"weapon_pistol"
+	}
+
+	"npc_metropolice" {
+		"count"		"10"
+		"weapon"	"weapon_grease"
+	}
+
+}
+
+"entities:apc1" {
+
+
+	"event" {
+		"targetname"	"apd1"
+		"action"	"setdriversmaxspeed"
+		"value"		"2000"
+	}
+
+	"event" {
+		"targetname"	"apd1"
+		"action"	"gotopathcorner"
+		"value"		"ap1"
+	}
+
+}
+
+
+"entities" {
+
+	"prop_vehicle_apc" {
+		"origin" "-4134 -10875 1401"		"angle" "0 -72 0"
+		"keyvalues" {
+			"vehiclescript"	"scripts/vehicles/apc_npc.txt"
+			"model"		"models/combine_apc.mdl"
+			"targetname"	"apc1"
+			"solid"		"6"
+		}
+	}
+
+	"npc_apcdriver" {
+		"keyvalues" {
+			"spawnflags" "131332"
+			"vehicle" "apc1"
+			"target" "ap1"
+			"targetname" "apd1"
+		}
+	}
+
+
+	"npc_zombie" {
+		"origin" "1741.5 -9268.2 1292.4"  "angle" "0 0 0"
+		"keyvalues" {
+		"model" "models/zombie/classic.mdl"
+		"targetname"	"z1"
+		}
+	}
+	"npc_zombie" {
+		"origin" "1793.4 -9094.9 1290.9"  "angle" "0 0 0"
+		"keyvalues" {
+		"model" "models/zombie/classic.mdl"
+		"targetname"	"z1"
+		}
+	}
+	"npc_zombie" {
+		"origin" "1976.9 -8859.5 1296.5"  "angle" "0 0 0"
+		"keyvalues" {
+		"model" "models/zombie/classic.mdl"
+		"targetname"	"z1"
+		}
+	}
+	"event" {
+		"targetname"	"z1"
+		"action"	"wake"
+		"value"		"1"
+	}
+
+	"path_corner" {
+		"origin" "-6271 -10614 762"
+		"keyvalues" {
+			"targetname" "ap1"
+			"target" "ap2"
+		}
+	}
+	
+	"path_corner" {
+		"origin" "-5865 -12473 704"
+		"keyvalues" {
+			"targetname" "ap2"
+			"target" "ap3"
+		}
+	}
+
+	"path_corner" {
+		"origin" "-3011 -12619 704" "angle" "6 82 0"
+		"keyvalues" {
+			"targetname" "ap3"
+		}
+	}
+	
+
+	"instant_trig" {
+		"origin" "-3538 -12542 704"
+		"keyvalues" {
+			"radius"	"400"
+			"label"		"apc1"
+		}
+	}
+	
+	"npc_rollermine" {
+		"origin" "-4960.7 -11965.6 713.4"  "angle" "70 103 260"
+	}
+
+	"npc_rollermine" {
+		"origin" "-4960.7 -11965.6 713.4"  "angle" "70 103 260"
+	}
+
+	"npc_rollermine" {
+		"origin" "-4960.7 -11965.6 713.4"  "angle" "70 103 260"
+	}
+
+	"npc_rollermine" {
+		"origin" "-4960.7 -11965.6 713.4"  "angle" "70 103 260"
+	}
+
+	"npc_rollermine" {
+		"origin" "-4960.7 -11965.6 713.4"  "angle" "70 103 260"
+	}
+	
+	
+
+
+}
+
+

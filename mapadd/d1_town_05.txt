@@ -1,0 +1,94 @@
+//	map arrange data
+//	location: d1_town_05
+
+"precache" {
+}
+
+"entities" {
+
+	lua {
+		"callfunc"	"Init"
+	}
+
+
+
+	"instant_trig" {
+		"origin" "-11471 4343 908"
+		"keyvalues" {
+			"radius"	"300"
+			"label"		"engun"
+		}
+	}
+	
+	"npc_combine_s" {
+		"origin" "-8339 6999 1328"
+		"angle" "24 174 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+	"npc_combine_s" {
+		"origin" "-5189 8082 1216" "angle" "0 179 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "-5197 8290 1216" "angle" "0 -177 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+	"instant_trig" {
+		"origin" "-2015 8881 896"
+		"keyvalues" {
+			"radius"	"30"
+			"label"		"engun2"
+		}
+	}
+}
+
+"entities:engun" {
+
+	"npc_citizen" {
+		"origin" "-12005 5477 896" "angle" "0 -90 0"
+		"keyvalues" { "targetname"	"nakama1"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+	"npc_citizen" {
+		"origin" "-12105 5476 896" "angle" "0 -91 0"
+		"keyvalues" { "targetname"	"nakama1"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+
+	"info_target" {
+		"origin" "-12079 4329 896"
+		"keyvalues" { "targetname" "goalnpc1" }
+	}
+
+	"ai_goal_follow" {
+		"keyvalues" {
+			"startactive"	"1"
+			"searchtype"	"0"
+			"MaximumState"	"2"
+			"actor"		"nakama*"
+			"goal"		"goalnpc1"
+		}
+	}
+
+}
+
+"entities:engun2" {
+	"npc_citizen" {
+		"origin" "-1545 9648 1192" "angle" "0 -84 0"
+		"keyvalues" { "targetname"	"nakama1"
+			"additionalequipment"	"weapon_shotgun"
+		}
+	}
+}
+

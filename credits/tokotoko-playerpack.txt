@@ -1,0 +1,55 @@
+smod_player_pack_ver1.0
+
+___________________________________________________________________
+
+
+For SMOD36b
+
+___________________________________________________________________
+
+models list
+
+
+---------------------------------------------------------
+　・cl_playermodel "models/player/snake.mdl"　　 [solid_snake          ]
+  ・cl_playermodel "models/player/t_phoenix.mdl" [t_phoenix　　        ]
+　・cl_playermodel "models/player/t_leet.mdl"　  [leet                 ]
+　・cl_playermodel "models/player/t_arctic.mdl"　[arctic               ]
+　・cl_playermodel "models/player/sas.mdl"       [sas                  ]
+　・cl_playermodel "models/player/urban.mdl"     [urban                ]
+　・cl_playermodel "models/player/gign.mdl"      [gign                 ]
+　・cl_playermodel "models/player/ny_police.mdl" [NY_police            ]
+　・cl_playermodel "models/player/german_r.mdl"  [                     ] 
+　・cl_playermodel "models/player/american_s.mdl"[                     ] 
+-----------------------------------------------------------
+>About install
+
+1:Please put the extracted file on the following directories. 
+
+[\smod\models\player]
+[\smod\materials\models\player]
+
+2:Please add sample cfg description to your autoexec.cfg file 
+  if you have not set the third person view setting yet. 
+
+
+
+>sample cfg setting
+
+bind "F1"     = FPS Mode ON
+bind "F2"     = TPS Mode ON
+bind "F3"     = DM Mode          <-> Citizen Mode
+bind "F4"     = cam_fixcamera ON <-> OFF
+
+>credits
+
+solid snake model
+http://forums.facepunchstudios.com/showthread.php?t=80254
+
+NY_police
+http://www.fpsbanana.com/?section=viewitem.skins.skins.dl.9418
+
+Sorry about my poor english.
+thanks
+
+2007/4/10

@@ -1,0 +1,73 @@
+//	map arrange data
+//	location: d1_trainstation_06
+
+"precache"{
+	"entity"	"npc_rollermine"
+}
+
+"randomspawn" {
+
+	"removenodes" {
+		"origin" "-8981 -3343 192"
+		"radius" "500"
+	}
+
+	"removenodes" {
+		"origin" "-8378 -3219 192"
+		"radius" "500"
+	}
+	"removenodes" {
+		"origin" "-8355 -544 -256"
+		"radius" "500"
+	}
+	"npc_metropolice" {
+		"count"		"16"
+		"weapon"	"weapon_pistol"
+	}
+}
+
+
+"entities"{
+
+	"npc_metropolice"
+	{
+		"origin"	"-7116.761230 -1507.508179 -63.968750"
+		"angle"		"0 32 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_stunstick"
+		}
+	}
+	
+	"npc_metropolice"
+	{
+		"origin"	"-7338.571777 -1518.019531 -63.968750" 
+		"angle"		"0 167 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+	
+//	"weapon_physlauncher"
+//	{
+//		"origin"	"-6893.041016 -1386.352783 -53.818825"
+//	}
+	
+	"item_item_crate"
+	{
+		"origin"	"-6893.041016 -1386.352783 -63.818825"
+		"angle"		"0 35 0"
+		"keyvalues"
+		{
+			"ItemClass"		"npc_rollermine"
+			"ItemCount"		"1"
+		}
+	}
+	
+	"npc_barnacle"
+	{
+		"origin"	"-8727 -2977 122"
+	}
+}
+

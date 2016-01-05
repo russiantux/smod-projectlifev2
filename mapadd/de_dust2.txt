@@ -1,0 +1,216 @@
+//ORIGINAL SCRIPT BY SMOD AUTHOR http://accept.hopto.org/smod/
+//MODIFICATION BY FITZROY_DOLL JANUARY 2007 http://www.amphibian.myzen.co.uk/home/
+"precache" {	"entity"	"item_suit"
+	"entity"	"npc_citizen"
+	"entity"	"npc_combine_e"
+	"entity"	"npc_combine_s"
+	"entity"	"npc_metropolice"
+	"entity"	"item_item_crate"
+	"entity"	"npc_manhack"
+	"entity"	"npc_rollermine"
+	"entity"	"combine_mine"
+	"entity"	"npc_cscanner"
+	}
+
+"randomspawn" {
+//these removenodes do not remove navigation nodes. Instead, they remove nodes from consideration when doing the randomspawn. This prevents zombies and rollermines from spawning in your lap when the map starts.
+	"removenodes" {
+		"origin" "-1500 -750 200"
+		"radius" "1500"
+	}
+
+	"removenodes" {
+		"origin" "250 2150 -50"
+		"radius" "1500"
+	}
+//zombie and combine tool spawn points - the spawn point entities themselves are arbitrary, and have been chosen because they do not appear in CS:S maps and can repeat many times over in the same map. Remember to increase this number if you increase the number of tools or zombies in the lua.
+	"info_npc_spawn_destination" {
+	"count" "10"
+	}
+
+
+}
+
+
+"entities" {
+
+	lua {
+		"callfunc"	"Init"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"initialize"
+			"timer"	"0.1"
+		}
+	}
+	"prop_vehicle_apc" {
+		"origin" "1480 2148 35"		
+		"angle" "0 -145 0"
+		"keyvalues" {
+			"vehiclescript"	"scripts/vehicles/apc_npc.txt"
+			"model"		"models/combine_apc.mdl"
+			"targetname"	"apc1"
+			"solid"		"6"
+		}
+	}
+	"npc_apcdriver" {
+		"keyvalues" {
+			"spawnflags" "256"
+			"vehicle" "apc1"
+			"target" "ap4"
+			"targetname" "apd1"
+		}
+	}
+	"path_corner" {
+		"origin" "1480 2148 69"
+		"keyvalues" {
+			"targetname" "ap4"
+		}
+	}
+	"item_ammo_crate"{
+		"origin" "659 2346 15"
+		"angle" "0 0 0"
+		"KeyValues" {
+		"AmmoType" "5"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"apd1"
+			"target"	"!player"
+			"disposition" "1"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"apd1"
+			"target"	"citizen"
+			"disposition" "1"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+	"ai_relationship" {
+		"keyvalues" {
+			"targetname" "relationship"
+			"subject"	"apd1"
+			"target"	"teamalyx"
+			"disposition" "1"
+			"rank" "99"
+			"StartActive" "0"
+			"Reciprocal" "0"
+		}
+	}
+}
+
+"entities:roundstart" {
+
+	"player" {
+		"music" 	"song_prison_crusher"
+		"message"	"All right let's move out!"
+	}
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"premove"
+			"timer"	"10"
+		}
+	}
+	"event" {
+		"targetname" "relationship"
+		"action" "applyrelationship"
+	}
+}
+
+"entities:roundstart" {
+
+	"player" {
+		"music" 	"song_c17_02_street"
+		"message"	"All right let's move out!"
+	}
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+}
+
+"entities:initialize" {
+
+	"player" {
+		"message"	"-- Counter Combine: Dust 2 --"
+		"fadein"	"10"
+	}
+
+
+	lua {
+		"callfunc"	"RoundInit"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"roundstart"
+			"timer"	"3"
+		}
+	}
+
+}
+
+"entities:movenext" {
+
+	lua {
+		"callfunc"	"MoveCombine"
+	}
+}
+
+
+
+"entities:cmovestop" {
+
+	"removeentity" {
+		"targetname"	"mv*"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"premove"
+			"timer"	"10"
+		}
+	}
+
+}
+
+"entities:premove" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"1"
+		}
+	}
+
+}
+
+"entities:clear" {
+
+	"player" {
+		"music" 	"song3"
+		"message"	"Targets eliminated! Gordon Freeman wins!"
+	}
+}
+
+
+

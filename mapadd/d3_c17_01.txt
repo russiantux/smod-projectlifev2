@@ -1,0 +1,33 @@
+//	map arrange data
+//	location: d3_c17_01
+"precache" {
+	"entity"		"food_cornedbeef"
+	"entity"		"food_sankaba"
+}
+
+
+"entities" {
+
+	
+	"item_item_crate"
+	{
+		"origin" "-6790.0 -1603.4 273.5"  "angle" "0 -90 275"
+			"keyvalues"
+		{
+			"ItemClass"		"food_cornedbeef"
+			"ItemCount"		"3"
+		}
+	}
+
+	"item_item_crate"
+	{
+		"origin" "-6566.6 -1428.1 268.5"  "angle" "-0 112 180"
+				"keyvalues"
+		{
+			"ItemClass"		"food_sankaba"
+			"ItemCount"		"3"
+		}
+	}
+	
+}
+

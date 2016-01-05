@@ -1,0 +1,39 @@
+//	map arrange data
+//	location: d1_town_04
+
+
+"precache" {
+}
+
+
+"randomspawn" {
+	"npc_fastzombie" {
+		"count"	"2"
+	}
+	"npc_fastzombie" {
+		"count"	"1"
+		"values"	"runspeedmod 0.1"
+	}
+	"npc_kheadcrab" {
+		"count"	"3"
+	}
+	"npc_headcrab" {
+		"count"	"3"
+		"values"	"runspeedmod 3"
+	}
+	
+}
+
+
+"entities" {
+
+	"npc_kheadcrab" {
+		"origin" "1780 -652 -4911" "angle" "0 120 0"
+	}
+
+	"npc_kheadcrab" {
+		"origin" "458 -1663 -4800" "angle" "0 177 0"
+	}
+
+}
+

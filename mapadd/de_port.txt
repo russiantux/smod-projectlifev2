@@ -1,0 +1,588 @@
+//ORIGINAL SCRIPT BY SMOD AUTHOR http://accept.hopto.org/smod/
+//MODIFICATION BY FITZROY_DOLL JANUARY 2007 http://www.amphibian.myzen.co.uk/home/
+"precache" {	"entity"	"item_suit"
+	"entity"	"npc_citizen"
+	"entity"	"npc_combine_e"
+	"entity"	"npc_combine_s"
+	"entity"	"npc_metropolice"
+	"entity"	"item_item_crate"
+	"entity"	"npc_manhack"
+	"entity"	"npc_rollermine"
+	"entity"	"combine_mine"
+	"entity"	"npc_cscanner"
+	"entity"	"npc_combinedropship"
+	}
+
+"randomspawn" {
+//these removenodes do not remove navigation nodes. Instead, they remove nodes from consideration when doing the randomspawn. This prevents zombies and rollermines from spawning in your lap when the map starts.
+	"removenodes" {
+		"origin" "1300 1700 550"
+		"radius" "2000"
+	}
+	"removenodes" {
+		"origin" "589 874 1046"
+		"radius" "1500"
+	}
+	"removenodes" {
+		"origin" "300 -3150 850"
+		"radius" "2000"
+	}
+//zombie and combine tool spawn points - the spawn point entities themselves are arbitrary, and have been chosen because they do not appear in CS:S maps and can repeat many times over in the same map. Remember to increase this number if you increase the number of tools or zombies in the lua.
+	"info_npc_spawn_destination" {
+	"count" "10"
+	}
+
+
+}
+
+
+"entities" {
+
+	lua {
+		"callfunc"	"Init"
+	}
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"initialize"
+			"timer"	"0.1"
+		}
+	}
+	"npc_enemyfinder" {
+	"origin" "-2877 1009 850"
+		"keyvalues" {
+		"targetname" "reinforcement_marker"
+		}
+	}	
+	"prop_physics" {
+		"origin" "180 2000 505"  "angle" "0 0 80"
+		"keyvalues" {
+		"model" "models/props_wasteland/wood_fence02a.mdl"
+		"spawnflags" "8"
+		"minhealthdmg" "99999"
+		}
+	}
+	"npc_zombie" {
+		"origin" "-321 463 383" "angle" "0 -15 0"
+		}
+	"npc_zombie" {
+		"origin" "-62 487 383" "angle" "0 -32 0"
+		}
+	"npc_zombie" {
+		"origin" "66 468 383" "angle" "0 -174 0"
+		}
+	"npc_zombie" {
+		"origin" "143 475 383" "angle" "0 -88 0"
+		}
+	"npc_zombie" {
+		"origin" "1066 234 512" "angle" "0 -78 0"
+		}
+	"prop_ragdoll" {
+		"origin" "1113 2241 461"  "angle" "0 -135 0"
+		"keyvalues" {
+		"model" "models/ichthyosaur_corpse.mdl"
+		}
+	}
+	"prop_vehicle_jeep" {
+		"origin" "59 1900 515"		
+		"angle" "0 180 0"
+		"keyvalues" {
+			"vehiclescript"	"scripts/vehicles/jeep_test.txt"
+			"model"		"models/buggy.mdl"
+			"solid"		"6"
+		}
+	}
+	"npc_headcrab_black" {
+		"origin" "1657 -370 524" "angle" "0 113 0"
+		"keyvalues" {
+			"spawnflags" "2"
+		}
+	}
+	"npc_combine_s"
+	{
+		"origin" "-2877 1009 742" "angle" "0 -61 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_svd"
+			"squadname" "csquad1"
+			"targetname" "csquad1"
+		}
+	}
+	"npc_combine_s"
+	{
+		"origin" "572 919 1053" "angle" "0 -85 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_svd"
+			"squadname" "csquad1"
+			"targetname" "csquad1"
+		}
+	}
+	"path_track" {
+		"origin" "-10983 4575 463"
+		"angle" "0 0 0"		
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_2"
+			"target" "ship_3"
+		}
+	}
+	"path_track" {
+		"origin" "-5726 3635 402"
+		"angle" "0 0 0"		
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_3"
+			"target" "ship_4"
+		}
+	}
+	"path_track" {
+		"origin" "-4036 448 1024"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_4"
+			"target" "ship_5"
+		}
+	}
+	"path_track" {
+		"origin" "-2124 -401 1139"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_5"
+			"target" "ship_6"
+		}
+	}
+		"path_track" {
+		"origin" "-379 -979 1051"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_6"
+			"target" "ship_7"
+		}
+	}
+			"path_track" {
+		"origin" "2009 -512 959"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_7"
+			"target" "ship_8"
+		}
+	}
+			"path_track" {
+		"origin" "1977 1282 940"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_8"
+			"target" "ship_9"
+		}
+	}
+			"path_track" {
+		"origin" "836 2434 993"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_9"
+			"target" "ship_10"
+		}
+	}
+			"path_track" {
+		"origin" "608 3453 1005"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_10"
+			"target" "ship_11"
+		}
+	}
+			"path_track" {
+		"origin" "-51 4648 734"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_11"
+			"target" "ship_12"
+		}
+	}
+		"path_track" {
+		"origin" "-658 4081 630"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_12"
+			"OnPass" "dship1,LandLeaveCrate,6,0,-1"
+		}
+	}
+	"info_target" {
+		"origin" "-679 3914 576"
+		"angle" "0 -82 0"
+		"keyvalues" {
+			"targetname"	"dsp2"
+		}
+	}
+		"assault_rallypoint"{
+		"origin" "-60 3673 576"
+		"angle" "0 180 0"
+	}
+		"assault_rallypoint"{
+		"origin" "-118 3671 576"
+		"angle" "0 180 0"
+	}
+		"assault_rallypoint"{
+		"origin" "-172 3672 576"
+		"angle" "0 180 0"
+	}
+		"assault_rallypoint"{
+		"origin" "-282 3677 576"
+		"angle" "0 180 0"
+	}
+		"assault_rallypoint"{
+		"origin" "-378 3678 576"
+		"angle" "0 180 0"
+	}
+		"assault_rallypoint"{
+		"origin" "-464 3679 576"
+		"angle" "0 180 0"
+	}
+		"assault_rallypoint"{
+		"origin" "-552 3680 576"
+		"angle" "0 180 0"
+	}
+		"assault_rallypoint"{
+		"origin" "-610 3681 576"
+		"angle" "0 180 0"
+	}
+		"assault_rallypoint"{
+		"origin" "-704 3685 576"
+		"angle" "0 -90 0"
+	}
+		"assault_rallypoint"{
+		"origin" "-697 3578 576"
+		"angle" "0 -90 0"
+	}
+		"path_track" {
+		"origin" "-1083 3989 855"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_a"
+			"target" "ship_b"
+		}
+	}
+		"path_track" {
+		"origin" "-1792 1979 1094"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_b"
+			"target" "ship_c"
+		}
+	}
+		"path_track" {
+		"origin" "-2849 281 1005"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_c"
+			"target" "ship_d"
+		}
+	}
+		"path_track" {
+		"origin" "-10346 -2319 623"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship_d"
+			"OnPass" "dship1,kill,,0,-1"
+		}
+	}
+		"path_track" {
+		"origin" "10729 -1313 422"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship2_1"
+			"target" "ship2_2"
+		}
+	}
+	"path_track" {
+		"origin" "3853 -298 411"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship2_2"
+			"target" "ship2_3"
+		}
+	}
+	"path_track" {
+		"origin" "2494 -166 816"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship2_3"
+			"target" "ship2_4"
+		}
+	}
+	"path_track" {
+		"origin" "2161 -713 1200"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship2_4"
+			"target" "ship2_5"
+			"OnPass" "dropship2,dropmines,2,0,-1"
+		}
+	}
+	"path_track" {
+		"origin" "686 -1068 1100"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship2_5"
+			"target" "ship2_6"
+			"OnPass" "dropship2,dropmines,2,0,-1"
+		}
+	}
+	"path_track" {
+		"origin" "-263 29 1200"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship2_6"
+			"target" "ship2_7"
+			"OnPass" "dropship2,dropmines,2,0,-1"
+		}
+	}
+	"path_track" {
+		"origin" "1146 1667 1200"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship2_7"
+			"target" "ship2_8"
+			"OnPass" "dropship2,dropmines,2,0,-1"
+		}
+	}
+	"path_track" {
+		"origin" "1529 3085 930"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship2_8"
+			"target" "ship2_9"
+			"OnPass" "dropship2,dropmines,2,0,-1"
+		}
+	}
+	"path_track" {
+		"origin" "-1521 2887 1122"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship2_9"
+			"target" "ship2_10"
+			"OnPass" "dropship2,dropmines,2,0,-1"
+		}
+	}
+	"path_track" {
+		"origin" "-2202 404 1152"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship2_10"
+			"target" "ship2_11"
+			"OnPass" "dropship2,dropmines,2,0,-1"
+		}
+	}
+	"path_track" {
+		"origin" "-2852 -166 1120"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship2_11"
+			"target" "ship2_12"
+			"OnPass" "dropship2,dropmines,2,0,-1"
+		}
+	}
+	"path_track" {
+		"origin" "-11650 -3934 399"
+		"angle" "0 0 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname" "ship2_12"
+			"OnPass" "dropship2,kill,,0,-1"
+		}
+	}
+}
+
+"entities:roundstart1" {
+
+	"player" {
+		"music" 	"song_prison_crusher"
+		"message"	"All right let's move out!"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+}
+
+"entities:roundstart2" {
+
+	"player" {
+		"music" 	"song_c17_02_street"
+		"message"	"Lock and load!"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+}
+
+"entities:initialize" {
+
+	"player" {
+		"message"	"-- Counter Combine: Port --"
+		"fadein"	"10"
+	}
+
+
+	lua {
+		"callfunc"	"RoundInit"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"roundstart1:roundstart2"
+			"timer"	"3"
+		}
+	}
+
+}
+
+"entities:movenext" {
+
+	lua {
+		"callfunc"	"MoveCombine"
+	}
+}
+
+
+
+"entities:cmovestop" {
+
+	"removeentity" {
+		"targetname"	"mv*"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"premove"
+			"timer"	"10"
+		}
+	}
+
+}
+
+"entities:premove" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"1"
+		}
+	}
+
+}
+
+
+
+"entities:clear" {
+
+	"player" {
+		"music" 	"song3"
+		"message"	"Targets eliminated! Gordon Freeman wins!"
+	}
+}
+
+"entities:dropship" {
+	"removeentity" {
+		"targetname"	"reinforcement_marker"
+	}
+	"npc_combinedropship" {
+		"origin" "-10983 4575 463"
+		"angle" "0 -16 0"
+		"keyvalues" {
+			"targetname"	"dship1"
+			"cratetype"	"1"
+			"LandTarget"	"dsp2"
+			"target"	"ship_2"
+			"gunrange"	"4000"
+			"NPCTemplate" "csquad9"
+		}
+	}
+	"event" {
+		"targetname" "dship1"
+		"action" "FlyToSpecificTrackViaPath"
+		"value" "ship_12"
+	}
+	"instant_trig" {
+		"origin" "-658 4081 630"
+		"keyvalues" {
+			"radius"	"200"
+			"label"		"landing"
+			"touchname"	"dship1"
+		}
+	}
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"dropship2"
+			"timer"	"30"
+		}
+	}
+}
+
+"entities:dropship2" {
+	"npc_combinedropship" {
+		"origin" "10503 -3766 686"
+		"angle" "0 104 0"
+		"keyvalues" {
+			"targetname"	"dropship2"
+			"cratetype"	"0"
+			"target"	"ship2_1"
+		}
+	}
+	"event" {
+		"targetname" "dropship2"
+		"action" "FlyToSpecificTrackViaPath"
+		"value" "ship2_12"
+	}
+}
+
+"entities:landing" {
+	"instant_trig" {
+		"keyvalues" {
+			"label"		"landing2"
+			"timer"		"30"
+		}
+	}
+	lua {
+		"callfunc"	"Spawn_Reinforcements"
+	}
+}
+
+"entities:landing2" {
+	"event" {
+		"targetname" "dship1"
+		"action" "FlyToSpecificTrackViaPath"
+		"value" "ship_d"
+	}
+}

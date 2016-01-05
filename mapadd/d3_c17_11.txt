@@ -1,0 +1,37 @@
+//	map arrange data
+//	location: d1_coast_08
+
+"precache" {
+}
+
+"randomspawn" {
+
+	"npc_combine_c" {
+		"count"		"5"
+		"weapon"	"weapon_mp5"
+	  "patrol"
+	}
+
+}
+
+"entities" {
+
+	"npc_combine_s" {
+		"origin" "1216 3544 1344" "angle" "0 87 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_svd"
+		}
+	}
+
+	"item_item_crate"
+	{
+		"origin"	"1218.32 7274.61 1023.96"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_hrifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+}

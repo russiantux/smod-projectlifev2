@@ -1,0 +1,5 @@
+Model: The_Lama
+Skin: Polygon
+Animations: Hav0c
+Compile: Pete
+Sounds: Vunsunta, 'boltpull' provided by Editor321

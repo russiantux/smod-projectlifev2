@@ -1,0 +1,25 @@
+//	map arrange data
+//	location: d2_prison_08
+"precache" {
+	"entity" "npc_f_turret_floor"
+}
+
+"entities" {
+
+	"npc_f_turret_floor" {
+		"origin" "-270.9 810.8 964.7"  "angle" "0 178 0"
+		"keyvalues" {
+		"model" "models/combine_turrets/floor_turret.mdl"
+		}
+	}
+
+	"npc_kscanner" {
+		"origin" "118 -568 1024"
+	}
+
+
+	lua {
+		"callfunc"	"Init"
+	}
+	
+}

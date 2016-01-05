@@ -1,0 +1,48 @@
+//	map arrange data
+//	location: d3_c17_03
+"precache" {
+}
+
+
+"randomspawn" {
+
+	"removenodes" {
+		"origin" "-4482 -3503 76"
+		"radius" "1000"
+	}
+	"removenodes" {
+		"origin" "-3575 -3266 97"
+		"radius" "1000"
+	}
+
+	"npc_combine_ace" {
+		"count"		"3"
+		"weapon"	"weapon_smg1"
+	}
+	
+}
+
+
+"entities" {
+
+	"npc_citizen" {
+		"origin" "-2932 -4299 816" "angle" "0 -171 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_rpg"
+			"targetname"		"npc11"
+			"spawnflags" "338692"
+		}
+	}
+
+
+	"npc_citizen" {
+		"origin" "-4035 -4128 832" "angle" "0 -128 0"
+		"longrange"
+		"keyvalues" {
+			"additionalequipment"	"weapon_rpg"
+			"targetname"		"npc11"
+			"spawnflags" "338692"
+		}
+	}
+}

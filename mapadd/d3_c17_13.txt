@@ -1,0 +1,141 @@
+//	map arrange data
+//	location: d1_coast_08
+
+"precache" {
+}
+
+"randomspawn" {
+
+	"removenodes" {
+		"origin" "4746 -2694 56"
+		"radius" "1000"
+	}
+
+	"npc_combine_s" {
+		"count"		"7"
+		"weapon"	"weapon_oicw"
+		"patrol"
+	}
+
+	"npc_combine_e" {
+		"count"		"3"
+		"weapon"	"weapon_jackhammer"
+		"patrol"
+	}
+
+	"npc_combine_ace" {
+		"count"		"3"
+		"weapon"	"weapon_pulsemg"
+		"patrol"
+	}
+
+}
+"entities" {
+
+	"prop_ragdoll" {
+		"origin" "5985 -1763 -46" "angle" "10 160 0"
+		"keyvalues" {
+			"model"	"models/combine_f_soldier.mdl"
+		}
+	}
+
+	"prop_ragdoll" {
+		"origin" "7117 -1720 88" "angle" "10 -160 0"
+		"keyvalues" {
+			"model"	"models/combine_f_soldier.mdl"
+		}
+	}
+
+	"npc_f_combine" {
+		"origin" "4729 -2470 64" "angle" "0 -73 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_grease"
+		}
+	}
+
+	"npc_f_combine" {
+		"origin" "4724 -2295 64" "angle" "0 83 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_m1garand"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "4980 -367 320" "angle" "0 20 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_rpg"
+		}
+	}
+
+	"item_item_crate"
+	{
+		"origin"	"7045.25 -1564.18 67.96"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_rifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"6327.77 -1354.67 64.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_rifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"6258.65 -576.16 192.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_hrifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"5670.21 -468.16 -63.97"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_gauss"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"6934.90 -843.16 167.02"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_rifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}	
+	"instant_trig" {
+		"origin" "5778 -830 192"
+		"keyvalues" {
+			"label"	"music1"
+			"radius"	"200"
+		}
+	}
+ }
+
+"entities:music1" {
+	"player" {
+		"music" "combinetheme"
+	}
+}
+
+
+

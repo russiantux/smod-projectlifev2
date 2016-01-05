@@ -1,0 +1,45 @@
+cs_enemy_pack_ver2.0
+
+_______________________________________________________________________________
+
+For Half- Life2 SP
+
+These files can replace the model of the hostile combine. 
+
+The model cannot be replaced while you are playing a game. 
+Please overwrite these files before starting game.
+
+All models can replace any combine.
+________________________________________________________________________________
+
+model list
+
+urban
+gign
+t_phoenix
+german
+SAS
+NYPD
+t_arctic
+
+
+>Phatcat's replacement sound packing of combine.
+
+http://phatcat.animedominion.com/smod/cs_enemy_sounds.rar
+
+Please download the file from this link 
+when you want to replace the sound of a hostile combine. 
+
+credit
+
+NYPD_model
+http://www.fpsbanana.com/?section=viewitem.skins.skins.dl.9418
+
+thanks
+
+
+
+Sorry about my poor english.
+thanks
+
+2006/4/9

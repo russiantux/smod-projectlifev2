@@ -1,0 +1,30 @@
+---------------------------------------------------------------------
+MP5/10
+
+Mp5 Model 		- Short_Fuse
+Mp5 Skin		- Creeping_Jesus
+Rail Model		- Short_Fuse
+Rail Skin		- Version_2
+Aimpoint Model		- Originally by Ironclad, redone by Version_2
+Aimpoint Skin		- Wannabe
+Aimpoint Skin Edits	- Sub Zero (a.k.a. Iceman)
+Aimpoint Base Model	- The Lama (a.k.a. Dave)
+Aimpoint Base Knobs	- SAS.STU
+Aimpoint Base Skin	- -X-
+Front Grip Model	- Version_2
+Front Grip Skin		- Prodigy
+Magazine Model		- Version_2
+Magazine Skin		- Creeping_Jesus
+Tape Texture		- The_Aim
+Animations		- Jennifer!!
+Arm Convert             - Soul_Slayer
+Sounds                  - Hk & Vunsunta
+Skin Edits              - !NC!Furious
+Compile                 - !NC!Furious
+
+----------------------------------------------------------------------
+
+Terms and Conditions apply to these files and their usage/redistribution. 
+For full details see http://www.csnation.net/skins/terms.html
+
+

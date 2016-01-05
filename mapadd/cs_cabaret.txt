@@ -1,0 +1,178 @@
+// ace - green
+// s - soldier
+// e - elite (white suit enemies)
+// c - camouflaged
+
+"precache"{
+	"entity" "npc_combine_s"
+	"entity" "npc_combine_e"
+}
+
+"randomspawn" {
+
+
+	"npc_combine_s" {
+		"count"		"20"
+		"grenade"	"5"
+		"patrolrandom"
+		"values" "GrenadeClass custom_explosive GrenadeExploType CSFragGrenade2 GrenadeClass custom_explosive GrenadeExploType CSFragGrenade2 GrenadeClass custom_explosive GrenadeExploType CSFragGrenade2 squadname cb1"
+		"model"	"models/combine_soldier_prisonguard.mdl"
+	}
+
+	"npc_combine_e" {
+		"count"		"20"
+		"grenade"	"5"
+		"patrolrandom"
+		"values" "GrenadeClass custom_explosive GrenadeExploType CSFragGrenade2 GrenadeClass custom_explosive GrenadeExploType CSFragGrenade2 squadname cb2"
+		"model"	"models/urbantrenchcoat.mdl"
+	}
+
+
+}
+
+
+"entities"{
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"label" "initialize"
+			"timer" ".1"
+		}
+	}
+
+
+	"instant_trig" {
+		"keyvalues" {
+			"islived"	"officer"
+			"label"		"clear"
+		}
+	}
+
+
+}
+
+
+"entities:initialize" {
+
+	"removeentity" {
+		"classname"	"info_player_start"
+	}
+
+	"npc_metropolice" {
+		"origin"	"-1218 3894 216"
+		"count"		"20"
+		"grenade"	"5"
+		"patrolrandom"
+		"values" "GrenadeClass custom_explosive GrenadeExploType CSFragGrenade2 GrenadeClass custom_explosive GrenadeExploType CSFragGrenade2 squadname cb2"
+			"keyvalues" {
+				"targetname"	"officer"
+			}
+		}
+	
+		"npc_f_combine" {
+		"origin"		"-693.277222 2382.110840 88.03125"
+		"model"			"combine_f_soldier_cop.mdl"
+		"expressiontype"	"1"
+		"weapon"	"weapon_custom4"
+				}
+
+		"npc_f_combine" {
+		"origin"		"-824.353638 2365.470215 88.03125"
+		"model"			"combine_f_soldier_cop.mdl"
+		"expressiontype"	"1"
+		"weapon"	"weapon_custom1"
+				}
+
+		"npc_f_combine" {
+		"origin"		"-540.538574 2623.487549 88.03125"
+		"model"			"models/humans/nypdcop/Male_02.mdl"
+		"expressiontype"	"1"
+		"weapon"	"weapon_custom1"
+				}
+
+		"npc_citizen" {
+		"origin"		"-428.208923 2598.490479 88.03125"
+		"model"			"models/humans/nypdcop/Male_03.mdl"
+		"expressiontype"	"1"
+		"weapon"	"weapon_custom4"
+				}
+
+		"npc_citizen" {
+		"origin"		"-2409.268066 3855.071045 88.03125"
+		"model"			"models/humans/nypdcop/Male_03.mdl"
+		"expressiontype"	"1"
+		"weapon"	"weapon_custom4"
+				}
+
+		"npc_citizen" {
+		"origin"		"-2288.504150 3715.709473 88.031250"
+		"model"			"models/humans/nypdcop/Male_03.mdl"
+		"expressiontype"	"1"
+		"weapon"	"weapon_custom1"`
+				}
+
+		"npc_citizen" {
+		"origin"		"-628.718872 2597.995605 88.031250"
+		"model"			"models/humans/nypdcop/Male_03.mdl"
+		"expressiontype"	"1"
+		"weapon"	"weapon_custom4"
+				}
+
+
+	"info_player_start" {
+		"origin" "-662 1460 135"
+		"angle" "7 115 0"
+		"fadein"	"5"
+		"message"	"Kill the Terroist Leader"
+	}
+
+	"item_suit" {
+		"origin"	"-662 1460 135"
+	}
+
+	"weapon_custom7" {
+		"origin"	"-662 1460 135"
+	}
+
+	"weapon_custom9" {
+		"origin"	"-662 1460 135"
+	}
+
+	"item_ammo_ar2" {
+		"origin"	"-662 1460 135"
+	}
+
+	"item_ammo_ar2" {
+		"origin"	"-662 1460 135"
+	}
+
+	"item_ammo_ar2" {
+		"origin"	"-662 1460 135"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"-662 1460 135"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"-662 1460 135"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"-662 1460 135"
+	}
+
+	"item_ammo_pistol" {
+		"origin"	"-662 1460 135"
+	}
+
+}
+
+
+"entities:clear"{
+	"player" {
+		"message"	"Mission Clear!!"
+		"music"		"song3"
+	}
+}

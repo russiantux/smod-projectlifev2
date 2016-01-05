@@ -1,0 +1,427 @@
+//	map arrange data
+//	location: d1_coast_04
+
+"precache" {
+	"entity"	"npc_citizen"
+	"entity"	"npc_metropolice"
+	"entity"	"npc_fastzombie"
+	"entity"	"npc_combinedropship"
+	"entity"	"prop_dropship_container"
+}
+
+"entities:land3" {
+	"removeentity" {
+		"targetname"	"dship1"
+	}
+}
+
+
+"entities:land2" {
+
+	"npc_combine_s" {
+		"origin" "5719 -2524 384"
+		"keyvalues" {
+			"NumGrenades" "12"
+			"squadname" "sq1"
+			"targetname"	"cb1"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "5731 -2372 384"
+		"keyvalues" {
+			"NumGrenades" "12"
+			"squadname" "sq1"
+			"targetname"	"cb1"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "5859 -2358 384"
+		"keyvalues" {
+			"NumGrenades" "12"
+			"squadname" "sq1"
+			"targetname"	"cb1"
+			"additionalequipment"	"weapon_smg1"
+		}
+	}	
+	
+	"event" {
+		"targetname"	"cb1"
+		"action"	"startpatrolling"
+		"value"		"1"
+	}
+
+	"event" {
+		"targetname"	"dship1"
+		"action"	"FlyToSpecificTrackViaPath"
+		"value"		"dsp3"
+	}
+
+	
+}
+
+"entities:land1" {
+
+	"event" {
+		"targetname"	"dship1"
+		"action"	"landleavecrate"
+		"value"		"1"
+	}
+
+	"instant_trig" {
+		"origin" "10021 10523 354"
+		"keyvalues" {
+			"radius"	"200"
+			"label"		"land3"
+			"touchname"	"dship1"
+		}
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"		"land2"
+			"timer"		"20"
+		}
+	}
+
+
+
+}
+
+"entities:a1" {
+
+
+	"info_target" {
+		"origin" "6039 -2311 384"
+		"angle" "0 -177 0"
+		"keyvalues" {
+			"targetname"	"dsp2"
+		}
+	}
+
+	"path_track" {
+//		"origin" "5977 -2350 2724"
+		"origin" "10021 10523 354"
+		"angle" "21 -114 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname"	"dsp3"
+		}
+	}
+
+
+	"path_track" {
+		"origin" "5900 -2398 660"
+		"angle" "0 -167 0"
+		"keyvalues" {
+			"orientationtype" "1"
+			"targetname"	"dsp1"
+		}
+	}
+
+	"npc_combinedropship" {
+		"origin" "-5538 -2152 2256"
+		"keyvalues" {
+			"targetname"	"dship1"
+			"cratetype"	"1"
+			"LandTarget"	"dsp2"
+			"target"	"dsp1"
+			"gunrange"	"4000"
+			"Dustoff1" "p2"
+			"NPCTemplate" "cb1"
+		}
+	}
+	
+	"instant_trig" {
+		"origin" "5927 -2361 685"
+		"keyvalues" {
+			"radius"	"100"
+			"label"		"land1"
+			"touchname"	"dship1"
+		}
+	}
+	
+	"info_target" {
+		"origin" "5211 -2283 384"
+	}
+	
+}
+
+"entities:init" {
+	"removeentity" {
+		"targetname"	"prop_catwalk"
+	}
+
+	"event" {
+		"targetname"	"thumper_1"
+		"action"	"enable"
+	}
+
+
+	"func_physbox" {
+		"origin" "5030.6 -2688.0 535.5"  "angle" "3 0 360"
+		"keyvalues" {
+			"model" "*60"
+			"spawnflags" "8"
+			"forcetoenablemotion"	"10000"
+		}
+	}
+
+	"removeentity" {
+		"origin" "6000.5 -1887.6 445.6"
+		"radius" "100"
+		"classname"	"prop_physics"
+	}
+
+}
+
+"entities:cann" {
+	
+	"event" {
+		"targetname"	"cannister01"
+		"action"	"firecanister"
+	}
+
+}
+
+"entities" {
+
+	"env_headcrabcanister" {
+		"origin" "2620 7603 1272"
+		"angle" "58 -81 0"
+		"keyvalues" {
+			"SmokeLifetime" "60"
+			"targetname" "cannister01"
+			"spawnflags" "57346"
+			"DamageRadius" "0"
+			"Damage" "100"
+			"SkyboxCannisterCount" "1"
+			"StartingHeight" "0"
+			"FlightTime" "1.5"
+			"FlightSpeed" "2700"
+			"HeadcrabCount" "4"
+			"HeadcrabType" "1"
+			"angles" "308 138 0"
+			"OnImpacted" "cannister01,OpenCanister,,0.5,-1"
+			"OnOpened" "cannister01,SpawnHeadcrabs,,1,-1"
+		}
+	}
+
+	"env_headcrabcanister" {
+		"origin" "2390 7865 1305"
+		"angle" "52 -65 0"
+		"keyvalues" {
+			"SmokeLifetime" "60"
+			"targetname" "cannister01"
+			"spawnflags" "57346"
+			"DamageRadius" "0"
+			"Damage" "100"
+			"SkyboxCannisterCount" "1"
+			"StartingHeight" "0"
+			"FlightTime" "1.5"
+			"FlightSpeed" "2700"
+			"HeadcrabCount" "4"
+			"HeadcrabType" "1"
+			"angles" "308 138 0"
+			"OnImpacted" "cannister01,OpenCanister,,0.5,-1"
+			"OnOpened" "cannister01,SpawnHeadcrabs,,1,-1"
+		}
+	}
+
+	"env_headcrabcanister" {
+		"origin" "2764 7798 1297"
+		"angle" "39 132 0"
+		"keyvalues" {
+			"SmokeLifetime" "60"
+			"targetname" "cannister01"
+			"spawnflags" "57346"
+			"DamageRadius" "0"
+			"Damage" "100"
+			"SkyboxCannisterCount" "1"
+			"StartingHeight" "0"
+			"FlightTime" "1.5"
+			"FlightSpeed" "2700"
+			"HeadcrabCount" "4"
+			"HeadcrabType" "1"
+			"angles" "308 138 0"
+			"OnImpacted" "cannister01,OpenCanister,,0.5,-1"
+			"OnOpened" "cannister01,SpawnHeadcrabs,,1,-1"
+		}
+	}
+
+
+"prop_physics" {
+	"origin" "2724.8 7498.1 1257.7"  "angle" "4 -34 6"
+	"stabilize"	"30"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+	}
+}
+"prop_physics" {
+	"origin" "2650.6 7490.5 1256.8"  "angle" "-7 98 359"
+	"stabilize"	"30"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+	}
+}
+"prop_physics" {
+	"origin" "2570.4 7481.3 1255.6"  "angle" "1 -171 353"
+	"stabilize"	"30"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+	}
+}
+"prop_physics" {
+	"origin" "2504.1 7470.4 1299.7"  "angle" "7 -90 180"
+	"stabilize"	"30"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+	}
+}
+"prop_physics" {
+	"origin" "2446.9 7473.4 1300.0"  "angle" "7 -72 182"
+	"stabilize"	"30"
+	"keyvalues" {
+	"model" "models/props_c17/oildrum001.mdl"
+			"forcetoenablemotion"	"1"
+	}
+}
+
+
+	"instant_trig" {
+		"origin" "2679 6267 1169"
+		"keyvalues" {
+			"radius"	"300"
+			"label"		"cann"
+		}
+	}
+	"instant_trig" {
+		"origin" "2213 -2829 412"
+		"keyvalues" {
+			"radius"	"50"
+			"label"		"a1"
+		}
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"timer"		"0.01"
+			"label"		"init"
+		}
+	}
+
+
+
+	"npc_citizen" {
+		"origin" "1653 -2522 256" "angle" "0 41 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_grease"
+		}
+	}
+
+	"npc_citizen" {
+		"origin" "1871 -3026 256" "angle" "0 87 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_grease"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "4509 -1652 672"
+		"keyvalues"
+		{
+			"label"	"spawncit"
+			"radius"	"50"
+		}
+	}
+	
+	"instant_trig" {
+		"origin" "585 -3368 897"
+		"keyvalues"
+		{
+			"label"	"spawn2"
+			"radius"	"300"
+		}
+	}
+
+	"npc_fastzombie" {
+		"origin" "2135 6793 1153" "angle" "0 -63 0"
+	}
+}
+
+
+"entities:spawn2" {
+
+	"prop_physics" {
+		"origin" "-1942.0 -1277.2 951.1"  "angle" "-0 -171 0"
+		"keyvalues" {
+		"model" "models/props_vehicles/car003a_physics.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "-1847.1 -1399.4 951.1"  "angle" "-0 90 0"
+		"keyvalues" {
+		"model" "models/props_vehicles/car003a_physics.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "-1722.2 -1293.2 951.1"  "angle" "0 -164 0"
+		"keyvalues" {
+		"model" "models/props_vehicles/car003a_physics.mdl"
+		}
+	}
+	
+	
+	"npc_combine_s" {
+		"origin" "-1712.0 -1054.8 928.0"  "angle" "0 -88 0"
+		"keyvalues" {
+				"additionalequipment"	"weapon_kar98"
+		}
+	}
+	"npc_metropolice" {
+		"origin" "-1850.2 -1078.6 928.0"  "angle" "0 -88 0"
+		"keyvalues" {
+				"additionalequipment"	"weapon_smg1"
+		}
+	}
+	"npc_metropolice" {
+		"origin" "-1958.2 -1097.1 928.0"  "angle" "0 -88 0"
+		"keyvalues" {
+				"additionalequipment"	"weapon_grease"
+		}
+	}
+
+}
+
+"entities:spawncit" {
+	
+	"npc_citizen" {
+		"origin" "4400 -1682 256" "angle" "0 -83 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+	"npc_citizen" {
+		"origin" "4342 -1589 256" "angle" "0 -83 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_grease"
+		}
+	}
+
+	"npc_citizen" {
+		"origin" "4295 -1747 256" "angle" "0 95 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+	
+}

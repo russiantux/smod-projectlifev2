@@ -1,0 +1,26 @@
+//	map arrange data
+//	location: d3_c17_09.txt
+
+"entities" {
+	"npc_sniper" {
+		"origin" "6007 7329 384" "angle" "0 -114 0"
+	}
+
+	"instant_trig" {
+		"origin" "7101 6245 0"
+		"keyvalues" {
+			"radius"	"100"
+			"label"		"sniper2"
+		}
+	}
+	
+}
+
+
+"entities:sniper2" {
+
+	"npc_sniper" {
+		"origin" "6228 7333 384" "angle" "0 -60 0"
+	}
+
+}

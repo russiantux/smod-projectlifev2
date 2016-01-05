@@ -1,0 +1,144 @@
+//	map arrange data
+//	location: d1_coast_08
+
+"precache" {
+}
+
+"randomspawn" {
+
+	"npc_combine_c" {
+		"count"		"5"
+		"weapon"	"weapon_mp5"
+		"patrol"
+	}
+
+	"npc_stalker" {
+		"count"		"5"
+		"beampower"	"1"
+		"patrol"
+	}
+	"npc_kscanner" {
+		"count"		"1"
+	}
+}
+
+"entities" {
+
+	"item_item_crate"
+	{
+		"origin"	"2869.25 -1707.12 319.96"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_rifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"3954.13 -836.41 576.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_hrifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"3041.50 1099.93 575.54"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_rifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"3"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"3054.99 1187.25 575.54"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_flare"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"3"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"2609.27 -1710.59 575.96"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_gauss"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"2665.13 -1713.93 575.96"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_hrifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"1"
+		}
+	}
+	"item_item_crate"
+	{
+		"origin"	"2380.64 -1113.08 320.03"
+		"angle"		"0 0 0"
+		"KeyValues"
+		{
+			"ItemClass"		"item_ammo_rifle"
+	//		"ItemClass"		"item_dynamic_resupply"
+			"ItemCount"		"2"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "2683 -1054 320"
+		"keyvalues" {
+			"label"	"ambush"
+			"radius"	"500"
+		}
+	}
+}
+
+
+"entities:ambush" {
+
+	"npc_combine_e" {
+		"origin" "2442 -304 320" "angle" "0 -80 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_pulsemg"
+		}
+	}
+	
+	"npc_combine_s" {
+		"origin" "2239 -307 320" "angle" "0 0 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_oicw"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "2175 -606 320" "angle" "0 -39 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_oicw"
+		}
+	}
+
+	"npc_combine_s" {
+		"origin" "2635 -882 576" "angle" "0 92 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_jackhammer"
+		}
+	}
+}

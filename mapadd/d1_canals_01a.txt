@@ -1,0 +1,18 @@
+//	map arrange data
+//	location: d1_canal_01a
+
+"randomspawn" {
+	"npc_metropolice" {
+		"count"		"16"
+		"weapon"	"weapon_pistol"
+	}
+	"npc_combine_s" {
+		"count"		"5"
+		"weapon"	"weapon_smg1"
+	}
+	"npc_metropolice" {
+		"count"		"5"
+		"weapon"	"weapon_shotgun"
+	}
+}
+

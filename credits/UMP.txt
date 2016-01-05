@@ -1,0 +1,22 @@
+=====================
+Credits
+=====================
+Model: Outlaw
+Silencer: Dirtball
+Silencer: Pr0d!gy
+Skin: S.P.I.T.Z.
+Flashlight model & skin: ? http://www.counter-strike-dl.com/download-642.html
+Reflex sight: ? http://www.counter-strike-dl.com/download-457.html
+Animations: Valve Default
+Compile: Bullet_Head
+Minor lense edit
+Recompile: PFM  | The End (Chalmers)
+------------------------------------------------------------
+
+=========================
+Installation
+=========================
+Extract to c:\\program files\valve\steam\steam apps\your account name\counter-strike source\
+cstrike
+
+ENJOY SUCKA FOO!

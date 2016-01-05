@@ -1,0 +1,262 @@
+//ORIGINAL SCRIPT BY SMOD AUTHOR http://accept.hopto.org/smod/
+//MODIFICATION BY FITZROY_DOLL JANUARY 2007 http://www.amphibian.myzen.co.uk/home/
+"precache" {
+	"entity"	"item_suit"
+	"entity"	"npc_citizen"
+	"entity"	"npc_combine_e"
+	"entity"	"npc_combine_s"
+	"entity"	"npc_metropolice"
+	"entity"	"item_item_crate"
+	}
+
+"entities" {
+
+	lua {
+		"callfunc"	"Init"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"initialize"
+			"timer"	"0.1"
+		}
+	}
+	"npc_metropolice"
+	{
+		"origin" "5452 5632 -569" "angle" "0 17 0"
+		"longrange"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_pistol"
+			"manhacks" "1"
+			"targetname" "csquad9"
+		}
+	}
+	"npc_metropolice"
+	{
+		"origin" "4899 4100 -635" "angle" "0 90 0"
+		"longrange"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_pistol"
+			"manhacks" "1"
+			"targetname" "csquad9"
+		}
+	}
+	"npc_metropolice"
+	{
+		"origin" "6418 4942 -405" "angle" "0 73 0"
+		"longrange"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_pistol"
+			"manhacks" "1"
+			"targetname" "csquad9"
+		}
+	}
+	"npc_metropolice"
+	{
+		"origin" "6395 7179 -447" "angle" "0 -73 0"
+		"longrange"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_pistol"
+			"manhacks" "1"
+			"targetname" "csquad9"
+		}
+	}
+	"npc_metropolice"
+	{
+		"origin" "7125 4625 -426" "angle" "0 130 0"
+		"longrange"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_pistol"
+			"manhacks" "1"
+			"targetname" "csquad9"
+		}
+	}
+	"npc_headcrab_black" {
+		"origin" "5366 7054 -901" "angle" "0 -96 0"
+	}
+	"npc_headcrab_black" {
+		"origin" "6309 4105 -419" "angle" "0 79 0"
+	}
+}
+
+"entities:roundstart1" {
+
+	"player" {
+		"music" 	"song20_submix0"
+		"message"	"All right let's move out!"
+	}
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+}
+
+"entities:roundstart2" {
+
+	"player" {
+		"music" 	"song12_long"
+		"message"	"Lock and load!"
+	}
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"2"
+		}
+	}
+}
+
+"entities:initialize" {
+
+	"player" {
+		"message"	"-- Hostage Rescue: Assault --"
+		"fadein"	"10"
+	}
+
+
+	lua {
+		"callfunc"	"RoundInit"
+	}
+
+"instant_trig" {
+		"keyvalues" {
+			"label"	"gameover"
+			"islived" "hostage"
+			"group"		"3"
+			"removegroup"	"1"
+		}
+	}
+
+//	Hostage Extract Point
+	"instant_trig" {
+		"origin" "5445 6393 -808"
+		"keyvalues" {
+			"label"	"clear"
+			"touchname"	"hostage"
+			"radius" "200"
+			"group"		"3"
+			"removegroup"	"1"
+		}
+	}
+
+	
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"roundstart1:roundstart2"
+			"timer"	"3"
+		}
+	}
+	
+
+}
+
+"entities:movenext" {
+
+	lua {
+		"callfunc"	"MoveCombine"
+	}
+}
+
+
+
+"entities:cmovestop" {
+
+	"removeentity" {
+		"targetname"	"mv*"
+	}
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"premove"
+			"timer"	"10"
+		}
+	}
+
+}
+
+"entities:premove" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"1"
+		}
+	}
+
+}
+
+
+"entities:premove" {
+
+	"instant_trig" {
+		"keyvalues" {
+			"label"	"movenext"
+			"timer"	"1"
+		}
+	}
+
+}
+
+"entities:takeshostage" {
+
+	lua {
+		"callfunc"	"EscortHostage"
+	}
+
+	"player" {
+		"message"	"ESCORT HOSTAGES TO EXTRACT POINT"
+	}
+	
+	"sound" {
+		"targetname"	"hostage"
+		"soundname"	"npc_citizen.abouttime01"
+	}
+}
+
+"entities:clear" {
+
+	"player" {
+		"message"	"HOSTAGE HAS BEEN RESCUED"
+		"music" 	"song_credits_2"
+	}
+	
+	"removeentity" {
+		"targetname"	"csquad*"
+	}
+	
+	"sound" {
+		"targetname"	"hostage"
+		"soundname"	"odessa.nlo_cheer03"
+	}
+
+	"scripted_sequence" {
+		"keyvalues" {
+			"m_iszplay"	"cheer1"
+			"m_iszEntity" "hostage"
+			"targetname" "ga1"
+		}
+	}
+
+	"event" {
+		"targetname"	"ga1"
+		"action"	"beginsequence"
+	}
+}
+
+
+"entities:gameover" {
+
+	"player" {
+		"message"	"HOSTAGES KILLED. MISSION FAILURE..."
+		"music"		"song_hl1_stinger8"
+		"fadeout"	"5"
+		"kill"
+	}
+}
+

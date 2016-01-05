@@ -1,0 +1,103 @@
+//	map arrange data
+//	location: d2_prison_06
+"precache" {
+	"model"	"models/combine_super_soldier.mdl"
+	"entity"	"npc_zombie"
+	"entity"	"npc_houndeye"
+	"entity"	"npc_fastzombie"
+}
+
+
+"entities" {
+
+	"npc_zombie" {
+		"origin" "1845 1456 -561" "angle" "0 -50 0"
+	}
+
+
+	"instant_trig" {
+		"origin" "1974 1050 -568"
+		"keyvalues" {
+			"radius"	"50"
+			"label"		"drop1"
+		}
+	}
+	
+	"instant_trig" {
+		"origin" "313 -809 0"
+		"keyvalues" {
+			"radius"	"50"
+			"label"		"zombie1"
+		}
+	}
+//Yet another train that lags/crashes the game.
+	"removeentity" {
+		"targetname"	"start_train_1_relay"
+	}
+}
+
+
+"entities:drop1" {
+	"prop_ragdoll" {
+		"origin" "1987 758 124" "angle" "89 90 0"
+		"keyvalues" {
+			"model"	"models/combine_super_soldier.mdl"
+		}
+	}
+}
+
+
+"entities:zombie1" {
+
+	"npc_zombie" {
+		"origin" "776.6 -1194.5 0.0"  "angle" "0 0 0"
+		"alwaysthink"
+		"keyvalues" {
+			"targetname"	"zb1"
+		}
+	}
+	"npc_zombie" {
+		"origin" "536.5 -1739.0 0.0"  "angle" "0 66 0"
+		"alwaysthink"
+		"keyvalues" {
+			"targetname"	"zb1"
+		}
+	}
+	"npc_zombie" {
+		"origin" "368.6 -1532.7 0.0"  "angle" "0 0 0"
+		"alwaysthink"
+		"keyvalues" {
+			"targetname"	"zb1"
+		}
+	}
+
+	"info_target" {
+		"origin" "534 -978 0"
+		"keyvalues" { "targetname" "goalnpc1" }
+	}
+
+	"ai_goal_follow" {
+		"keyvalues" {
+			"startactive"	"1"
+			"searchtype"	"0"
+			"MaximumState"	"3"
+			"actor"		"zb1"
+			"goal"		"goalnpc1"
+		}
+	}
+
+	"npc_houndeye" {
+		"origin" "1057 -2165 -240"
+		"angle" "0 2 0"
+	}
+
+	"npc_zombie" {
+		"origin" "1172 -2180 -240"
+		"angle" "0 93 0"
+		"keyvalues" {
+			"targetname"	"zb1"
+		}
+	}
+
+}
+

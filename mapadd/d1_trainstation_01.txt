@@ -1,0 +1,110 @@
+//	map arrange data
+//	location: d1_trainstation_01
+
+
+"entities:leave1"
+{
+
+	"scripted_sequence" {
+		"origin" "-7301 -3473 320"
+		"keyvalues" {
+			"spawnflags" "608"
+			"m_iszEntity" "gmang1"
+			"targetname" "gman_ss_1"
+			"m_fMoveTo" "1"
+			"angles" "0 0 0"
+		}
+	}
+
+	"event" {
+		"targetname"	"gman_ss_1"
+		"action"	"beginsequence"
+	}
+
+}
+
+
+"entities:sb" {
+
+	"shoot_bullet" {
+		"origin" "3972 -4252 -500"
+		"angle" "-9 69 0"
+		"keyvalues" {
+			"force"	"3000"
+			"damage"	"1000"
+		}
+		
+	}
+}
+
+"entities"
+{
+
+
+	lua {
+		"callfunc"	"Init"
+	}
+	
+	
+	"npc_combine_e" {
+		"origin" "4047 -4064 -528"
+		"angle" "0 -85 0"
+	}
+	
+	
+	"instant_trig" {
+		"origin" "-4382 -2052 -16"
+		"keyvalues" {
+			"radius"	"200"
+			"label"	"sb"
+		}
+	}
+	
+	"npc_gman" {
+		"origin" "-7335 -2964 324"
+		"angle" "0 89 0"
+		"keyvalues" {
+			"targetname"	"gmang1"
+		}
+	}
+	
+	"instant_trig" {
+		"origin" "-7504 -2071 16"
+		"keyvalues" {
+			"radius"	"150"
+			"label"		"leave1"
+		}
+	}
+	
+	
+	"food_sankaba" {
+		"origin" "-5250.2 -1316.1 -0.8"  "angle" "0 -153 360"
+		"keyvalues" {
+		"model" "models/misc/foods/sankaba.mdl"
+		}
+	}
+
+	"prop_physics" {
+		"origin" "-5696.3 -2042.7 38.3"  "angle" "-0 -180 359"
+		"freeze"
+		"keyvalues" {
+		"model" "models/misc/kanban/nozaki.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "-7068.8 -2173.9 69.7"  "angle" "-0 180 359"
+		"freeze"
+		"keyvalues" {
+		"model" "models/misc/kanban/nozaki.mdl"
+		}
+	}
+	"prop_physics" {
+		"origin" "-7577.9 -2306.9 72.0"  "angle" "-0 180 359"
+		"freeze"
+		"keyvalues" {
+		"model" "models/misc/kanban/nozaki.mdl"
+		}
+	}
+
+
+}

@@ -1,0 +1,133 @@
+//	map arrange data
+//	location: d1_canal_01
+"precache" {
+	"entity"	"npc_zombie"
+}
+
+
+"randomspawn" {
+	
+	"removenodes" {
+		"origin" "134 -7354 -128"
+		"radius" "500"
+	}
+
+	"removenodes" {
+		"origin" "809 2630 -58"
+		"radius" "300"
+	}
+
+	"removenodes" {
+		"origin" "122 -7351 -63"
+		"radius" "1000"
+	}
+
+	"removenodes" {
+		"origin" "475 -2462 496"
+		"radius" "250"
+	}
+
+	"npc_metropolice" {
+		"count"		"15"
+		"weapon"	"weapon_pistol"
+		"patrol"
+	}
+}
+
+
+"entities" {
+	"instant_trig" {
+		"origin" "427 -4329 512"
+		"keyvalues" {
+			"radius"	"100"
+			"label"		"wave1"
+		}
+	}
+
+//Train causes lag/crashes.
+	"removeentity" {
+		"targetname"	"barrelpush_conditions"
+	}
+
+	"removeentity" {
+		"targetname"	"looping_traincar2"
+	}	
+
+	"removeentity" {
+		"targetname"	"looping_traincar3"
+	}		
+//Stop train from lagging engine
+"ai_script_conditions" {
+		"keyvalues" {
+      "origin" "624 -3432 368"
+      "targetname"	"barrelpush_conditions"
+			"PlayerBlockingActor"	"2"
+			"PlayerTargetLOS"	"1"
+			"PlayerTargetFOV"	"60"
+			"PlayerActorLOS"	"2"
+			"PlayerActorFOV"	"300"	
+			"ActorSeePlayer"	"2"	
+			"MaximumState"	"3"
+			"MinimumState"	"1"	
+			"ActorSeePlayer"	"2"												
+      "OnConditionsSatisfied"     "assault3cop_1,Kill,,0,-1"
+     "OnConditionsSatisfied"     "assault3cop_2,Kill,,0,-1"
+      "OnConditionsSatisfied"     "barrelpush_cop2_seq,BeginSequence,,0,-1"
+  	}
+	}
+}
+	
+"entities:wave1" {
+
+	"npc_metropolice"
+	{
+		"origin" "199 -2672 576" "angle" "0 -90 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+
+	"npc_metropolice"
+	{
+		"origin" "352 -2672 576" "angle" "14 -95 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+
+	"instant_trig" {
+		"origin" "-231 -2398 480"
+		"keyvalues" {
+			"radius"	"100"
+			"label"		"wave2"
+		}
+	}
+
+
+}
+
+"entities:wave2" {
+	"npc_metropolice"
+	{
+		"origin" "260 -1283 576" "angle" "0 -90 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+
+	"npc_metropolice"
+	{
+		"origin" "45 -344 640" "angle" "0 -70 0"
+		"keyvalues"
+		{
+			"additionalequipment"	"weapon_pistol"
+		}
+	}
+
+	"npc_zombie" {
+		"origin" "944 2187 -126" "angle" "0 -146 0"	
+	}
+}

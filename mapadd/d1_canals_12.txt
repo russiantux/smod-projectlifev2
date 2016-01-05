@@ -1,0 +1,39 @@
+//	map arrange data
+//	location: d1_canals_12
+
+"precache"{
+	"entity"	"npc_metropolice"
+}
+
+"randomspawn" {
+
+	"removenodes" {
+		"origin" "619 11664 624"
+		"radius" "2000"
+	}
+	
+	"npc_metropolice" {
+		"count"		"20"
+		"weapon"	"weapon_pistol"
+	}
+
+}
+
+"entities" {
+
+	"npc_metropolice" {
+		"origin" "48 7714 638" "angle" "0 -85 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+	"npc_metropolice" {
+		"origin" "-61 7721 638" "angle" "0 -83 0"
+		"keyvalues" {
+			"additionalequipment"	"weapon_smg1"
+		}
+	}
+
+
+}
+

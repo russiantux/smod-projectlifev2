@@ -1,0 +1,140 @@
+                        _____      __                            __
+ _  www.Ønline.net  __ / _  /_  __/ /  ____  _____   __  _____  / /
+| |/|/ / |/|/ / |/|/ // // /  \/ / /__/ /  \/ / -_|_/  \/ / -_|/ _/
+|__,__/|__,__/|__,__(_)___/_/\__/____/_/_/\__/\__/(_)/\__/\__//_/
+Un site tout en conneries par moi-même. mukuk mukuk.
+
+
+-|-------------------------------------------------------------------|-
+-|- DM_MINE_ENHANCED ------------------------------------------------|-
+-|-------------------------- Par N[yk]O`18 --------------------------|-
+-|-------------------------------------------------------- 30/07/06 -|-
+-|-------------------------------------------------------------------|-
+
+
+
+-|-------------------------------------------------------------------|-
+-|- I ------------------------------------------------ INSTALLATION -|-
+-|-------------------------------------------------------------------|-
+
+
+ Dézippez tout simplement le contenu entier du ZIP dans le dossier :
+ ...\Steam\SteamApps\<login>\half-life 2 deathmatch\hl2mp\maps\
+ 
+ Le fichier .bsp contient la map en elle même.
+ Le fichier .txt contient la description de la map.
+ 
+ Lancez ensuite Half-Life 2 Deathmatch, créez une partie ou joignez en
+ une qui tourne sur dm_mine_enhanced et profitez bien de l'expérience.
+
+
+-|-------------------------------------------------------------------|-
+-|- II ------------------------------------------------ DESCRIPTION -|-
+-|-------------------------------------------------------------------|-
+
+
+ L'action se déroule dans une mine a moitié désaffectée en bord de mer.
+ Il y a une partie à surface (usine, falaise, océan) et une partie en
+ sous-sol (galeries, grottes, aeration)
+ Deux moyens sont à votre disposition pour passer d'une section à une
+ autre.. l'ascenceur, rapide mais très voyant et la falaise, plus
+ discret mais plus long également.
+
+ Pour toute suggestion/commentaire : NykO.18{@}club-internet{.}fr
+
+
+-|-------------------------------------------------------------------|-
+-|- III ----------------------------------------------- MISE A JOUR -|-
+-|-------------------------------------------------------------------|-
+
+ Au mois de juillet 2006, après avoir reçu environ 154 784 mails me
+ demandant si je pouvais mettre à jour dm_mine, corriger ceci, corriger
+ cela, ajouter un truc à tel endroit et un autre à tel autre endroit..
+ j'ai finalement craqué et j'ai décidé de me replonger dans dm_mine.
+ Non pas pour ajouter 2 ou 3 bricoles mais pour faire un ravalement de
+ facade complet pour mettre la map au goût du jour. Loin d'être une
+ version 2, cette version apporte tout de même quelques trucs sympatiques.
+
+
+-|-------------------------------------------------------------------|-
+-|- IV -------------------------------------------------- PROBLEMES -|-
+-|-------------------------------------------------------------------|-
+
+
+ La carte est relativement complexe et a été difficile à optimiser.
+ Une bonne configuration, ou un ajustement de la qualité graphique
+ seront à prévoir si vous avez une petite config.
+ 
+ Certains problèmes de texture sont apparus chez certains joueurs
+ tandis que chez d'autres se sont des problèmes avec la lumière..
+ En règle général, il y a toujours un petit quelque chose qui cloche
+ chez l'un ou chez l'autre, mais rien qui vous empêchera de jouer.
+ 
+ Un bug est fortement embêtant au point de vue esthétique, c'est la
+ pluie à l'intérieur de la mine.. Je n'ai pas réussi à résoudre ce
+ problème.. La pluie de la surface traverse le sol et le plafond de
+ la mine..
+
+ Au cas ou vous trouvez un bug non repertorié envoyez moi un email à
+ - NykO.18{@}club-internet{.}fr
+
+
+-|-------------------------------------------------------------------|-
+-|- V ---------------------------------------------------- VERSIONS -|-
+-|-------------------------------------------------------------------|-
+ 
+ 
+ BETA 2 (17/04/05)
+ - Correction des respawn foireux
+ - Changement de la taille d'une texture
+ - Remplacement de plusieurs textures parfois trop claires ou sombres
+ - Ajout de tous les models, pour éviter les ERROR
+ - Correction sur les 2 tuyaux pas assez longs le long de la falaise
+ - Ajout de quelques munitions
+ 
+ BETA 3 (18/04/05)
+ - Lancement des sons de machinerie en surface au démarrage
+ - Supression de l'environement orageux (bug de pluie + perfs)
+ - Ajout de quelques sons d'ambiance
+ - Correction de la grue non-solide pour la voiture suspendue
+ - Ajout d'un hack sur la porte d'entrée pour éviter qu'elle colle (lol)
+ - Ajout d'un élément du décor qui manquait
+ - Augmentation du rayon de certains sons
+ - Correction de la surface de l'océan
+ 
+ VERSION 2 (30/07/06)
+ - Ajout d'un nouveau passage au niveau du pont enjambant les rais (beaucoup demandé par mail)
+ - Nouvelles textures de meilleure qualité
+ - Nouveaux models 3D d'arbres remplaçant les très moyens de shiroko
+ - Correction du respawn corrompu de certains items et armes
+ - Ajout de détails et de models 3D un peu partout
+ - Amélioration de l'ambiance sonore
+ - Amélioration drastique du skybox 3D et en particulier de la mer qui était très moche.
+ - Amélioration de l'ambiance lumineuse, il fait plus sombre qu'avant en surface et plus jauni dans la mine
+ - Ajout de decals/overlays pour salir la plupart des endroits
+ - Correction de tous les bugs de textures qui apparaissaient sur les vieilles cartes 3D
+ - Amélioration de l'ambiance près de la ventilation géante (effets visuels et sonores)
+ - Ajout de pierres qui tombent des plafonds lorsque la terre tremble
+ - Ajout d'effets visuels un peu partout (comme des étincelles, de la fumée et des halos de lumière)
+ - Réoptimisation légère de l'ensemble de la map (mais difficile de faire mieux)
+ - Ajout de ma signature pour que la map arrête d'être plagiée
+ - Correction d'une quantité astronomique de bugs divers, de murs mal collés, d'armes ou objets qui volaient et ainsi de suite...
+
+ 
+-|-------------------------------------------------------------------|-
+-|- VI ------------------------------------------------------ MERCI -|-
+-|-------------------------------------------------------------------|-
+
+ - *MoroeS* ! Pour les tests, les conseils, les aides et le ciel
+ - Dans le désordre, Zorg045, KMi, Deglingo, Solarix, Neernitt
+   RoBoT, DarthRod et DieZz-L pour les bêta-tests
+ - Trakiss pour avoir mis la map sur son serveur
+ - mapping-area.com en général pour les conseils & aides
+ - Shiroko pour la texture de cascade et les models de verdure
+ - cheroketeam.savana.cs pour de nombreux models de la map
+ - Hessi pour quelques models honteusement pompés de la magnifique de_corse
+  
+   Désolé si j'en oublie...
+
+
+-|-------------------------------------------------------------------|-

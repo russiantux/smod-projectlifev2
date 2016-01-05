@@ -1,0 +1,19 @@
+//	map arrange data
+//	location: d1_trainstation_03
+
+
+"entities"
+{
+	"npc_citizen"
+	{
+		"origin" "-5104 -4691 192"
+		"angle" "0 90 0"
+	}
+	
+//	"npc_barnacle"
+//	{
+//		"origin" "-5043 -4642 504"
+//	}
+
+
+}
