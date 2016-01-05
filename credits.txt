@@ -1,0 +1,74 @@
+MAPS
+
+TDM_rms_titanic_1912 by F.kalkman. Mapadd by "The SMOD Author"
+
+OBJ Kinyoenta Beta 7 by kasasu. Mapadd by "The SMOD Author"
+
+DM_Torrent by Joey "Erratic" Adey. Mapadd by "The SMOD Author"
+
+WEAPONS
+
+Desert Eagle
+Model/Skin/Sounds: Valve
+LAM Model: Will
+LAM Textures: Kimono, The_Tub
+New Animations: Strykerwolf
+HL2 Arm Hack and SMOD Compile: Onemanshow
+-----------------------------------------------------------------------------------------------------------
+
+P90
+Model: Enin
+Skin: Enin
+Animations: Strykerwolf (Taken from Ghost Ops http://www.ghostopsmod.com/ )
+Sounds: Vunsunta (Taken from Ghost Ops http://www.ghostopsmod.com/ ) 
+Compile\Armhackage: Soul_Slayer
+HL2 Arm Hack and SMOD Compile: Onemanshow
+-----------------------------------------------------------------------------------------------------------
+
+M249 PARA
+Model/Skin/Animations/Sounds: Valve
+HL2 Arm Hack and SMOD Compile: Onemanshow
+-----------------------------------------------------------------------------------------------------------
+
+M4A1 Carbine
+M4 Model: Soul_Slayer
+Foregrip Model: Twinke Masta
+EOTech Model: Twinke Masta
+Skin M4a1: Thanez
+Skin Foregrip and EOTech: Twinke Masta
+Animations: MulletÅE
+Sounds: Valve/1.xx CS team
+Compile (v/w's): Skladfin
+
+HL2 Arm Hack, Model Edits and SMOD Compile: Onemanshow
+-----------------------------------------------------------------------------------------------------------
+
+Player Models:
+
+Gordon Freeman (Citizen)
+Base Models\Skins: Valve
+Base Face Texture: FakeFactory
+Face Remodel/Retexture: Romka
+Face Reskin/Model Edits and SMOD Compile: Onemanshow
+
+Combine Soldier
+Model\Skin: Valve
+SMOD Compile: Onemanshow
+
+New Sounds By:
+DaveXIII90
+Deku Scrub
+VALVe
+csru team
+Games Fusion
+Defcon Soundpack v4
+Unknown
+dDefinder
+Blindshot
+DICE
+Infinity Ward
+hunterm16a2
+Red Storm Entertainment
+kenboy
+Matix89
+Ubisoft

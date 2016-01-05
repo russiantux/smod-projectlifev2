@@ -1,0 +1,27 @@
+Weapon List
+
+weapon_custom1		Kimber
+weapon_custom2		PDW7
+weapon_custom3		M16
+weapon_custom4		Shotgun
+weapon_custom5		Para
+weapon_custom6		AWM
+weapon_custom7		AK47
+weapon_custom8		G36
+weapon_custom9		Glock
+weapon_custom10		MP5
+weapon_custom11		P90
+weapon_custom12		UZI
+weapon_custom13		AK47U
+weapon_custom14		NEO
+weapon_custom15		Five Seven
+Weapon_custom16		M4A1 Supressed
+weapon_custom17		Frag Grenade
+weapon_custom18		Dual MP5
+weapon_custom19		Dual Shotguns
+weapon_custom20		RPG-7
+weapon_custom21		AR15 With Scope
+weapon_custom22		C-4: 30sec Timer
+weapon_custom23		Colt .357 Python
+weapon_custom24		Mini-Gun
+weapon_custom25		KNIFE

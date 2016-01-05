@@ -1,0 +1,21 @@
+Delta 5.56:
+
+-DOD:S/Half-Life 2: The Lost Coast no longer needed. Likely fixing 99% of the "Mount Filesystem Error 301" issues.
+-Made a possible 3d scope crash fix. (Still keeps the 3d scope enabled)
+-Proper and working W models for NPCs (Converted by Onemanshow and veteran_gamer). 
+-Tweaked setup map cfgs for best performance.
+-"Point Insertion" re-added to chapter menu.
+-Zombie fix merged.
+-Updated code to Smod Version 40a.
+-alltactical.cfg errors fixed.
+-Massive file cleanup for reduced size.
+-Player voices disabled.
+-Separate install that no longer overwrite's the Smod folder. Allowing normal Smod and Smod Tactical to be installed at the same time without conflict.
+-Fixed MP5/Mossberg 590 HUD icons conflicting.
+-Fixed Uzi using .45ACP ammo.
+-Fixed improper UMP magazine size.
+-Fixed excessive blurring/shaking when wounded.
+-Added proper weapon spawn names. (EX:You can type in give weapon_m4a1 to get the m4a1 now)
+-Added P90/M4A1/MP5 fire animation fixes made by EvilMr.Lee
+-Disabled automatic reloading of holstered weapons.
+-Lowered fire rate on Minigun to help prevent crashes with it.
